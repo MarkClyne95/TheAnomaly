@@ -11,7 +11,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>PROJECT</RootNamespace>
     <ProjectGuid>{5dbd9b70-de53-e777-40a4-1bf3187a693b}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -43,22 +43,145 @@
   <ItemGroup>
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
      <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
+     <Compile Include="Assets\[Babylon]\Shaders\UnityInterface.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+     <Compile Include="Assets\[Babylon]\Normals\GeometryNormals.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
      <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
+     <Compile Include="Assets\[Babylon]\Plugins\Anim\AnimUnhideTool.cs" />
      <Compile Include="Assets\DoorOpen.cs" />
+     <None Include="Assets\[Babylon]\Template\Shader\Albedo.partial.shader.txt" />
+     <None Include="Assets\[Babylon]\Template\Workers\manifest.json" />
+     <None Include="Assets\[Babylon]\Template\Shader\Albedo.vertex.txt" />
+     <None Include="Assets\[Babylon]\Template\System\JavaScript.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\256\recast.js" />
+     <None Include="Assets\[Babylon]\Template\Shader\Albedo.partial.material.txt" />
+     <None Include="Assets\[Babylon]\Template\Typings\ammo.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Typings\babylon.materials.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\1024\recast.wasm.js" />
+     <None Include="Assets\[Babylon]\Plugins\Utilities\FreeImage.License-fi.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\128\ammo.js" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\64\ammo.wasm.js" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFOcclusionMapChannel.shader" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\256\ammo.wasm.js" />
+     <None Include="Assets\[Babylon]\Template\Scripts\pep.js" />
+     <None Include="Assets\[Babylon]\Template\Shader\Albedo.partial.chunks.txt" />
+     <None Include="Assets\[Babylon]\Template\Project\toaster.css" />
+     <None Include="Assets\[Babylon]\Template\Typings\babylon.manager.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Scripts\babylon.manager.js" />
+     <None Include="Assets\[Babylon]\Template\Shader\Albedo.partial.specular.txt" />
+     <None Include="Assets\[Babylon]\Template\Typings\global.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\512\recast.wasm.js" />
+     <None Include="Assets\[Babylon]\Template\Workers\worker-cache.js" />
+     <None Include="Assets\[Babylon]\Template\Project\bootstrap.css" />
      <None Include="Assets\3. Materials\S_CRT.shader" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFEncodeLightmap.shader" />
+     <None Include="Assets\[Config]\menu.json" />
+     <None Include="Assets\[Babylon]\[Pro]\RealtimeReflection.ts" />
+     <None Include="Assets\[Babylon]\[Pro]\TerrainGenerator.ts" />
+     <None Include="Assets\[Babylon]\Shaders\UnityStandard.shader" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\256\ammo.js" />
+     <None Include="Assets\[Babylon]\Shaders\UnitySpecular.shader" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFBumpToNormal.shader" />
+     <None Include="Assets\[Babylon]\Template\Shader\Raw.vertex.txt" />
+     <None Include="Assets\[Babylon]\Template\Typings\babylon.gui.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\512\recast.js" />
+     <None Include="Assets\[Babylon]\Template\System\TypeScript.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\fastclick.js" />
+     <None Include="Assets\[Babylon]\Template\Typings\toaster.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Shader\Raw.material.txt" />
+     <None Include="Assets\[Babylon]\Template\Typings\win.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Shader\Albedo.shader.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\2048\ammo.wasm.js" />
+     <None Include="Assets\[Babylon]\Template\Scripts\babylon.gui.js" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\128\recast.js" />
+     <None Include="Assets\[Babylon]\Template\Typings\tvjs.d.ts" />
+     <None Include="Assets\[Babylon]\[Pro]\CharacterController.ts" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFConvertColors.cginc" />
+     <None Include="Assets\[Babylon]\Template\Typings\fonts.d.ts" />
+     <None Include="Assets\[Babylon]\!LICENSE.txt" />
      <None Include="Assets\AltspaceUploader\space_templates.json" />
+     <None Include="Assets\[Babylon]\Template\Typings\babylon.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\1024\recast.js" />
+     <None Include="Assets\[Babylon]\Template\Master\index.html" />
      <None Include="Assets\StarterAssets\Environment\Shaders\Built-in_RP\Triplanar.shader" />
+     <None Include="Assets\[Babylon]\Template\System\DataScript.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\msc_basis_transcoder.js" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\2048\ammo.js" />
+     <None Include="Assets\[Babylon]\[Pro]\AudioSource.ts" />
+     <None Include="Assets\[Babylon]\[Pro]\AnimationState.ts" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\256\recast.wasm.js" />
+     <None Include="Assets\[Config]\settings.json" />
+     <None Include="Assets\[Babylon]\Template\Shader\Raw.fragment.txt" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFSecondaryDetailMaps.shader" />
+     <None Include="Assets\[Babylon]\Template\Typings\babylon.loaders.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Scripts\jquery.js" />
+     <None Include="Assets\[Babylon]\Template\Scripts\babylon.max.js" />
+     <None Include="Assets\[Babylon]\Template\Typings\babylon.glTF2Interface.d.ts" />
+     <None Include="Assets\[Babylon]\Template\Scripts\babylon.ktx2decoder.js" />
+     <None Include="Assets\[Babylon]\Template\Scripts\babylon.earcut.js" />
      <None Include="Assets\StarterAssets\license.txt" />
+     <None Include="Assets\[Babylon]\Plugins\Utilities\FreeImage.License-gplv3.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\babylon.min.js" />
+     <None Include="Assets\[Babylon]\[Pro]\WebVideoPlayer.ts" />
+     <None Include="Assets\[Babylon]\Plugins\Utilities\FreeImage.Readme.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\64\recast.wasm.js" />
+     <None Include="Assets\[Babylon]\[Pro]\NavigationAgent.ts" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFMetalGlossChannel.shader" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\64\ammo.js" />
+     <None Include="Assets\[Babylon]\Template\System\CompileOptions.json" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\128\recast.wasm.js" />
+     <None Include="Assets\[Babylon]\Template\Shader\Albedo.fragment.txt" />
+     <None Include="Assets\[Babylon]\[Pro]\RaycastVehicle.ts" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFEncodeTextureColor.shader" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\1024\ammo.js" />
+     <None Include="Assets\[Babylon]\Template\System\XboxScript.txt" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFMaskToNormal.shader" />
+     <None Include="Assets\[Babylon]\[Pro]\ShurikenParticles.ts" />
+     <None Include="Assets\[Babylon]\Template\Scripts\babylon.inspector.js" />
      <None Include="Assets\3. Materials\S_Window.shader" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Recast\64\recast.js" />
+     <None Include="Assets\[Config]\cache.json" />
+     <None Include="Assets\[Babylon]\Template\Shader\Universal.shader.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\babylon.materials.js" />
+     <None Include="Assets\[Babylon]\[Pro]\RigidbodyPhysics.ts" />
+     <None Include="Assets\[Babylon]\Template\Shader\Raw.shader.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\toaster.js" />
+     <None Include="Assets\[Babylon]\Template\Master\engine.html" />
+     <None Include="Assets\[Babylon]\Template\Class\ScriptClass.txt" />
+     <None Include="Assets\[Babylon]\Template\Shader\Node.shader.txt" />
+     <None Include="Assets\[Babylon]\!PHYSICS.txt" />
+     <None Include="Assets\[Babylon]\Template\Project\awesome.css" />
+     <None Include="Assets\[Babylon]\Template\Scripts\babylon.gltf.js" />
+     <None Include="Assets\[Babylon]\!RECAST.txt" />
+     <None Include="Assets\[Babylon]\!README.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\meter.js" />
+     <None Include="Assets\[Babylon]\Template\Shader\Albedo.specular.txt" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFHeightToNormal.shader" />
      <None Include="Assets\AltspaceUploader\kits.json" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\128\ammo.wasm.js" />
      <None Include="Assets\StarterAssets\Environment\Shaders\Built-in_RP\ArmatureShader.shader" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\512\ammo.js" />
+     <None Include="Assets\[Babylon]\Plugins\Utilities\FreeImage.License-gplv2.txt" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFSpecularGlossChannel.shader" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\512\ammo.wasm.js" />
+     <None Include="Assets\[Babylon]\Template\Workers\worker-service.js" />
+     <None Include="Assets\[Babylon]\Template\Scripts\glslang.js" />
+     <None Include="Assets\[Babylon]\Plugins\System\GLTFEncodeTexture.shader" />
+     <None Include="Assets\[Babylon]\Template\Shader\Node.material.txt" />
+     <None Include="Assets\[Babylon]\Artist\BabylonArtTools.md" />
+     <None Include="Assets\[Babylon]\Template\Scripts\peer.js" />
+     <None Include="Assets\[Babylon]\Template\Scripts\Ammo\1024\ammo.wasm.js" />
+     <None Include="Assets\[Babylon]\Template\Class\EditorClass.txt" />
+     <None Include="Assets\[Babylon]\Template\Scripts\bootstrap.js" />
+     <None Include="Assets\[Babylon]\Template\Master\style.css" />
+     <None Include="Assets\[Babylon]\Template\Shader\Albedo.material.txt" />
+     <None Include="Assets\[Babylon]\Template\Typings\recast.d.ts" />
      <None Include="Assets\3. Materials\S_Window (2).shader" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -282,6 +405,9 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
+     <Reference Include="AjaxMin">
+     <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Assets\[Babylon]\Plugins\AjaxMin.dll</HintPath>
+     </Reference>
      <Reference Include="System.Reflection.Emit.Lightweight">
      <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Library\PackageCache\com.microsoft.altspacevr_uploader@dbdf70d12261-1668179520771\Plugins\System.Reflection.Emit.Lightweight.dll</HintPath>
      </Reference>
@@ -302,6 +428,12 @@
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="FreeImageNet">
+     <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Assets\[Babylon]\Plugins\Utilities\FreeImageNet.dll</HintPath>
+     </Reference>
+     <Reference Include="CanvasTools">
+     <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Assets\[Babylon]\Plugins\CanvasTools.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
