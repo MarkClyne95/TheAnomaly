@@ -1,0 +1,54 @@
+{
+	"tags": null,
+	"url": "Anomaly Models/glb/Material.001 (Metallic Roughness).png",
+	"uOffset": 0,
+	"vOffset": 0,
+	"uScale": 1,
+	"vScale": 1,
+	"uAng": 0,
+	"vAng": 0,
+	"wAng": 0,
+	"uRotationCenter": 0.5,
+	"vRotationCenter": 0.5,
+	"wRotationCenter": 0.5,
+	"homogeneousRotationInUVTransform": false,
+	"isBlocking": true,
+	"name": "Anomaly Models/glb/Material.001 (Metallic Roughness).png",
+	"metadata": {
+		"gltf": {
+			"pointers": [
+				"/materials/2/pbrMetallicRoughness/metallicRoughnessTexture"
+			],
+			"editorDone": true
+		},
+		"editorDone": true,
+		"ktx2CompressedTextures": {
+			"isUsingCompressedTexture": false
+		},
+		"editorId": "39ff1444-1f70-4d37-9bc4-03e367ffbaeb",
+		"editorName": "Material.001 (Metallic Roughness).png"
+	},
+	"hasAlpha": false,
+	"getAlphaFromRGB": false,
+	"level": 1,
+	"coordinatesIndex": 0,
+	"coordinatesMode": 0,
+	"wrapU": 1,
+	"wrapV": 1,
+	"wrapR": 1,
+	"anisotropicFilteringLevel": 4,
+	"isCube": false,
+	"is3D": false,
+	"is2DArray": false,
+	"gammaSpace": true,
+	"invertZ": false,
+	"lodLevelInAlpha": false,
+	"lodGenerationOffset": 0,
+	"lodGenerationScale": 0,
+	"linearSpecularLOD": false,
+	"isRenderTarget": false,
+	"animations": [],
+	"invertY": false,
+	"samplingMode": 3,
+	"_useSRGBBuffer": false
+}

@@ -1,0 +1,142 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "Circle.010",
+			"id": "98af8a2f-3096-4c0c-b195-9ac974badfa3",
+			"uniqueId": 3255,
+			"type": "Mesh",
+			"position": [
+				0.0010395050048828125,
+				0.2646292448043823,
+				77.75955963134766
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"scaling": [
+				1,
+				1,
+				1
+			],
+			"pivotMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": true,
+			"isBlocker": false,
+			"parentId": "159cb2b6-9c69-47cf-b94d-b7ffb41ec4b8",
+			"isUnIndexed": false,
+			"geometryId": "d8cbaa18-884f-47cf-aa9a-0cbaafc6abc2",
+			"subMeshes": null,
+			"materialId": "0bd42ef2-7197-429d-a7c0-efcf70f1df4c",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": -1,
+					"1": 0,
+					"2": -0.000007346410257014213,
+					"3": 0,
+					"4": 0,
+					"5": 1,
+					"6": 0,
+					"7": 0,
+					"8": 0.000007346410257014213,
+					"9": 0,
+					"10": -1,
+					"11": 0,
+					"12": 0.0005740250344388187,
+					"13": -0.05869999900460243,
+					"14": -78.13680267333984,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "Circle.010",
+					"name": "Circle.010",
+					"sceneFileName": "meshes/ship/ship.babylon"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "src/scenes/DoorInteraction.ts"
+				},
+				"renderingGroupId": 0,
+				"doNotExport": false
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/d8cbaa18-884f-47cf-aa9a-0cbaafc6abc2.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				18.691999435424805,
+				18.944000244140625,
+				2.424999952316284
+			],
+			"boundingBoxMinimum": [
+				-18.691999435424805,
+				-3.895699977874756,
+				-2.424999952316284
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 1119,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 1119,
+					"stride": 3,
+					"offset": 4476,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 492,
+					"stride": 1,
+					"offset": 8952,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 10920,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

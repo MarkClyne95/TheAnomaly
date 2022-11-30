@@ -4,6 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Navigation
   - CinemachineTarget
   layers:
   - Default
@@ -35,9 +36,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - No Instance
+  - Ignore Export
+  - Babylon Prefab
   m_SortingLayers:
   - name: Default
     uniqueID: 0
