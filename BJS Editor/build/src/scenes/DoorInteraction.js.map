@@ -1,0 +1,1 @@
+{"version":3,"file":"DoorInteraction.js","sourceRoot":"","sources":["../../../src/scenes/DoorInteraction.ts"],"names":[],"mappings":";;AAEA,mCAA8B;AAE9B;IACI;QACA,cAAS,GAAG,IAAI,gBAAM,EAAE,CAAC;IADT,CAAC;IAGV,iCAAO,GAAd;QACI,IAAI,CAAC,SAAS,CAAC,eAAe,CAAC,EAAE,CAAC,CAAC;IACvC,CAAC;IAEM,kCAAQ,GAAf;IACA,CAAC;IAEM,mCAAS,GAAhB;IAEA,CAAC;IACL,sBAAC;AAAD,CAAC,AAdD,IAcC"}

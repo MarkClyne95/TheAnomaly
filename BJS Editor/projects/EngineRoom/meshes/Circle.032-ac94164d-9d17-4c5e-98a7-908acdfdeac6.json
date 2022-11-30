@@ -1,0 +1,333 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "Circle.032",
+			"id": "ac94164d-9d17-4c5e-98a7-908acdfdeac6",
+			"uniqueId": 58,
+			"type": "Mesh",
+			"position": [
+				-0.7377,
+				8.5882,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				-0.1498
+			],
+			"scaling": [
+				1,
+				1,
+				1
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"billboardMode": 0,
+			"visibility": 1,
+			"isBlocker": false,
+			"parentId": "811cfeaf-4f98-49a4-8173-2ea27bc63408",
+			"isUnIndexed": false,
+			"geometryId": "bf59ddc4-092b-475d-9e87-e018259d1c95",
+			"subMeshes": null,
+			"materialId": "default material",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": 0.9888009428977966,
+					"1": 0.1492403745651245,
+					"2": 0,
+					"3": 0,
+					"4": -0.1492403745651245,
+					"5": 0.9888009428977966,
+					"6": 0,
+					"7": 0,
+					"8": 0,
+					"9": 0,
+					"10": 1,
+					"11": 0,
+					"12": 2.0111446380615234,
+					"13": -8.381925582885742,
+					"14": 0,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "Circle.032",
+					"name": "Circle.032",
+					"sceneFileName": "meshes/ship/ship.babylon"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [],
+			"animations": [
+				{
+					"name": "rotation animation",
+					"property": "rotation",
+					"framePerSecond": 25,
+					"dataType": 1,
+					"loopBehavior": 1,
+					"blendingSpeed": 0.01,
+					"keys": [
+						{
+							"frame": 0,
+							"values": [
+								0,
+								0,
+								-0.1498
+							]
+						},
+						{
+							"frame": 234,
+							"values": [
+								0,
+								0,
+								-0.4914
+							]
+						},
+						{
+							"frame": 508,
+							"values": [
+								0,
+								0,
+								-0.8126
+							]
+						},
+						{
+							"frame": 737,
+							"values": [
+								0,
+								0,
+								0.2539
+							]
+						},
+						{
+							"frame": 999,
+							"values": [
+								0,
+								0,
+								-0.8702
+							]
+						}
+					],
+					"ranges": [
+						{
+							"name": "Circle.019Action.002",
+							"from": 0,
+							"to": 999
+						}
+					]
+				},
+				{
+					"name": "position animation",
+					"property": "position",
+					"framePerSecond": 25,
+					"dataType": 1,
+					"loopBehavior": 1,
+					"blendingSpeed": 0.01,
+					"keys": [
+						{
+							"frame": 0,
+							"values": [
+								-0.7377,
+								8.5882,
+								0
+							]
+						},
+						{
+							"frame": 234,
+							"values": [
+								-0.7377,
+								8.5882,
+								0
+							]
+						},
+						{
+							"frame": 508,
+							"values": [
+								-0.7377,
+								8.5882,
+								0
+							]
+						},
+						{
+							"frame": 737,
+							"values": [
+								-0.7377,
+								8.5882,
+								0
+							]
+						},
+						{
+							"frame": 999,
+							"values": [
+								-0.7377,
+								8.5882,
+								0
+							]
+						}
+					],
+					"ranges": [
+						{
+							"name": "Circle.019Action.002",
+							"from": 0,
+							"to": 999
+						}
+					]
+				},
+				{
+					"name": "scaling animation",
+					"property": "scaling",
+					"framePerSecond": 25,
+					"dataType": 1,
+					"loopBehavior": 1,
+					"blendingSpeed": 0.01,
+					"keys": [
+						{
+							"frame": 0,
+							"values": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"frame": 234,
+							"values": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"frame": 508,
+							"values": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"frame": 737,
+							"values": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"frame": 999,
+							"values": [
+								1,
+								1,
+								1
+							]
+						}
+					],
+					"ranges": [
+						{
+							"name": "Circle.019Action.002",
+							"from": 0,
+							"to": 999
+						}
+					]
+				}
+			],
+			"ranges": [
+				{
+					"name": "Circle.019Action.002",
+					"from": 0,
+					"to": 999
+				}
+			],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"overlayAlpha": 0.5,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/bf59ddc4-092b-475d-9e87-e018259d1c95.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				9.94950008392334,
+				9.934100151062012,
+				6.706200122833252
+			],
+			"boundingBoxMinimum": [
+				-9.94950008392334,
+				-9.964900016784668,
+				-6.706200122833252
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 723,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 723,
+					"stride": 3,
+					"offset": 2892,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 482,
+					"stride": 2,
+					"offset": 5784,
+					"dataType": 1
+				},
+				"tangetsAttrDesc": {
+					"count": 964,
+					"stride": 3,
+					"offset": 7712,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 576,
+					"stride": 1,
+					"offset": 11568,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 13872,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"tangents": null,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}
