@@ -34,7 +34,6 @@
 	"id": "676fcad8-bc03-4d4b-bbb6-70795be0ee2f",
 	"state": "",
 	"metadata": {
-		"_waitingParentId": null,
 		"script": {
 			"name": "None"
 		}
@@ -44,5 +43,5 @@
 	"parentId": "ca18225d-0131-4650-84cc-766f42e2ca36",
 	"animations": [],
 	"ranges": [],
-	"isEnabled": true
+	"isEnabled": false
 }

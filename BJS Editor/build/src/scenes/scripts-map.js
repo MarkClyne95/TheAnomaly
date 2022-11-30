@@ -6,6 +6,7 @@ exports.scriptsMap = void 0;
  */
 exports.scriptsMap = {
     "src/scenes/DoorInteraction.ts": require("./DoorInteraction"),
+    "src/scenes/functions.ts": require("./functions"),
     "src/scenes/player.ts": require("./player"),
     "src/scenes/scene/camera.ts": require("./scene/camera"),
 };

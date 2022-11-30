@@ -33,8 +33,7 @@
 		"script": {
 			"name": "None"
 		},
-		"doNotExport": false,
-		"_waitingParentId": null
+		"doNotExport": false
 	},
 	"uniqueId": 2361,
 	"type": 0,

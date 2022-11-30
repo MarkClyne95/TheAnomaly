@@ -32,6 +32,8 @@ var PlayerCamera = /** @class */ (function (_super) {
     // @ts-ignore ignoring the super call as we don't want to re-init
     function PlayerCamera() {
         var _this = this;
+        //Hidden in Editor
+        _this._hasInteracted = false;
         return _this;
     }
     /**
@@ -56,8 +58,8 @@ var PlayerCamera = /** @class */ (function (_super) {
      */
     PlayerCamera.prototype._onPointerEvent = function (info) {
         this._enterPointerLock();
-        this._launchBall(info);
     };
+    //#region keyboard events
     /**
      * Called on the escape key (key code 27) is up.
      * Used to exit pointer lock.
@@ -68,6 +70,21 @@ var PlayerCamera = /** @class */ (function (_super) {
             engine.exitPointerlock();
         }
     };
+    PlayerCamera.prototype._keyDown = function (info) {
+        this.speed = 12;
+    };
+    PlayerCamera.prototype._keyUp = function (info) {
+        this.speed = 8;
+    };
+    //set up interact key
+    PlayerCamera.prototype._interact = function (info) {
+        // if (this._hasInteracted == false)
+        //     this._hasInteracted = true;
+        // else if (this._hasInteracted == true)
+        //     this._hasInteracted = false;
+        console.log("Interacted");
+    };
+    //#endregion
     /**
      * Requests the pointer lock.
      */
@@ -76,19 +93,6 @@ var PlayerCamera = /** @class */ (function (_super) {
         if (!engine.isPointerLock) {
             engine.enterPointerlock();
         }
-    };
-    /**
-     * Launches a new ball from the camera position to the camera direction.
-     */
-    PlayerCamera.prototype._launchBall = function (info) {
-        // Create a new ball instance
-        var ballInstance = this._ball.createInstance("ballInstance");
-        ballInstance.position.copyFrom(this._ball.getAbsolutePosition());
-        // Create physics impostor for the ball instance
-        ballInstance.physicsImpostor = new core_1.PhysicsImpostor(ballInstance, core_1.PhysicsImpostor.SphereImpostor, { mass: 1, friction: 0.2, restitution: 0.2 });
-        // Apply impulse on ball
-        var force = this.getDirection(new core_1.Vector3(0, 0, 1)).multiplyByFloats(this._ballForceFactor, this._ballForceFactor, this._ballForceFactor);
-        ballInstance.applyImpulse(force, ballInstance.getAbsolutePosition());
     };
     __decorate([
         (0, decorators_1.fromChildren)("ball")
@@ -114,6 +118,15 @@ var PlayerCamera = /** @class */ (function (_super) {
     __decorate([
         (0, decorators_1.onKeyboardEvent)([27], core_1.KeyboardEventTypes.KEYUP)
     ], PlayerCamera.prototype, "_onEscapeKey", null);
+    __decorate([
+        (0, decorators_1.onKeyboardEvent)([16], core_1.KeyboardEventTypes.KEYDOWN)
+    ], PlayerCamera.prototype, "_keyDown", null);
+    __decorate([
+        (0, decorators_1.onKeyboardEvent)([16], core_1.KeyboardEventTypes.KEYUP)
+    ], PlayerCamera.prototype, "_keyUp", null);
+    __decorate([
+        (0, decorators_1.onKeyboardEvent)([69], core_1.KeyboardEventTypes.KEYDOWN)
+    ], PlayerCamera.prototype, "_interact", null);
     return PlayerCamera;
 }(core_1.FreeCamera));
 exports.default = PlayerCamera;

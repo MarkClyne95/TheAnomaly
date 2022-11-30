@@ -5,6 +5,7 @@ import { ScriptMap } from "./tools";
  */
 export interface ISceneScriptMap {
 	"src/scenes/DoorInteraction.ts": ScriptMap;
+	"src/scenes/functions.ts": ScriptMap;
 	"src/scenes/player.ts": ScriptMap;
 	"src/scenes/scene/camera.ts": ScriptMap;
 }
@@ -14,6 +15,7 @@ export interface ISceneScriptMap {
  */
 export const scriptsMap: ISceneScriptMap = {
 	"src/scenes/DoorInteraction.ts": require("./DoorInteraction"),
+	"src/scenes/functions.ts": require("./functions"),
 	"src/scenes/player.ts": require("./player"),
 	"src/scenes/scene/camera.ts": require("./scene/camera"),
 }

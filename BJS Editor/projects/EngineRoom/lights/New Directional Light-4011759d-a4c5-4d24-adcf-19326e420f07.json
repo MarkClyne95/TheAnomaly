@@ -44,13 +44,12 @@
 	"metadata": {
 		"script": {
 			"name": "None"
-		},
-		"_waitingParentId": null
+		}
 	},
 	"uniqueId": 40,
 	"type": 1,
 	"parentId": "ca18225d-0131-4650-84cc-766f42e2ca36",
 	"animations": [],
 	"ranges": [],
-	"isEnabled": true
+	"isEnabled": false
 }

@@ -1,4 +1,4 @@
-import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes } from "@babylonjs/core";
+import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, KeyboardInfo } from "@babylonjs/core";
 
 import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../decorators";
 
@@ -6,6 +6,7 @@ export default class PlayerCamera extends FreeCamera {
     @fromChildren("ball")
     private _ball: Mesh;
 
+    //Visible in Editor
     @visibleInInspector("KeyMap", "Forward Key", "W".charCodeAt(0))
     private _forwardKey: number;
 
@@ -20,6 +21,9 @@ export default class PlayerCamera extends FreeCamera {
 
     @visibleInInspector("number", "Ball Force Factor", 1)
     private _ballForceFactor: number;
+
+    //Hidden in Editor
+    private _hasInteracted: boolean = false;
 
     /**
      * Override constructor.
@@ -53,9 +57,8 @@ export default class PlayerCamera extends FreeCamera {
     @onPointerEvent(PointerEventTypes.POINTERDOWN, false)
     private _onPointerEvent(info: PointerInfo): void {
         this._enterPointerLock();
-        this._launchBall(info);
     }
-
+//#region keyboard events
     /**
      * Called on the escape key (key code 27) is up.
      * Used to exit pointer lock.
@@ -68,6 +71,27 @@ export default class PlayerCamera extends FreeCamera {
         }
     }
 
+    @onKeyboardEvent([16], KeyboardEventTypes.KEYDOWN)
+    protected _keyDown(info: KeyboardInfo): void {
+        this.speed = 12;
+    }
+
+    @onKeyboardEvent([16], KeyboardEventTypes.KEYUP)
+    protected _keyUp(info: KeyboardInfo): void {
+        this.speed = 8;
+    }
+
+    //set up interact key
+    @onKeyboardEvent([69], KeyboardEventTypes.KEYDOWN)
+    protected _interact(info: KeyboardInfo): void {
+        // if (this._hasInteracted == false)
+        //     this._hasInteracted = true;
+        // else if (this._hasInteracted == true)
+        //     this._hasInteracted = false;
+        console.log("Interacted");
+    }
+//#endregion
+
     /**
      * Requests the pointer lock.
      */
@@ -76,21 +100,5 @@ export default class PlayerCamera extends FreeCamera {
         if (!engine.isPointerLock) {
             engine.enterPointerlock();
         }
-    }
-
-    /**
-     * Launches a new ball from the camera position to the camera direction.
-     */
-    private _launchBall(info: PointerInfo): void {
-        // Create a new ball instance
-        const ballInstance = this._ball.createInstance("ballInstance");
-        ballInstance.position.copyFrom(this._ball.getAbsolutePosition());
-
-        // Create physics impostor for the ball instance
-        ballInstance.physicsImpostor = new PhysicsImpostor(ballInstance, PhysicsImpostor.SphereImpostor, { mass: 1, friction: 0.2, restitution: 0.2 });
-
-        // Apply impulse on ball
-        const force = this.getDirection(new Vector3(0, 0, 1)).multiplyByFloats(this._ballForceFactor, this._ballForceFactor, this._ballForceFactor);
-        ballInstance.applyImpulse(force, ballInstance.getAbsolutePosition());
     }
 }

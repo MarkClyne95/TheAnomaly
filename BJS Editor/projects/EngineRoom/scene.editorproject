@@ -13,11 +13,6 @@
 		},
 		{
 			"isMultiMaterial": false,
-			"bindedMeshes": [],
-			"json": "meshes/ship/Material.014-Material.014.material"
-		},
-		{
-			"isMultiMaterial": false,
 			"bindedMeshes": [
 				"9dd1a949-31f8-425e-bca6-0fc744d0cf02"
 			],
@@ -25,13 +20,23 @@
 		},
 		{
 			"isMultiMaterial": false,
-			"bindedMeshes": [],
-			"json": "meshes/ship/Material.002-Material.002.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [],
-			"json": "meshes/ship/Material.001-Material.001.material"
+			"bindedMeshes": [
+				"3b1be9dd-5617-4edf-9b38-b032ae018018",
+				"a425c097-f552-4214-95f8-0c7f30c219f7",
+				"c7c0190f-a4c9-4bdc-b68d-b1005afcedd6",
+				"f455bf1b-20fc-40b6-bc7c-081e272dca2e",
+				"c7ac480e-42cd-4f41-9a35-a3b1cd9c75f0",
+				"0db6e383-a772-4638-afa6-b03d2c5000fc",
+				"3b598d4f-4fa9-44d7-92ab-11ec7c25d723",
+				"98af8a2f-3096-4c0c-b195-9ac974badfa3",
+				"ab237e47-4055-430f-bf52-7932ec0fb6cf",
+				"e2972d93-8032-48b2-987b-81db15d7f887",
+				"b4df133d-e411-4d9a-b2b6-9ce6de3e7339",
+				"07ad4200-47a6-42c0-8e6f-47c2b109888f",
+				"b27d74df-8f2c-40a2-b8f3-6657ae150606",
+				"b30cc796-e221-4baa-a7b4-359dcfcfe71a"
+			],
+			"json": "meshes/ship/door-door.material"
 		},
 		{
 			"isMultiMaterial": false,
@@ -97,26 +102,6 @@
 				"a9423b2d-8c6c-4bf2-9860-5c94b63cbc1f"
 			],
 			"json": "Anomaly Models/glb/Material.003-Material.003.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"3b1be9dd-5617-4edf-9b38-b032ae018018",
-				"a425c097-f552-4214-95f8-0c7f30c219f7",
-				"c7c0190f-a4c9-4bdc-b68d-b1005afcedd6",
-				"f455bf1b-20fc-40b6-bc7c-081e272dca2e",
-				"c7ac480e-42cd-4f41-9a35-a3b1cd9c75f0",
-				"0db6e383-a772-4638-afa6-b03d2c5000fc",
-				"3b598d4f-4fa9-44d7-92ab-11ec7c25d723",
-				"98af8a2f-3096-4c0c-b195-9ac974badfa3",
-				"ab237e47-4055-430f-bf52-7932ec0fb6cf",
-				"e2972d93-8032-48b2-987b-81db15d7f887",
-				"b4df133d-e411-4d9a-b2b6-9ce6de3e7339",
-				"07ad4200-47a6-42c0-8e6f-47c2b109888f",
-				"b27d74df-8f2c-40a2-b8f3-6657ae150606",
-				"b30cc796-e221-4baa-a7b4-359dcfcfe71a"
-			],
-			"json": "meshes/ship/door-door.material"
 		}
 	],
 	"textures": [
@@ -421,13 +406,13 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": -44.241274955817374,
-			"beta": 0.8917203907517655,
-			"radius": 27.644449236341934,
+			"alpha": -36.60921654558368,
+			"beta": 1.1468594478610026,
+			"radius": 17.311198057771403,
 			"target": [
-				3.559234834227401,
-				19.349857051039344,
-				32.64187970366763
+				-11.631800660153523,
+				21.095496523316527,
+				22.56949673047407
 			],
 			"inertialAlphaOffset": 0,
 			"inertialBetaOffset": 0,
@@ -458,9 +443,9 @@
 			],
 			"speed": 2,
 			"position": [
-				24.353493851250494,
-				36.712623183990345,
-				27.132912674714785
+				-4.332894323525738,
+				28.216492543793287,
+				36.558598208441744
 			],
 			"upVector": [
 				0,
@@ -527,7 +512,7 @@
 					"pinchDeltaPercentage": 0,
 					"useNaturalPinchZoom": false,
 					"pinchZoom": true,
-					"panningSensibility": 36.17362717016552,
+					"panningSensibility": 57.76607700187894,
 					"multiTouchPanning": true,
 					"multiTouchPanAndZoom": true
 				}

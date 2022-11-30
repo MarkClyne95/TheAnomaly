@@ -22,9 +22,20 @@ var player = /** @class */ (function () {
     player.prototype.SetBatteryCount = function (num) {
         this.batteryCount = num;
     };
+    player.prototype.MusicChanger = function () {
+        if (this.tensionMeter >= 60) {
+            //play sound effect to tell anomaly is near   
+        }
+        else {
+            //play normal ambient music    
+        }
+    };
     player.prototype.onStart = function () {
         this.batteryCount = 12;
         console.log(this.batteryCount);
+    };
+    player.prototype.onUpdate = function () {
+        this.MusicChanger();
     };
     __decorate([
         (0, decorators_1.visibleInInspector)("boolean", "Has Multitool", false)
@@ -38,6 +49,9 @@ var player = /** @class */ (function () {
     __decorate([
         (0, decorators_1.visibleInInspector)("number", "Battery Count", 0)
     ], player.prototype, "batteryCount", void 0);
+    __decorate([
+        (0, decorators_1.visibleInInspector)("number", "Tension Meter", 0)
+    ], player.prototype, "tensionMeter", void 0);
     return player;
 }());
 exports.default = player;

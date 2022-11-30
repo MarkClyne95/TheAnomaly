@@ -4,9 +4,12 @@ export default class player {
     private firstDoorFlag;
     private secondDoorFlag;
     private batteryCount;
+    private tensionMeter;
     SetTool(param: boolean): void;
     SetFirstDoorFlag(param: boolean): void;
     SetSecondDoorFlag(param: boolean): void;
     SetBatteryCount(num: number): void;
+    MusicChanger(): void;
     onStart(): void;
+    onUpdate(): void;
 }

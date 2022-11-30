@@ -81,8 +81,7 @@
 				"script": {
 					"name": "None"
 				},
-				"renderingGroupId": 0,
-				"_waitingParentId": null
+				"renderingGroupId": 0
 			},
 			"instances": [],
 			"animations": [],

@@ -63,8 +63,7 @@
 				"script": {
 					"name": "None"
 				},
-				"renderingGroupId": 0,
-				"_waitingParentId": null
+				"renderingGroupId": 0
 			},
 			"instances": [
 				{
@@ -95,8 +94,7 @@
 						"script": {
 							"name": "None"
 						},
-						"renderingGroupId": 0,
-						"_waitingParentId": null
+						"renderingGroupId": 0
 					},
 					"animations": [],
 					"ranges": []
@@ -129,8 +127,7 @@
 						"script": {
 							"name": "None"
 						},
-						"renderingGroupId": 0,
-						"_waitingParentId": null
+						"renderingGroupId": 0
 					},
 					"animations": [],
 					"ranges": []
@@ -163,8 +160,7 @@
 						"script": {
 							"name": "None"
 						},
-						"renderingGroupId": 0,
-						"_waitingParentId": null
+						"renderingGroupId": 0
 					},
 					"animations": [],
 					"ranges": []
@@ -197,8 +193,7 @@
 						"script": {
 							"name": "None"
 						},
-						"renderingGroupId": 0,
-						"_waitingParentId": null
+						"renderingGroupId": 0
 					},
 					"animations": [],
 					"ranges": []

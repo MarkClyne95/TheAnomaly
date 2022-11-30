@@ -84,8 +84,7 @@
 					"name": "None"
 				},
 				"renderingGroupId": 0,
-				"doNotExport": false,
-				"_waitingParentId": null
+				"doNotExport": false
 			},
 			"instances": [],
 			"animations": [],

@@ -15,6 +15,9 @@ export default class player {
 
     @visibleInInspector("number", "Battery Count", 0)
     private batteryCount: number;
+
+    @visibleInInspector("number", "Tension Meter", 0)
+    private tensionMeter: number;
     
 
     SetTool(param : boolean) {
@@ -33,8 +36,24 @@ export default class player {
         this.batteryCount = num;
     }
 
+    MusicChanger()
+    {
+        if (this.tensionMeter >= 60)
+        {
+            //play sound effect to tell anomaly is near   
+        }
+        else
+        {
+            //play normal ambient music    
+        }
+    }
+
     public onStart(): void {
         this.batteryCount = 12;
         console.log(this.batteryCount);
+    }
+
+    public onUpdate(): void {
+        this.MusicChanger();
     }
 }
