@@ -32,6 +32,7 @@ var PlayerCamera = /** @class */ (function (_super) {
     // @ts-ignore ignoring the super call as we don't want to re-init
     function PlayerCamera() {
         var _this = this;
+        _this.test = 1;
         //Hidden in Editor
         _this._hasInteracted = false;
         return _this;
@@ -75,6 +76,14 @@ var PlayerCamera = /** @class */ (function (_super) {
     };
     PlayerCamera.prototype._keyUp = function (info) {
         this.speed = 8;
+    };
+    PlayerCamera.prototype._key2Down = function (info) {
+        //this.cameraDirection.y += 20;
+        this.cameraDirection.y += 50;
+    };
+    PlayerCamera.prototype._key2Up = function (info) {
+        //this.cameraDirection.y += 10;
+        console.log("Jump");
     };
     //set up interact key
     PlayerCamera.prototype._interact = function (info) {
@@ -124,6 +133,12 @@ var PlayerCamera = /** @class */ (function (_super) {
     __decorate([
         (0, decorators_1.onKeyboardEvent)([16], core_1.KeyboardEventTypes.KEYUP)
     ], PlayerCamera.prototype, "_keyUp", null);
+    __decorate([
+        (0, decorators_1.onKeyboardEvent)([32], core_1.KeyboardEventTypes.KEYDOWN)
+    ], PlayerCamera.prototype, "_key2Down", null);
+    __decorate([
+        (0, decorators_1.onKeyboardEvent)([32], core_1.KeyboardEventTypes.KEYUP)
+    ], PlayerCamera.prototype, "_key2Up", null);
     __decorate([
         (0, decorators_1.onKeyboardEvent)([69], core_1.KeyboardEventTypes.KEYDOWN)
     ], PlayerCamera.prototype, "_interact", null);

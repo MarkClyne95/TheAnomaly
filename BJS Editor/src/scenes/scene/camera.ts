@@ -1,10 +1,13 @@
 import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, KeyboardInfo } from "@babylonjs/core";
+import { int } from "babylonjs";
 
 import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../decorators";
 
 export default class PlayerCamera extends FreeCamera {
     @fromChildren("ball")
     private _ball: Mesh;
+
+    private test = 1;
 
     //Visible in Editor
     @visibleInInspector("KeyMap", "Forward Key", "W".charCodeAt(0))
@@ -79,6 +82,19 @@ export default class PlayerCamera extends FreeCamera {
     @onKeyboardEvent([16], KeyboardEventTypes.KEYUP)
     protected _keyUp(info: KeyboardInfo): void {
         this.speed = 8;
+    }
+
+    
+    @onKeyboardEvent([32], KeyboardEventTypes.KEYDOWN)
+    protected _key2Down(info: KeyboardInfo): void{
+        //this.cameraDirection.y += 20;
+            this.cameraDirection.y += 50
+       }
+
+    @onKeyboardEvent([32], KeyboardEventTypes.KEYUP)
+    protected _key2Up(info: KeyboardInfo): void{
+            //this.cameraDirection.y += 10;
+        console.log("Jump");
     }
 
     //set up interact key

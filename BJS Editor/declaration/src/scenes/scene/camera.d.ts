@@ -1,6 +1,7 @@
 import { FreeCamera, KeyboardInfo } from "@babylonjs/core";
 export default class PlayerCamera extends FreeCamera {
     private _ball;
+    private test;
     private _forwardKey;
     private _backwardKey;
     private _strafeLeftKey;
@@ -32,6 +33,8 @@ export default class PlayerCamera extends FreeCamera {
     private _onEscapeKey;
     protected _keyDown(info: KeyboardInfo): void;
     protected _keyUp(info: KeyboardInfo): void;
+    protected _key2Down(info: KeyboardInfo): void;
+    protected _key2Up(info: KeyboardInfo): void;
     protected _interact(info: KeyboardInfo): void;
     /**
      * Requests the pointer lock.

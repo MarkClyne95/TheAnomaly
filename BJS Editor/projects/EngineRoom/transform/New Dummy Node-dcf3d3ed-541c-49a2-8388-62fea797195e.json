@@ -42,6 +42,10 @@
 				"secondDoorFlag": {
 					"type": "boolean",
 					"value": false
+				},
+				"tensionMeter": {
+					"type": "number",
+					"value": 0
 				}
 			}
 		}

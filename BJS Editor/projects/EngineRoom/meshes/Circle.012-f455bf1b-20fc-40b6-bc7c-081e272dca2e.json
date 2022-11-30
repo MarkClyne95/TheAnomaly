@@ -2826,6 +2826,345 @@
 									"to": 412
 								}
 							]
+						},
+						{
+							"name": "rotation animation",
+							"property": "rotation",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										0,
+										0,
+										0
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
+						{
+							"name": "position animation",
+							"property": "position",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
+						{
+							"name": "scaling animation",
+							"property": "scaling",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										1,
+										1,
+										1
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
 						}
 					],
 					"ranges": [
@@ -2863,6 +3202,345 @@
 						"isPickable": true
 					},
 					"animations": [
+						{
+							"name": "rotation animation",
+							"property": "rotation",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										0,
+										0,
+										0
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
+						{
+							"name": "position animation",
+							"property": "position",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
+						{
+							"name": "scaling animation",
+							"property": "scaling",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										1,
+										1,
+										1
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
 						{
 							"name": "rotation animation",
 							"property": "rotation",
@@ -8322,6 +9000,345 @@
 									"to": 412
 								}
 							]
+						},
+						{
+							"name": "rotation animation",
+							"property": "rotation",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										0,
+										0,
+										0
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
+						{
+							"name": "position animation",
+							"property": "position",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
+						{
+							"name": "scaling animation",
+							"property": "scaling",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										1,
+										1,
+										1
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
 						}
 					],
 					"ranges": [
@@ -8359,6 +9376,345 @@
 						"isPickable": true
 					},
 					"animations": [
+						{
+							"name": "rotation animation",
+							"property": "rotation",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										0,
+										0,
+										0
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										0,
+										0,
+										0
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
+						{
+							"name": "position animation",
+							"property": "position",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										0,
+										0.269,
+										0.1402
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										0,
+										0.269,
+										-0.8432
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
+						{
+							"name": "scaling animation",
+							"property": "scaling",
+							"framePerSecond": 25,
+							"dataType": 1,
+							"loopBehavior": 1,
+							"blendingSpeed": 0.01,
+							"keys": [
+								{
+									"frame": 0,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 22,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 50,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 128,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 156,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 178,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 234,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 256,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 284,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 362,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 390,
+									"values": [
+										1,
+										1,
+										1
+									]
+								},
+								{
+									"frame": 412,
+									"values": [
+										1,
+										1,
+										1
+									]
+								}
+							],
+							"ranges": [
+								{
+									"name": "Circle.005Action.002",
+									"from": 0,
+									"to": 412
+								}
+							]
+						},
 						{
 							"name": "rotation animation",
 							"property": "rotation",
