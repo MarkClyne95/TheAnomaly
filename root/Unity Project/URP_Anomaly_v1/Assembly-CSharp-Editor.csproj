@@ -11,7 +11,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>PROJECT</RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{891f5714-3907-0158-82f7-d700b54af323}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -41,12 +41,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\[Babylon]\Editor\TerrainExtraction.cs" />
      <Compile Include="Assets\StarterAssets\Editor\StarterAssetsDeployMenu.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
      <Compile Include="Assets\StarterAssets\Editor\ThirdPersonStarterAssetsDeployMenu.cs" />
      <Compile Include="Assets\StarterAssets\Editor\FirstPersonStarterAssetsDeployMenu.cs" />
-     <Compile Include="Assets\[Babylon]\Normals\Editor\NormalsVisualizer.cs" />
      <None Include="Assets\StarterAssets\Editor\PackageChecker\PackageCheckerSettings.json" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -285,9 +283,6 @@
      <Reference Include="System.Security.SecureString">
      <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Library\PackageCache\com.microsoft.altspacevr_uploader@dbdf70d12261-1668179520771\Editor\Uploader\System.Security.SecureString.dll</HintPath>
      </Reference>
-     <Reference Include="AjaxMin">
-     <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Assets\[Babylon]\Plugins\AjaxMin.dll</HintPath>
-     </Reference>
      <Reference Include="System.Reflection.Emit.Lightweight">
      <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Library\PackageCache\com.microsoft.altspacevr_uploader@dbdf70d12261-1668179520771\Plugins\System.Reflection.Emit.Lightweight.dll</HintPath>
      </Reference>
@@ -363,17 +358,11 @@
      <Reference Include="Microsoft.IdentityModel.Tokens">
      <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Library\PackageCache\com.microsoft.altspacevr_uploader@dbdf70d12261-1668179520771\Editor\Uploader\Microsoft.IdentityModel.Tokens.dll</HintPath>
      </Reference>
-     <Reference Include="FreeImageNet">
-     <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Assets\[Babylon]\Plugins\Utilities\FreeImageNet.dll</HintPath>
-     </Reference>
      <Reference Include="ICSharpCode.NRefactory">
      <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Library\PackageCache\com.unity.render-pipelines.core@10.6.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
      </Reference>
      <Reference Include="System.Data.Common">
      <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Library\PackageCache\com.microsoft.altspacevr_uploader@dbdf70d12261-1668179520771\Editor\Uploader\System.Data.Common.dll</HintPath>
-     </Reference>
-     <Reference Include="CanvasTools">
-     <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Assets\[Babylon]\Plugins\CanvasTools.dll</HintPath>
      </Reference>
      <Reference Include="System.Net.Sockets">
      <HintPath>F:\Year 4\TheAnomaly\root\Unity Project\URP_Anomaly_v1\Library\PackageCache\com.microsoft.altspacevr_uploader@dbdf70d12261-1668179520771\Editor\Uploader\System.Net.Sockets.dll</HintPath>
