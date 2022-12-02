@@ -2,6 +2,8 @@ import { FreeCamera, KeyboardInfo } from "@babylonjs/core";
 export default class PlayerCamera extends FreeCamera {
     private _ball;
     private test;
+    private scene;
+    private engine;
     private _forwardKey;
     private _backwardKey;
     private _strafeLeftKey;

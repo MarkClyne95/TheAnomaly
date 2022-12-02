@@ -43,7 +43,7 @@
 			"isVisible": true,
 			"infiniteDistance": false,
 			"pickable": true,
-			"receiveShadows": false,
+			"receiveShadows": true,
 			"billboardMode": 0,
 			"visibility": 1,
 			"checkCollisions": false,

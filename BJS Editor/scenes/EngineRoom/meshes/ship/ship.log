@@ -1,0 +1,734 @@
+Exporter version: 3.3.0, Blender version: 3.3.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  F:\Year 4\TheAnomaly\BJS Editor\assets\meshes\ship\
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of mesh:  Cube
+		animation processing begun
+			processing action CubeAction:  in[0 - 1199], out[0 - 1199]
+		processing begun of material:  Material.001
+		processing begun of material:  Material.002
+		processing begun of multimaterial:  ship.Multimaterial#0
+		num positions      :  9014
+		num normals        :  9014
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  3204
+	processing begun of mesh:  Circle.022
+		processing begun of material:  UVMap.004
+		Custom split normals with tangents being used
+		num positions      :  57
+		num normals        :  57
+		num tangents       :  228
+		num uvs            :  114
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  38
+	processing begun of mesh:  Circle.031
+		animation processing begun
+			processing action Circle.031Action:  in[0 - 1016], out[0 - 1016]
+		processing begun of material:  UVMap.004
+		registered as also a user of material:  UVMap.004
+		Custom split normals with tangents being used
+		num positions      :  155
+		num normals        :  155
+		num tangents       :  620
+		num uvs            :  310
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  70
+	processing begun of mesh:  Circle.032
+		animation processing begun
+			processing action Circle.019Action.002:  in[0 - 999], out[0 - 999]
+		processing begun of material:  UVMap.004
+		registered as also a user of material:  UVMap.004
+		Custom split normals with tangents being used
+		num positions      :  241
+		num normals        :  241
+		num tangents       :  964
+		num uvs            :  482
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  192
+	processing begun of mesh:  Cube.040
+		animation processing begun
+			processing action Cube.010Action.009:  in[0 - 1196], out[0 - 1196]
+		processing begun of material:  UVMap.004
+		registered as also a user of material:  UVMap.004
+		Custom split normals with tangents being used
+		num positions      :  157
+		num normals        :  157
+		num tangents       :  628
+		num uvs            :  314
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  86
+	processing begun of mesh:  Cube.041
+		animation processing begun
+			processing action Cube.011Action.007:  in[0 - 1196], out[0 - 1196]
+		processing begun of material:  Red
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  Cube.038
+		animation processing begun
+			processing action Cube.010Action.008:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.040.  Processing halted.
+	processing begun of mesh:  Cube.039
+		animation processing begun
+			processing action Cube.011Action.006:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.030
+		animation processing begun
+			processing action Cube.010Action.007:  in[0 - 1196], out[0 - 1196]
+		processing begun of material:  UVMap.004
+		registered as also a user of material:  UVMap.004
+		Custom split normals with tangents being used
+		num positions      :  159
+		num normals        :  159
+		num tangents       :  636
+		num uvs            :  318
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  86
+	processing begun of mesh:  Cube.037
+		animation processing begun
+			processing action Cube.011Action.005:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.028
+		animation processing begun
+			processing action Cube.010Action.001:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.030.  Processing halted.
+	processing begun of mesh:  Cube.029
+		animation processing begun
+			processing action Cube.011Action.001:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Circle.014
+		mesh is an instance of :  Circle.022.  Processing halted.
+	processing begun of mesh:  Circle.015
+		animation processing begun
+			processing action Circle.015Action.001:  in[0 - 1202], out[0 - 1202]
+		mesh is an instance of :  Circle.031.  Processing halted.
+	processing begun of mesh:  Circle.019
+		animation processing begun
+			processing action Circle.019Action.001:  in[0 - 1198], out[0 - 1198]
+		mesh is an instance of :  Circle.032.  Processing halted.
+	processing begun of mesh:  Cube.026
+		animation processing begun
+			processing action Cube.010Action.001:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.030.  Processing halted.
+	processing begun of mesh:  Cube.027
+		animation processing begun
+			processing action Cube.011Action.001:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.016
+		animation processing begun
+			processing action Cube.010Action.007:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.030.  Processing halted.
+	processing begun of mesh:  Cube.017
+		animation processing begun
+			processing action Cube.011Action.005:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.012
+		animation processing begun
+			processing action Cube.010Action.008:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.040.  Processing halted.
+	processing begun of mesh:  Cube.014
+		animation processing begun
+			processing action Cube.011Action.006:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.010
+		animation processing begun
+			processing action Cube.010Action.009:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.040.  Processing halted.
+	processing begun of mesh:  Cube.011
+		animation processing begun
+			processing action Cube.011Action.007:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Circle
+		animation processing begun
+			processing action CircleAction:  in[0 - 1200], out[0 - 1200]
+		processing begun of material:  Panic_Bot.001
+		Custom split normals with tangents being used
+		num positions      :  1062
+		num normals        :  1062
+		num tangents       :  4248
+		num uvs            :  2124
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  696
+	processing begun of mesh:  Circle.020
+		animation processing begun
+			processing action Circle.020Action.002:  in[0 - 1102], out[0 - 1102]
+		processing begun of material:  Red
+		registered as also a user of material:  Red
+		num positions      :  156
+		num normals        :  156
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  154
+	processing begun of mesh:  Under_Attack
+		animation processing begun
+			processing action Text.002Action:  in[0 - 1102], out[0 - 1102]
+		processing begun of material:  Red
+		registered as also a user of material:  Red
+		num positions      :  185
+		num normals        :  185
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  169
+	processing begun of mesh:  Station
+		animation processing begun
+			processing action Text.001Action:  in[0 - 1102], out[0 - 1102]
+		processing begun of material:  Red
+		registered as also a user of material:  Red
+		num positions      :  120
+		num normals        :  120
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  110
+	processing begun of mesh:  Warning
+		animation processing begun
+			processing action TextAction.004:  in[0 - 1102], out[0 - 1102]
+		processing begun of material:  Red
+		registered as also a user of material:  Red
+		num positions      :  116
+		num normals        :  116
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  104
+	processing begun of mesh:  Text.003
+		animation processing begun
+			processing action Text.003Action:  in[0 - 1102], out[0 - 1102]
+		processing begun of material:  Red
+		registered as also a user of material:  Red
+		num positions      :  28
+		num normals        :  28
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  Circle.002
+		mesh is an instance of :  Circle.022.  Processing halted.
+	processing begun of mesh:  Circle.003
+		animation processing begun
+			processing action Circle.015Action:  in[202 - 2667], out[0 - 2667]
+		mesh is an instance of :  Circle.031.  Processing halted.
+	processing begun of mesh:  Circle.013
+		animation processing begun
+			processing action Circle.019Action:  in[0 - 1198], out[0 - 1198]
+		mesh is an instance of :  Circle.032.  Processing halted.
+	processing begun of mesh:  Cube.035
+		animation processing begun
+			processing action Cube.010Action.009:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.040.  Processing halted.
+	processing begun of mesh:  Cube.036
+		animation processing begun
+			processing action Cube.011Action.007:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.033
+		animation processing begun
+			processing action Cube.010Action.008:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.040.  Processing halted.
+	processing begun of mesh:  Cube.034
+		animation processing begun
+			processing action Cube.011Action.006:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.031
+		animation processing begun
+			processing action Cube.010Action.007:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.030.  Processing halted.
+	processing begun of mesh:  Cube.032
+		animation processing begun
+			processing action Cube.011Action.005:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.000
+		animation processing begun
+			processing action Cube.010Action.001:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.030.  Processing halted.
+	processing begun of mesh:  Cube.001
+		animation processing begun
+			processing action Cube.011Action.001:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Circle.028
+		mesh is an instance of :  Circle.022.  Processing halted.
+	processing begun of mesh:  Circle.029
+		animation processing begun
+			processing action Circle.015Action:  in[202 - 2667], out[0 - 2667]
+		mesh is an instance of :  Circle.031.  Processing halted.
+	processing begun of mesh:  Circle.030
+		animation processing begun
+			processing action Circle.019Action:  in[0 - 1198], out[0 - 1198]
+		mesh is an instance of :  Circle.032.  Processing halted.
+	processing begun of mesh:  Cube.024
+		animation processing begun
+			processing action Cube.010Action.001:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.030.  Processing halted.
+	processing begun of mesh:  Cube.025
+		animation processing begun
+			processing action Cube.011Action.001:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.022
+		animation processing begun
+			processing action Cube.010Action.007:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.030.  Processing halted.
+	processing begun of mesh:  Cube.023
+		animation processing begun
+			processing action Cube.011Action.005:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.020
+		animation processing begun
+			processing action Cube.010Action.008:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.040.  Processing halted.
+	processing begun of mesh:  Cube.021
+		animation processing begun
+			processing action Cube.011Action.006:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.018
+		animation processing begun
+			processing action Cube.010Action.009:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.040.  Processing halted.
+	processing begun of mesh:  Cube.019
+		animation processing begun
+			processing action Cube.011Action.007:  in[0 - 1196], out[0 - 1196]
+		mesh is an instance of :  Cube.041.  Processing halted.
+	processing begun of mesh:  Cube.009
+		animation processing begun
+			processing action Cube.002Action:  in[0 - 940], out[0 - 940]
+		processing begun of material:  Red
+		registered as also a user of material:  Red
+		num positions      :  240
+		num normals        :  240
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  80
+	processing begun of mesh:  Torus.019
+		animation processing begun
+			processing action Torus.006Action:  in[0 - 720], out[0 - 720]
+		processing begun of material:  Drohn_1
+		num positions      :  197
+		num normals        :  197
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  78
+	processing begun of mesh:  Torus.020
+		animation processing begun
+			processing action Torus.005Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Cube.008
+		animation processing begun
+			processing action Cube.003Action.001:  in[5 - 911], out[0 - 911]
+		mesh is an instance of :  Cube.009.  Processing halted.
+	processing begun of mesh:  Torus.017
+		animation processing begun
+			processing action Torus.006Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Torus.018
+		animation processing begun
+			processing action Torus.005Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Cube.007
+		animation processing begun
+			processing action Cube.004Action:  in[0 - 940], out[0 - 940]
+		mesh is an instance of :  Cube.009.  Processing halted.
+	processing begun of mesh:  Torus.015
+		animation processing begun
+			processing action Torus.006Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Torus.016
+		animation processing begun
+			processing action Torus.005Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Cube.006
+		animation processing begun
+			processing action Cube.005Action.001:  in[8 - 908], out[0 - 908]
+		mesh is an instance of :  Cube.009.  Processing halted.
+	processing begun of mesh:  Torus.013
+		animation processing begun
+			processing action Torus.006Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Torus.014
+		animation processing begun
+			processing action Torus.005Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Cube.005
+		animation processing begun
+			processing action Cube.005Action:  in[0 - 940], out[0 - 940]
+		mesh is an instance of :  Cube.009.  Processing halted.
+	processing begun of mesh:  Torus.011
+		animation processing begun
+			processing action Torus.006Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Torus.012
+		animation processing begun
+			processing action Torus.005Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Cube.004
+		animation processing begun
+			processing action Cube.004Action.001:  in[5 - 911], out[0 - 911]
+		mesh is an instance of :  Cube.009.  Processing halted.
+	processing begun of mesh:  Torus.009
+		animation processing begun
+			processing action Torus.006Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Torus.010
+		animation processing begun
+			processing action Torus.005Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Cube.003
+		animation processing begun
+			processing action Cube.003Action:  in[0 - 940], out[0 - 940]
+		mesh is an instance of :  Cube.009.  Processing halted.
+	processing begun of mesh:  Torus.007
+		animation processing begun
+			processing action Torus.006Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Torus.008
+		animation processing begun
+			processing action Torus.005Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Cube.002
+		animation processing begun
+			processing action Cube.002Action.001:  in[5 - 911], out[0 - 911]
+		mesh is an instance of :  Cube.009.  Processing halted.
+	processing begun of mesh:  Torus.006
+		animation processing begun
+			processing action Torus.006Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Torus.005
+		animation processing begun
+			processing action Torus.005Action:  in[0 - 720], out[0 - 720]
+		mesh is an instance of :  Torus.019.  Processing halted.
+	processing begun of mesh:  Circle.010
+		processing begun of material:  door
+		num positions      :  373
+		num normals        :  373
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  164
+	processing begun of mesh:  Circle.027
+		animation processing begun
+			processing action Circle.005Action.001:  in[0 - 890], out[0 - 890]
+		processing begun of material:  door
+		registered as also a user of material:  door
+		num positions      :  436
+		num normals        :  436
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  150
+	processing begun of mesh:  Circle.026
+		animation processing begun
+			processing action Circle.006Action.001:  in[0 - 890], out[0 - 890]
+		processing begun of material:  door
+		registered as also a user of material:  door
+		num positions      :  495
+		num normals        :  495
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  168
+	processing begun of mesh:  Circle.012
+		animation processing begun
+			processing action Circle.005Action.002:  in[0 - 412], out[0 - 412]
+		processing begun of material:  door
+		registered as also a user of material:  door
+		num positions      :  29
+		num normals        :  29
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  Circle.011
+		animation processing begun
+			processing action Circle.009Action:  in[0 - 412], out[0 - 412]
+		mesh is an instance of :  Circle.012.  Processing halted.
+	processing begun of mesh:  Circle.025
+		animation processing begun
+			processing action Circle.025Action:  in[0 - 1290], out[0 - 1290]
+		processing begun of material:  Drohn_1
+		registered as also a user of material:  Drohn_1
+		num positions      :  414
+		num normals        :  414
+		num tangents       :  0
+		num uvs            :  828
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  440
+	processing begun of mesh:  Circle.024
+		animation processing begun
+			processing action Circle.024Action:  in[0 - 1290], out[0 - 1290]
+		mesh is an instance of :  Circle.025.  Processing halted.
+	processing begun of mesh:  Torus.004
+		animation processing begun
+			processing action Torus.000Action.008:  in[0 - 402], out[0 - 402]
+		processing begun of material:  Material.014
+		processing begun of material:  Red
+		registered as also a user of material:  Red
+		processing begun of multimaterial:  ship.Multimaterial#1
+		num positions      :  159
+		num normals        :  159
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  134
+	processing begun of mesh:  Torus.000
+		animation processing begun
+			processing action Torus.000Action.008:  in[0 - 402], out[0 - 402]
+		mesh is an instance of :  Torus.004.  Processing halted.
+	processing begun of mesh:  Torus.001
+		animation processing begun
+			processing action Torus.000Action.008:  in[0 - 402], out[0 - 402]
+		mesh is an instance of :  Torus.004.  Processing halted.
+	processing begun of mesh:  Torus.002
+		animation processing begun
+			processing action Torus.000Action.008:  in[0 - 402], out[0 - 402]
+		mesh is an instance of :  Torus.004.  Processing halted.
+	processing begun of mesh:  Torus.003
+		animation processing begun
+			processing action Torus.000Action.008:  in[0 - 402], out[0 - 402]
+		mesh is an instance of :  Torus.004.  Processing halted.
+	processing begun of mesh:  Torus.021
+		animation processing begun
+			processing action Torus.000Action.008:  in[0 - 402], out[0 - 402]
+		mesh is an instance of :  Torus.004.  Processing halted.
+	processing begun of mesh:  Torus.022
+		animation processing begun
+			processing action Torus.000Action.008:  in[0 - 402], out[0 - 402]
+		mesh is an instance of :  Torus.004.  Processing halted.
+	processing begun of mesh:  Sphere.001
+		animation processing begun
+			processing action Sphere.001Action:  in[0 - 720], out[0 - 720]
+		processing begun of material:  Material.011
+		num positions      :  192
+		num normals        :  192
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  256
+	processing begun of mesh:  Circle.023
+		processing begun of material:  Drohn_1
+		registered as also a user of material:  Drohn_1
+		num positions      :  241
+		num normals        :  241
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  264
+	processing begun of mesh:  Circle.021
+		processing begun of material:  Material.007
+		Custom split normals with tangents being used
+		num positions      :  9860
+		num normals        :  9860
+		num tangents       :  39440
+		num uvs            :  19720
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  5880
+	processing begun of mesh:  Circle.018
+		processing begun of material:  UVMap.003
+		Custom split normals with tangents being used
+		num positions      :  1032
+		num normals        :  1032
+		num tangents       :  4128
+		num uvs            :  2064
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  632
+	processing begun of mesh:  Circle.007
+		mesh is an instance of :  Circle.010.  Processing halted.
+	processing begun of mesh:  Circle.009
+		animation processing begun
+			processing action Circle.009Action:  in[0 - 412], out[0 - 412]
+		mesh is an instance of :  Circle.012.  Processing halted.
+	processing begun of mesh:  Circle.008
+		animation processing begun
+			processing action Circle.005Action.002:  in[0 - 412], out[0 - 412]
+		mesh is an instance of :  Circle.012.  Processing halted.
+	processing begun of mesh:  Circle.006
+		animation processing begun
+			processing action Circle.006Action.001:  in[0 - 890], out[0 - 890]
+		mesh is an instance of :  Circle.026.  Processing halted.
+	processing begun of mesh:  Circle.005
+		animation processing begun
+			processing action Circle.005Action.001:  in[0 - 890], out[0 - 890]
+		mesh is an instance of :  Circle.027.  Processing halted.
+	processing begun of mesh:  Circle.004
+		processing begun of material:  Railing
+		Custom split normals with tangents being used
+		num positions      :  8208
+		num normals        :  8208
+		num tangents       :  32832
+		num uvs            :  16416
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  4176
+	processing begun of mesh:  Circle.001
+		processing begun of material:  Material
+		num positions      :  1064
+		num normals        :  1064
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2080
+	processing begun of mesh:  Circle.016
+		processing begun of material:  UVMap.002
+		Custom split normals with tangents being used
+		num positions      :  168
+		num normals        :  168
+		num tangents       :  672
+		num uvs            :  336
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  248
+	processing begun of mesh:  Circle.017
+		mesh is an instance of :  Circle.016.  Processing halted.
+	processing begun of mesh:  SF.005
+		animation processing begun
+			processing action SF.005Action.002:  in[0 - 1199], out[0 - 1199]
+		processing begun of material:  Sartfighter
+		Custom split normals with tangents being used
+		num positions      :  4851
+		num normals        :  4851
+		num tangents       :  19404
+		num uvs            :  9702
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2804
+	processing begun of node:  Empty.006
+	processing begun of mesh:  SF.006
+		animation processing begun
+			processing action Fire.001:  in[0 - 1200], out[0 - 1200]
+		processing begun of material:  Star_Fighter_Fire
+		Custom split normals with tangents being used
+		num positions      :  48
+		num normals        :  48
+		num tangents       :  192
+		num uvs            :  96
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  64
+	processing begun of node:  Empty.007
+	processing begun of mesh:  SF.007
+		animation processing begun
+			processing action Fire.001:  in[0 - 1200], out[0 - 1200]
+		mesh is an instance of :  SF.006.  Processing halted.
+	processing begun of mesh:  SF.008
+		animation processing begun
+			processing action SF.005Action.001:  in[0 - 1199], out[0 - 1199]
+		mesh is an instance of :  SF.005.  Processing halted.
+	processing begun of node:  Empty.004
+	processing begun of mesh:  SF.009
+		animation processing begun
+			processing action Fire.001:  in[0 - 1200], out[0 - 1200]
+		mesh is an instance of :  SF.006.  Processing halted.
+	processing begun of node:  Empty.005
+	processing begun of mesh:  SF.010
+		animation processing begun
+			processing action Fire.001:  in[0 - 1200], out[0 - 1200]
+		mesh is an instance of :  SF.006.  Processing halted.
+	processing begun of mesh:  SF
+		animation processing begun
+			processing action SFAction.001:  in[0 - 1200], out[0 - 1200]
+		mesh is an instance of :  SF.005.  Processing halted.
+	processing begun of node:  Empty.001
+	processing begun of mesh:  SF.002
+		animation processing begun
+			processing action Fire.001:  in[0 - 1200], out[0 - 1200]
+		mesh is an instance of :  SF.006.  Processing halted.
+	processing begun of node:  Empty.002
+	processing begun of mesh:  SF.004
+		animation processing begun
+			processing action SF.003Action:  in[213 - 1110], out[0 - 1110]
+		processing begun of material:  Starfighter_Laser
+		Custom split normals with tangents being used
+		num positions      :  561
+		num normals        :  561
+		num tangents       :  2244
+		num uvs            :  1122
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  204
+	processing begun of node:  Empty.003
+	processing begun of mesh:  SF.003
+		animation processing begun
+			processing action SF.003Action:  in[213 - 1110], out[0 - 1110]
+		mesh is an instance of :  SF.004.  Processing halted.
+	processing begun of node:  Empty
+	processing begun of mesh:  SF.001
+		animation processing begun
+			processing action Fire.001:  in[0 - 1200], out[0 - 1200]
+		mesh is an instance of :  SF.006.  Processing halted.
+	processing begun of light (POINT):  Point
+========= Writing of JSON file started =========
+	writing mesh:  Cube
+	writing mesh:  Circle.022
+	writing mesh:  Circle.031
+	writing mesh:  Circle.032
+	writing mesh:  Cube.040
+	writing mesh:  Cube.041
+	writing mesh:  Cube.030
+	writing mesh:  Circle
+	writing mesh:  Circle.020
+	writing mesh:  Under_Attack
+	writing mesh:  Station
+	writing mesh:  Warning
+	writing mesh:  Text.003
+	writing mesh:  Cube.009
+	writing mesh:  Torus.019
+	writing mesh:  Circle.010
+	writing mesh:  Circle.027
+	writing mesh:  Circle.026
+	writing mesh:  Circle.012
+	writing mesh:  Circle.025
+	writing mesh:  Torus.004
+	writing mesh:  Sphere.001
+	writing mesh:  Circle.023
+	writing mesh:  Circle.021
+	writing mesh:  Circle.018
+	writing mesh:  Circle.004
+	writing mesh:  Circle.001
+	writing mesh:  Circle.016
+	writing mesh:  SF.005
+	writing mesh:  SF.006
+	writing mesh:  SF.004
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 12.7616 secs

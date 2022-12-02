@@ -1,13 +1,18 @@
-import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, KeyboardInfo } from "@babylonjs/core";
-import { int } from "babylonjs";
+import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, KeyboardInfo, Engine, Scene, BabylonFileLoaderConfiguration } from "@babylonjs/core";
+
+import * as BABYLON from '@babylonjs/core'
 
 import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../decorators";
+import { appendScene } from "../tools";
 
 export default class PlayerCamera extends FreeCamera {
     @fromChildren("ball")
     private _ball: Mesh;
 
     private test = 1;
+
+    private scene: Scene;
+    private engine: Engine;
 
     //Visible in Editor
     @visibleInInspector("KeyMap", "Forward Key", "W".charCodeAt(0))
@@ -100,10 +105,11 @@ export default class PlayerCamera extends FreeCamera {
     //set up interact key
     @onKeyboardEvent([69], KeyboardEventTypes.KEYDOWN)
     protected _interact(info: KeyboardInfo): void {
-        // if (this._hasInteracted == false)
-        //     this._hasInteracted = true;
-        // else if (this._hasInteracted == true)
-        //     this._hasInteracted = false;
+        this.scene = this.getScene();
+        this.engine = this.getEngine();
+
+        BABYLON.SceneLoader.Load("../../../scenes/scene/", "scene.babylon", this.scene);
+
         console.log("Interacted");
     }
 //#endregion

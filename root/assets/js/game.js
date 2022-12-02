@@ -1,29 +1,24 @@
 import '../../../node_modules/@babylonjs/core/Legacy/legacy.js';
 import '../../../node_modules/babylonjs-loaders/babylon.glTF2FileLoader.js';
 
+
 var canvas = document.getElementById("renderCanvas")
 var engine = new BABYLON.Engine(canvas, true);
 const createScene = function() {
     const scene = new BABYLON.Scene(engine);
 
-    var camera = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(-2, 2, -2), scene);
+    var camera = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 10, 0), scene);
     camera.fov = 0.6;
     camera.inertia = 0.0;
     camera.attachControl(canvas, true);
 
-    scene.gravity = new BABYLON.Vector3(0, -9.81, 0);
-
-    scene.enablePhysics(scene.gravity, new BABYLON.CannonJSPlugin());
-
-    // Enable Collisions
-    scene.collisionsEnabled = true;
-
-    //Then apply collisions and gravity to the active camera
-    camera.checkCollisions = true;
-    camera.applyGravity = true;
+    scene.enablePhysics(null, new BABYLON.CannonJSPlugin());
 
     //Set the ellipsoid around the camera (e.g. your player's size)
-    camera.ellipsoid = new BABYLON.Vector3(1, 2, 1);
+    camera.ellipsoid = new BABYLON.Vector3(1, 4, 1);
+
+    camera.enablePhysics = true;
+    camera.checkCollisions = true;
 
     var skeleton = null;
 
@@ -45,10 +40,10 @@ const createScene = function() {
         inputMap[evt.sourceEvent.key] = evt.sourceEvent.type == "keydown";
     }));
 
-    BABYLON.SceneLoader.Append("../Unity Export/scenes/", "TestScene.gltf", scene, (newMeshes) => {
+    BABYLON.SceneLoader.Append("../../../BJS Editor/assets/EngineRoom/", "scene.babylon", scene, (newMeshes) => {
         var meshes = newMeshes.meshes;
         meshes.forEach(item => {
-            item.checkCollisions = true;
+            item.physicsImpostor = new BABYLON.PhysicsImpostor(ground, BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0, restitution: 0.9 }, scene);
         });
     });
 
@@ -84,6 +79,33 @@ const createScene = function() {
         }
     };
 
+    scene.onKeyboardObservable.add((kbInfo) => {
+        switch (kbInfo.type) {
+            case BABYLON.KeyboardEventTypes.KEYDOWN:
+                switch (kbInfo.event.key) {
+                    case "Shift":
+                        camera.speed = 12;
+                        break;
+                }
+                break;
+
+            case BABYLON.KeyboardEventTypes.KEYUP:
+                switch (kbInfo.event.key) {
+                    case "Shift":
+                        camera.speed = 6;
+                        break;
+                }
+                break;
+        }
+    });
+    var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI('Ui');
+    var crosschair = BABYLON.GUI.Button.CreateImageOnlyButton("b1", "../../../BJS Editor/scenes/EngineRoom/textures/pngfind.com-crosshair-dot-png-5191877.png")
+    crosschair.image.stretch = BABYLON.GUI.Image.STRETCH_UNIFORM;
+    crosschair.width = "48px";
+    crosschair.height = "48px";
+    crosschair.color = "transparent"
+    advancedTexture.addControl(crosschair);
+
     // Attach events to the document
     document.addEventListener("pointerlockchange", pointerlockchange, false);
     document.addEventListener("mspointerlockchange", pointerlockchange, false);
@@ -97,5 +119,6 @@ const createScene = function() {
 
 var scene = createScene();
 engine.runRenderLoop(function() {
+
     scene.render();
 });

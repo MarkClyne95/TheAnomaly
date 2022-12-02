@@ -1,8 +1,6 @@
 {
 	"animationGroups": [],
-	"cameras": [
-		"Player-df723f62-19dc-43a8-9950-c40ee69432e8.json"
-	],
+	"cameras": [],
 	"materials": [
 		{
 			"isMultiMaterial": false,
@@ -13,9 +11,7 @@
 		},
 		{
 			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"9dd1a949-31f8-425e-bca6-0fc744d0cf02"
-			],
+			"bindedMeshes": [],
 			"json": "meshes/ship/Red-Red.material"
 		},
 		{
@@ -56,22 +52,12 @@
 		},
 		{
 			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"75a60261-6f8a-47c8-ac29-1c705ea4a007"
-			],
+			"bindedMeshes": [],
 			"json": "meshes/ship/Material-Material.material"
 		},
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [
-				"4d88b520-3e38-4aa9-8444-d2d3734c14e7"
-			],
-			"json": "Anomaly Models/glb/Material.002-Material.002.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"a886eb5e-ff02-455b-819e-7b4b3c576058",
 				"262c356c-befe-4d8e-8542-ead2b410711f",
 				"1d0334bd-48f6-4426-8365-7e7450094203",
 				"af27a324-b95b-4344-a690-379a8907278b",
@@ -82,13 +68,7 @@
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [
-				"7ff7cfe8-0a0b-48d9-b69b-b460ce491c69"
-			],
-			"json": "Anomaly Models/glb/Material.001-Material.001.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [
+				"75a60261-6f8a-47c8-ac29-1c705ea4a007",
 				"c4e94866-0a94-4920-b6b8-cec30ac59515",
 				"faf3aa68-f95a-423e-a9d0-92601fce2498",
 				"83c8dfa2-1931-45bb-b723-352d6f71d3f4",
@@ -99,9 +79,43 @@
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [
-				"a9423b2d-8c6c-4bf2-9860-5c94b63cbc1f"
+				"4c5f6088-60e5-45d0-b62d-4a087be2015e",
+				"2faa25ed-f14c-4593-ab86-f63c4e45744f",
+				"71614a1b-a06a-4205-ac39-d1dd08b16621",
+				"7ff7cfe8-0a0b-48d9-b69b-b460ce491c69"
 			],
-			"json": "Anomaly Models/glb/Material.003-Material.003.material"
+			"json": "EngineRoom/Anomaly Models/glb/lambert1.001-lambert1.001.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"0cd8568f-f4e1-4815-b6c3-7fd67c4e0ba8"
+			],
+			"json": "EngineRoom/Anomaly Models/glb/Material.004-Material.004.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "EngineRoom/Anomaly Models/fbx/Material!lambert1-1752596103248.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"90df140f-3f36-4cbb-aca2-c26471d0f79c"
+			],
+			"json": "materials/m_incubator_top.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "EngineRoom/materials/screen.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"4d88b520-3e38-4aa9-8444-d2d3734c14e7"
+			],
+			"json": "EngineRoom/materials/scanner.material"
 		}
 	],
 	"textures": [
@@ -115,16 +129,10 @@
 		"Room_1_Done_UVMap_rough.png-bc074e61-ef85-49dd-adf6-31addf4c7080.json",
 		"Room_1_Done_UVMap_nmap.png-63db1238-6263-423b-9bfc-c55d9696392c.json",
 		"d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg-75f52004-ad24-4a88-abef-22e6139c0bfd.json",
-		"Computer Monitor.png-96a1ea14-f3ea-4c7d-8e3b-6df01a6c0e51.json",
-		"Material.001 (Base Color).jpeg-2bfc8432-26d2-4203-ad80-7d043ca26dbc.json",
-		"Material.001 (Metallic Roughness).png-39ff1444-1f70-4d37-9bc4-03e367ffbaeb.json",
-		"Material.001 (Normal).jpeg-beff2878-2e90-41a1-94cc-5529d71f281f.json",
 		"texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg-948a0fb5-9d78-4edf-9d04-459b8380bb24.json",
-		"Material.003 (Base Color).png-fa4a687c-07cd-4ebe-abfb-454320de4060.json",
 		"InfoBot_Panic_Bot_color.png-154aeca9-80c2-40bd-8122-f018f8f09494.json",
 		"InfoBot_Panic_Bot_metalness.png-39471943-1a33-400f-ae68-c62728da189a.json",
 		"InfoBot_Panic_Bot_rough.png-f557c6ec-28d4-42a5-970f-038d862aec1c.json",
-		"ScannerBlue.png-7a717cf8-4888-4c57-843c-594bbfb5df89.json",
 		"InfoBot_Panic_Bot_nmap.png-4c060679-27a8-48ee-aa71-e7dc5cbf9b80.json",
 		"blaster_diffuse.jpg-f5471261-ffd3-4811-92b0-c268ca5c7eb2.json",
 		"column_UVMap_color.png-8fe48564-30bb-42bc-947c-3def0f3d5b3c.json",
@@ -135,23 +143,17 @@
 		"t1_UVMap_metalness.png-8e848200-bfd3-48be-af30-c30f4df41b03.json",
 		"out_side_UVMap_color.png-636af63e-22a6-44c4-8e84-e3e41f5f8b34.json",
 		"t1_UVMap_rough.png-4e8d0df0-c598-4151-8145-55946299d191.json",
-		"Panel alt.png-9cfdc63b-f958-4103-829e-2d0de7667b92.json",
 		"column_UVMap_metalness.png-0057dc54-0953-4f43-80a7-65ee26f1cbe0.json",
 		"t1_UVMap_color.png-da04daeb-2ab2-44f4-908d-21d92ae22ebd.json",
 		"out_side_UVMap_metalness.png-6f53e4f1-88d1-4eea-9821-673a4fc729e8.json",
-		"Material.002 (Base Color).png-0269e595-3f5a-4259-91b7-9b0e832b0a01.json",
 		"out_side_UVMap_rough.png-6601155a-19e0-4eec-82dc-41a96050dc81.json",
-		"t1_UVMap_nmap.png-d5d88925-c070-4320-b8ec-988a2fe089f7.json"
+		"t1_UVMap_nmap.png-d5d88925-c070-4320-b8ec-988a2fe089f7.json",
+		"Material.001 (Base Color).jpeg-2bfc8432-26d2-4203-ad80-7d043ca26dbc.json",
+		"Material.001 (Metallic Roughness).png-39ff1444-1f70-4d37-9bc4-03e367ffbaeb.json",
+		"Material.001 (Normal).jpeg-beff2878-2e90-41a1-94cc-5529d71f281f.json",
+		"Computer Monitor.png-8e63477c-f072-4edf-b038-c3f943a7a4e4.json"
 	],
 	"meshes": [
-		"Circle.022-d2f27ed4-04f3-4616-992b-4a7d8643df83.json",
-		"Circle.031-811cfeaf-4f98-49a4-8173-2ea27bc63408.json",
-		"Circle.032-ac94164d-9d17-4c5e-98a7-908acdfdeac6.json",
-		"Cube.040-5881c66f-6e35-41fb-8dee-31c70d961bc3.json",
-		"Cube.041-9dd1a949-31f8-425e-bca6-0fc744d0cf02.json",
-		"Cube.030-9f162756-19f4-403d-b6ec-233eab1f3e36.json",
-		"New Ground-a886eb5e-ff02-455b-819e-7b4b3c576058.json",
-		"New Cube-5ca9e97c-7d5c-4d1c-828e-018eed740b49.json",
 		"Circle.021-47330527-b56e-4199-9079-f96f8327610e.json",
 		"Circle.004-4a6ed767-130f-4a62-80f2-ab8dd13e7902.json",
 		"Circle.001-75a60261-6f8a-47c8-ac29-1c705ea4a007.json",
@@ -182,11 +184,13 @@
 		"Screen-f7bce1ae-d2d9-4c27-8a09-6f9234a49711.json",
 		"Scanner-7ff7cfe8-0a0b-48d9-b69b-b460ce491c69.json",
 		"BlueScreen-a9423b2d-8c6c-4bf2-9860-5c94b63cbc1f.json",
-		"RedScreen-4d88b520-3e38-4aa9-8444-d2d3734c14e7.json"
+		"RedScreen-4d88b520-3e38-4aa9-8444-d2d3734c14e7.json",
+		"__root__-6bc72bba-2ba0-4b07-953e-82ff37e08438.json",
+		"Pipe-71614a1b-a06a-4205-ac39-d1dd08b16621.json",
+		"New Cube-5ca9e97c-7d5c-4d1c-828e-018eed740b49.json"
 	],
 	"transformNodes": [
 		"ship.babylon-159cb2b6-9c69-47cf-b94d-b7ffb41ec4b8.json",
-		"New Dummy Node-dcf3d3ed-541c-49a2-8388-62fea797195e.json",
 		"Environment-ca18225d-0131-4650-84cc-766f42e2ca36.json"
 	],
 	"particleSystems": [],
@@ -406,13 +410,13 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": -36.60921654558368,
-			"beta": 1.1468594478610026,
-			"radius": 17.311198057771403,
+			"alpha": -42.54271232081405,
+			"beta": 1.3397370771797303,
+			"radius": 11.058551522298869,
 			"target": [
-				-11.631800660153523,
-				21.095496523316527,
-				22.56949673047407
+				-26.306223002160475,
+				30.752792200896614,
+				23.57271191634321
 			],
 			"inertialAlphaOffset": 0,
 			"inertialBetaOffset": 0,
@@ -443,9 +447,9 @@
 			],
 			"speed": 2,
 			"position": [
-				-4.332894323525738,
-				28.216492543793287,
-				36.558598208441744
+				-24.897824791784085,
+				33.285297275099616,
+				34.24484358257949
 			],
 			"upVector": [
 				0,
@@ -468,7 +472,7 @@
 				"script": {},
 				"detached": false
 			},
-			"uniqueId": 7,
+			"uniqueId": 4,
 			"type": "ArcRotateCamera",
 			"inputsmgr": {
 				"ArcRotateCameraKeyboardMoveInput": {
@@ -512,7 +516,7 @@
 					"pinchDeltaPercentage": 0,
 					"useNaturalPinchZoom": false,
 					"pinchZoom": true,
-					"panningSensibility": 57.76607700187894,
+					"panningSensibility": 90.42775611105698,
 					"multiTouchPanning": true,
 					"multiTouchPanAndZoom": true
 				}

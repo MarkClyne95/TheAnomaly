@@ -12,10 +12,10 @@
 				0.005372398998588324
 			],
 			"rotationQuaternion": [
-				1,
-				6.123233995736766e-17,
-				6.123233995736766e-17,
-				6.123233995736766e-17
+				6.123237240776044e-17,
+				0,
+				0,
+				1
 			],
 			"scaling": [
 				0.4364669919013977,
@@ -54,7 +54,7 @@
 			"isUnIndexed": false,
 			"geometryId": "b5009454-c14c-4dc7-8730-891041ff722d",
 			"subMeshes": null,
-			"materialId": "d652b92e-ffa8-41a3-9216-ce4c31f448be",
+			"materialId": "4ec1deef-7222-4321-a921-3c91a1f342fa",
 			"metadata": {
 				"gltf": {
 					"pointers": [
@@ -103,7 +103,7 @@
 				0,
 				0
 			],
-			"applyFog": true,
+			"applyFog": false,
 			"delayLoadingFile": "geometries/b5009454-c14c-4dc7-8730-891041ff722d.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				1,

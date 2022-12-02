@@ -9,7 +9,7 @@
 			"position": [
 				0,
 				0,
-				0
+				-0.0248260498046875
 			],
 			"rotation": [
 				0,
@@ -39,13 +39,13 @@
 				"14": 0,
 				"15": 1
 			},
-			"isEnabled": true,
+			"isEnabled": false,
 			"isVisible": true,
 			"infiniteDistance": false,
 			"pickable": true,
 			"billboardMode": 0,
 			"visibility": 1,
-			"checkCollisions": true,
+			"checkCollisions": false,
 			"isBlocker": false,
 			"parentId": "159cb2b6-9c69-47cf-b94d-b7ffb41ec4b8",
 			"isUnIndexed": false,

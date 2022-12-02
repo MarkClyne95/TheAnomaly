@@ -7,8 +7,8 @@
 			"uniqueId": 3685,
 			"type": "Mesh",
 			"position": [
-				0,
-				0.02686202898621559,
+				-1.0205570788457408e-7,
+				0.026862232014536858,
 				0
 			],
 			"rotationQuaternion": [
@@ -18,9 +18,9 @@
 				0.7071067811865476
 			],
 			"scaling": [
-				3,
-				0.800000011920929,
-				5
+				2.5278525352478027,
+				0.674095094203949,
+				4.2130866050720215
 			],
 			"localMatrix": {
 				"0": 1,
@@ -54,7 +54,7 @@
 			"isUnIndexed": false,
 			"geometryId": "e3072fef-f9c2-4e2a-a129-eb951db60b47",
 			"subMeshes": null,
-			"materialId": "e0469f9f-9cf7-426a-aa25-108bc2620702",
+			"materialId": "ea784a9b-640f-4a35-ab50-462aa0baff3b",
 			"metadata": {
 				"gltf": {
 					"pointers": [

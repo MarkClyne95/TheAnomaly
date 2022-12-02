@@ -22,6 +22,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@babylonjs/core");
+var BABYLON = require("@babylonjs/core");
 var decorators_1 = require("../decorators");
 var PlayerCamera = /** @class */ (function (_super) {
     __extends(PlayerCamera, _super);
@@ -87,10 +88,9 @@ var PlayerCamera = /** @class */ (function (_super) {
     };
     //set up interact key
     PlayerCamera.prototype._interact = function (info) {
-        // if (this._hasInteracted == false)
-        //     this._hasInteracted = true;
-        // else if (this._hasInteracted == true)
-        //     this._hasInteracted = false;
+        this.scene = this.getScene();
+        this.engine = this.getEngine();
+        BABYLON.SceneLoader.Load("../../../scenes/scene/", "scene.babylon", this.scene);
         console.log("Interacted");
     };
     //#endregion

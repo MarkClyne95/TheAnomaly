@@ -198,7 +198,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 1743,
+	"uniqueId": 824,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,
@@ -301,6 +301,9 @@
 		"indexOfRefraction": 1.3,
 		"name": "PBRIridescence",
 		"priority": 110,
+		"registerForExtraEvents": false
+	}
+}riority": 110,
 		"registerForExtraEvents": false
 	}
 }
