@@ -1,4 +1,5 @@
 //import { title } from "process";
+import {setSceneIndex}        from "./createScenes.js";
 
 function createCamera(scene) {
   let camAlpha = -Math.PI / 2;
@@ -31,7 +32,7 @@ function createLight(scene) {
 
 function createBG(scene) {
   let hdrTexture = new BABYLON.HDRCubeTexture(
-    "./assets/texture/CosmicCoolCloudBack.hdr",
+    "./texture/CosmicCoolCloudBack.hdr",
     scene,
     512
   );
@@ -56,7 +57,7 @@ function createGUI(scene) {
   let advancedTexture =
     BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
 
-  let titleImg = new BABYLON.GUI.Image("Title", "./assets/texture/Title.png");
+  let titleImg = new BABYLON.GUI.Image("Title", "./texture/Title.png");
   titleImg.width = 0.4;
   titleImg.height = 0.4;
   titleImg.top = -290;
@@ -64,7 +65,7 @@ function createGUI(scene) {
 
   let creditImg = new BABYLON.GUI.Image(
     "Credit",
-    "./assets/texture/Credit.png"
+    "./texture/Credit.png"
   );
   creditImg.width = 0.2;
   creditImg.height = 0.1;
@@ -74,20 +75,20 @@ function createGUI(scene) {
 
   let beginImg = new BABYLON.GUI.Image(
     "Begin",
-    "./assets/texture/Begin.png"
+    "./texture/Begin.png"
   );
   beginImg.width = 0.4;
   beginImg.height = 0.125;
   beginImg.top = 0;
 
   beginImg.onPointerUpObservable.add(function () {
-    alert("Scene should change");
+    setSceneIndex(1);
   });
   advancedTexture.addControl(beginImg);
 
   let settingsImg = new BABYLON.GUI.Image(
     "Settings",
-    "./assets/texture/Settings.png"
+    "./texture/Settings.png"
   );
   settingsImg.width = 0.4;
   settingsImg.height = 0.125;
@@ -101,7 +102,7 @@ function createGUI(scene) {
 }
 
 function createMusic(scene){
-  var music = new BABYLON.Sound("Music", "./assets/audio/e s c p - - Cyber Crime Story.mp3", scene, null, {
+  var music = new BABYLON.Sound("Music", "./audio/e s c p - - Cyber Crime Story.mp3", scene, null, {
     loop: true,
     autoplay: true
   });
@@ -127,10 +128,11 @@ export default function createStartScene(engine) {
 
   let light = (that.light = createLight(scene));
   let camera = (that.camera = createCamera(scene));
-  let gui = (that.gui = createGUI(scene));
+
 
   let bgSphere = (that.bgSphere = createBG(scene));
 
+  let gui = (that.gui = createGUI(scene));
   let music = (that.music = createMusic(scene));
   return that;
 }
