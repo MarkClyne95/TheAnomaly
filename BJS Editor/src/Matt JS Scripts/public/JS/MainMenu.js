@@ -46,7 +46,7 @@ function createBG(scene) {
   sphere.scaling = new BABYLON.Vector3(10, 10, 10);
 
   scene.registerBeforeRender(function () {
-    sphere.rotation.y += 0.0001 * scene.deltaTime;
+    sphere.rotation.z += 0.0001 * scene.deltaTime;
   });
 
   return sphere;
@@ -100,6 +100,16 @@ function createGUI(scene) {
 
 }
 
+function createMusic(scene){
+  var music = new BABYLON.Sound("Music", "./assets/audio/e s c p - - Cyber Crime Story.mp3", scene, null, {
+    loop: true,
+    autoplay: true
+  });
+
+  music.setVolume(.1);
+  return music
+}
+
 export default function createStartScene(engine) {
   let that = {};
   let scene = (that.scene = new BABYLON.Scene(engine));
@@ -121,6 +131,6 @@ export default function createStartScene(engine) {
 
   let bgSphere = (that.bgSphere = createBG(scene));
 
-  //let music = (that.music = createMusic(scene));
+  let music = (that.music = createMusic(scene));
   return that;
 }
