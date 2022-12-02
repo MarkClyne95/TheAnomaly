@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "textures/texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg",
+		"url": "EngineRoom/textures/texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,10 +20,10 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "textures/texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg",
+		"name": "EngineRoom/textures/texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg",
 		"metadata": {
 			"editorName": "texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg",
-			"editorId": "948a0fb5-9d78-4edf-9d04-459b8380bb24",
+			"editorId": "910c89ea-51be-46e6-8f58-5c8245dd436a",
 			"ktx2CompressedTextures": {
 				"isUsingCompressedTexture": false
 			}
@@ -118,7 +118,7 @@
 	"enableSpecularAntiAliasing": false,
 	"useHorizonOcclusion": true,
 	"useRadianceOcclusion": true,
-	"unlit": false,
+	"unlit": true,
 	"_imageProcessingConfiguration": {
 		"tags": null,
 		"colorCurves": {
@@ -198,7 +198,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 824,
+	"uniqueId": 358,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,
@@ -301,9 +301,6 @@
 		"indexOfRefraction": 1.3,
 		"name": "PBRIridescence",
 		"priority": 110,
-		"registerForExtraEvents": false
-	}
-}riority": 110,
 		"registerForExtraEvents": false
 	}
 }

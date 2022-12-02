@@ -1,0 +1,148 @@
+Exporter version: 3.3.0, Blender version: 3.3.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  F:\Year 4\TheAnomaly\root\assets\scenes\
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of node:  Ship
+	processing begun of node:  ship.babylon
+	processing begun of mesh:  Circle.021
+		processing begun of material:  Material.007
+			WARNING: unsupported node type(ShaderNodeSeparateColor) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMath) will trigger baking
+			WARNING: unsupported node type(ShaderNodeSeparateColor) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Room_1_Done_UVMap_nmap image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+			processing texture Room_1_Done_UVMap_color_3
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Room_1_Done_UVMap_metalness image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Room_1_Done_UVMap_metalness image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+			bake time:  0 min, 0.0125 secs
+		Custom split normals with tangents being used
+		num positions      :  10684
+		num normals        :  10684
+		num tangents       :  42736
+		num uvs            :  21368
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  5880
+	processing begun of mesh:  Circle.004
+		processing begun of material:  Railing
+			WARNING: unsupported node type(ShaderNodeSeparateColor) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMath) will trigger baking
+			WARNING: unsupported node type(ShaderNodeSeparateColor) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Railings_texures_UVMap_nmap image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+			processing texture Railings_texture_UVMap_color
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Railings_texture_UVMap_metalness image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Railings_texture_UVMap_metalness image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+			bake time:  0 min, 0.0095 secs
+		Custom split normals with tangents being used
+		num positions      :  8824
+		num normals        :  8824
+		num tangents       :  35296
+		num uvs            :  17648
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  4176
+	processing begun of mesh:  Circle.001
+		processing begun of material:  Star_Fighter_Fire
+			WARNING: unsupported node type(ShaderNodeGroup) will trigger baking
+			WARNING: unsupported node type(ShaderNodeGroup) will trigger baking
+			WARNING: unsupported node type(ShaderNodeGroup) will trigger baking
+			bake time:  0 min, 0.0095 secs
+		Custom split normals with tangents being used
+		num positions      :  2396
+		num normals        :  2396
+		num tangents       :  9584
+		num uvs            :  4792
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2080
+	processing begun of mesh:  Circle.016
+		processing begun of material:  Material.007
+			WARNING: unsupported node type(ShaderNodeSeparateColor) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMath) will trigger baking
+			WARNING: unsupported node type(ShaderNodeSeparateColor) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Room_1_Done_UVMap_nmap image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+			processing texture Room_1_Done_UVMap_color_3
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Room_1_Done_UVMap_metalness image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Room_1_Done_UVMap_metalness image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+			bake time:  0 min, 0.0045 secs
+		Custom split normals with tangents being used
+		num positions      :  168
+		num normals        :  168
+		num tangents       :  672
+		num uvs            :  336
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  248
+	processing begun of mesh:  Circle.010
+		processing begun of material:  door
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			processing texture 
+				WARNING: Exception during copy:
+					Error: Could not write image: Permission denied
+Error: Image 'Railings_texture_UVMap_color image' could not be saved to 'F:\Year 4\TheAnomaly\root\assets\scenes\.'
+
+========= An error was encountered =========
+  File "C:\Users\zeddu\AppData\Roaming\Blender Foundation\Blender\3.3\scripts\addons\babylon_js\json_exporter.py", line 116, in execute
+    mesh = Mesh(object, scene, self)
+  File "C:\Users\zeddu\AppData\Roaming\Blender Foundation\Blender\3.3\scripts\addons\babylon_js\mesh.py", line 150, in __init__
+    recipe = BakingRecipe(bpyMesh, exporter)
+  File "C:\Users\zeddu\AppData\Roaming\Blender Foundation\Blender\3.3\scripts\addons\babylon_js\materials\baking_recipe.py", line 103, in __init__
+    self.bakedMaterial.processImageTextures(bpyMesh)
+  File "C:\Users\zeddu\AppData\Roaming\Blender Foundation\Blender\3.3\scripts\addons\babylon_js\materials\material.py", line 125, in processImageTextures
+    tex.process(self.exporter, True, bpyMesh)
+  File "C:\Users\zeddu\AppData\Roaming\Blender Foundation\Blender\3.3\scripts\addons\babylon_js\materials\texture.py", line 93, in process
+    self.uvMapName = bpyMesh.data.uv_layers.active.name
+ERROR:  'NoneType' object has no attribute 'name'
+========= end of processing =========
+elapsed time:  0 min, 0.8716 secs

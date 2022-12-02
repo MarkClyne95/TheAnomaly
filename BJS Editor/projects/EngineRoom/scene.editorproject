@@ -38,8 +38,7 @@
 			"isMultiMaterial": false,
 			"bindedMeshes": [
 				"47330527-b56e-4199-9079-f96f8327610e",
-				"a12b7923-ea11-4b99-80bc-30dc657fe85e",
-				"1cf4fd28-9df7-4d18-99a0-41de6cfae07a"
+				"a12b7923-ea11-4b99-80bc-30dc657fe85e"
 			],
 			"json": "meshes/ship/Material.007-Material.007.material"
 		},
@@ -58,6 +57,7 @@
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [
+				"75a60261-6f8a-47c8-ac29-1c705ea4a007",
 				"262c356c-befe-4d8e-8542-ead2b410711f",
 				"1d0334bd-48f6-4426-8365-7e7450094203",
 				"af27a324-b95b-4344-a690-379a8907278b",
@@ -68,19 +68,6 @@
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [
-				"75a60261-6f8a-47c8-ac29-1c705ea4a007",
-				"c4e94866-0a94-4920-b6b8-cec30ac59515",
-				"faf3aa68-f95a-423e-a9d0-92601fce2498",
-				"83c8dfa2-1931-45bb-b723-352d6f71d3f4",
-				"3f66301d-d1bd-4af0-b1cb-73f2666f85f2"
-			],
-			"json": "materials/m_incubator_top.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"4c5f6088-60e5-45d0-b62d-4a087be2015e",
-				"2faa25ed-f14c-4593-ab86-f63c4e45744f",
 				"71614a1b-a06a-4205-ac39-d1dd08b16621",
 				"7ff7cfe8-0a0b-48d9-b69b-b460ce491c69"
 			],
@@ -88,9 +75,7 @@
 		},
 		{
 			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"0cd8568f-f4e1-4815-b6c3-7fd67c4e0ba8"
-			],
+			"bindedMeshes": [],
 			"json": "EngineRoom/Anomaly Models/glb/Material.004-Material.004.material"
 		},
 		{
@@ -101,21 +86,119 @@
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [
-				"90df140f-3f36-4cbb-aca2-c26471d0f79c"
+				"4d88b520-3e38-4aa9-8444-d2d3734c14e7"
+			],
+			"json": "EngineRoom/materials/screen.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "materials/Scanner.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"c4e94866-0a94-4920-b6b8-cec30ac59515"
+			],
+			"json": "materials/m_incubator_top.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"faf3aa68-f95a-423e-a9d0-92601fce2498"
+			],
+			"json": "materials/m_incubator_top.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"83c8dfa2-1931-45bb-b723-352d6f71d3f4"
 			],
 			"json": "materials/m_incubator_top.material"
 		},
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [],
-			"json": "EngineRoom/materials/screen.material"
+			"json": "materials/m_incubator_top.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/Sartfighter-Sartfighter.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/Starfighter_Laser-Starfighter_Laser.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/Material.001-Material.001.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/UVMap.002-UVMap.002.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/Panic_Bot.001-Panic_Bot.001.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/Drohn_1-Drohn_1.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/Material.011-Material.011.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/UVMap.004-UVMap.004.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/UVMap.003-UVMap.003.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/Material.014-Material.014.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [],
+			"json": "meshes/ship/Material.002-Material.002.material"
 		},
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [
-				"4d88b520-3e38-4aa9-8444-d2d3734c14e7"
+				"3f66301d-d1bd-4af0-b1cb-73f2666f85f2"
 			],
-			"json": "EngineRoom/materials/scanner.material"
+			"json": "materials/m_incubator_top.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"1cf4fd28-9df7-4d18-99a0-41de6cfae07a"
+			],
+			"json": "materials/cube.material"
+		},
+		{
+			"isMultiMaterial": true,
+			"bindedMeshes": [],
+			"json": "ship.Multimaterial#0-ship.Multimaterial#0.json"
+		},
+		{
+			"isMultiMaterial": true,
+			"bindedMeshes": [],
+			"json": "ship.Multimaterial#1-ship.Multimaterial#1.json"
 		}
 	],
 	"textures": [
@@ -128,13 +211,17 @@
 		"Room_1_Done_UVMap_metalness.png-d11771f0-b566-43a5-95b5-a790cd4b1783.json",
 		"Room_1_Done_UVMap_rough.png-bc074e61-ef85-49dd-adf6-31addf4c7080.json",
 		"Room_1_Done_UVMap_nmap.png-63db1238-6263-423b-9bfc-c55d9696392c.json",
-		"d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg-75f52004-ad24-4a88-abef-22e6139c0bfd.json",
-		"texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg-948a0fb5-9d78-4edf-9d04-459b8380bb24.json",
+		"d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg-20499b12-8e43-425e-8c93-d9cc4463bf51.json",
+		"out_side_UVMap_color.png-eabf9f98-4c9d-4e48-a914-16d306e2094b.json",
+		"out_side_UVMap_metalness.png-5b5cf307-34d2-4e4f-9fd6-4a2342a2d01e.json",
+		"out_side_UVMap_nmap.png-62932110-dfc6-462f-84aa-3141b8525d7d.json",
+		"Computer Monitor.png-8e63477c-f072-4edf-b038-c3f943a7a4e4.json",
+		"ScannerBlue.png-7a717cf8-4888-4c57-843c-594bbfb5df89.json",
+		"texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg-910c89ea-51be-46e6-8f58-5c8245dd436a.json",
 		"InfoBot_Panic_Bot_color.png-154aeca9-80c2-40bd-8122-f018f8f09494.json",
 		"InfoBot_Panic_Bot_metalness.png-39471943-1a33-400f-ae68-c62728da189a.json",
 		"InfoBot_Panic_Bot_rough.png-f557c6ec-28d4-42a5-970f-038d862aec1c.json",
 		"InfoBot_Panic_Bot_nmap.png-4c060679-27a8-48ee-aa71-e7dc5cbf9b80.json",
-		"blaster_diffuse.jpg-f5471261-ffd3-4811-92b0-c268ca5c7eb2.json",
 		"column_UVMap_color.png-8fe48564-30bb-42bc-947c-3def0f3d5b3c.json",
 		"column_UVMap_nmap.png-a80d6956-4309-47d2-a001-9a3057028c46.json",
 		"column_UVMap_rough.png-7b9bd9cf-b4dd-4d17-9608-d0e2396612be.json",
@@ -148,12 +235,10 @@
 		"out_side_UVMap_metalness.png-6f53e4f1-88d1-4eea-9821-673a4fc729e8.json",
 		"out_side_UVMap_rough.png-6601155a-19e0-4eec-82dc-41a96050dc81.json",
 		"t1_UVMap_nmap.png-d5d88925-c070-4320-b8ec-988a2fe089f7.json",
-		"Material.001 (Base Color).jpeg-2bfc8432-26d2-4203-ad80-7d043ca26dbc.json",
-		"Material.001 (Metallic Roughness).png-39ff1444-1f70-4d37-9bc4-03e367ffbaeb.json",
-		"Material.001 (Normal).jpeg-beff2878-2e90-41a1-94cc-5529d71f281f.json",
-		"Computer Monitor.png-8e63477c-f072-4edf-b038-c3f943a7a4e4.json"
+		"out_side_UVMap_rough.png-73d0cf0d-a679-434d-838b-e78e89a0d2b5.json"
 	],
 	"meshes": [
+		"New Cube-5ca9e97c-7d5c-4d1c-828e-018eed740b49.json",
 		"Circle.021-47330527-b56e-4199-9079-f96f8327610e.json",
 		"Circle.004-4a6ed767-130f-4a62-80f2-ab8dd13e7902.json",
 		"Circle.001-75a60261-6f8a-47c8-ac29-1c705ea4a007.json",
@@ -161,6 +246,8 @@
 		"Model!Cylinder-262c356c-befe-4d8e-8542-ead2b410711f.json",
 		"Model!Incubator-c4e94866-0a94-4920-b6b8-cec30ac59515.json",
 		"New Cube-1cf4fd28-9df7-4d18-99a0-41de6cfae07a.json",
+		"__root__-6bc72bba-2ba0-4b07-953e-82ff37e08438.json",
+		"Pipe-71614a1b-a06a-4205-ac39-d1dd08b16621.json",
 		"Model!Incubator-faf3aa68-f95a-423e-a9d0-92601fce2498.json",
 		"Model!Incubator.Model!Cylinder-1d0334bd-48f6-4426-8365-7e7450094203.json",
 		"Model!Incubator-83c8dfa2-1931-45bb-b723-352d6f71d3f4.json",
@@ -184,10 +271,7 @@
 		"Screen-f7bce1ae-d2d9-4c27-8a09-6f9234a49711.json",
 		"Scanner-7ff7cfe8-0a0b-48d9-b69b-b460ce491c69.json",
 		"BlueScreen-a9423b2d-8c6c-4bf2-9860-5c94b63cbc1f.json",
-		"RedScreen-4d88b520-3e38-4aa9-8444-d2d3734c14e7.json",
-		"__root__-6bc72bba-2ba0-4b07-953e-82ff37e08438.json",
-		"Pipe-71614a1b-a06a-4205-ac39-d1dd08b16621.json",
-		"New Cube-5ca9e97c-7d5c-4d1c-828e-018eed740b49.json"
+		"RedScreen-4d88b520-3e38-4aa9-8444-d2d3734c14e7.json"
 	],
 	"transformNodes": [
 		"ship.babylon-159cb2b6-9c69-47cf-b94d-b7ffb41ec4b8.json",
@@ -410,13 +494,13 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": -42.54271232081405,
-			"beta": 1.3397370771797303,
-			"radius": 11.058551522298869,
+			"alpha": -35.34675151211147,
+			"beta": 1.248321880112754,
+			"radius": 165.0415007265936,
 			"target": [
-				-26.306223002160475,
-				30.752792200896614,
-				23.57271191634321
+				76.8032297736182,
+				-20.274318991885703,
+				77.89699729466224
 			],
 			"inertialAlphaOffset": 0,
 			"inertialBetaOffset": 0,
@@ -447,9 +531,9 @@
 			],
 			"speed": 2,
 			"position": [
-				-24.897824791784085,
-				33.285297275099616,
-				34.24484358257949
+				-33.45802876736657,
+				32.02971374490086,
+				189.00703278432206
 			],
 			"upVector": [
 				0,
@@ -472,7 +556,7 @@
 				"script": {},
 				"detached": false
 			},
-			"uniqueId": 4,
+			"uniqueId": 7,
 			"type": "ArcRotateCamera",
 			"inputsmgr": {
 				"ArcRotateCameraKeyboardMoveInput": {
@@ -516,7 +600,7 @@
 					"pinchDeltaPercentage": 0,
 					"useNaturalPinchZoom": false,
 					"pinchZoom": true,
-					"panningSensibility": 90.42775611105698,
+					"panningSensibility": 6.059082082976159,
 					"multiTouchPanning": true,
 					"multiTouchPanAndZoom": true
 				}

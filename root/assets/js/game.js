@@ -1,7 +1,3 @@
-import '../../../node_modules/@babylonjs/core/Legacy/legacy.js';
-import '../../../node_modules/babylonjs-loaders/babylon.glTF2FileLoader.js';
-
-
 var canvas = document.getElementById("renderCanvas")
 var engine = new BABYLON.Engine(canvas, true);
 const createScene = function() {
@@ -16,6 +12,8 @@ const createScene = function() {
 
     //Set the ellipsoid around the camera (e.g. your player's size)
     camera.ellipsoid = new BABYLON.Vector3(1, 4, 1);
+
+    camera.applyGravity = true;
 
     camera.enablePhysics = true;
     camera.checkCollisions = true;
@@ -40,7 +38,7 @@ const createScene = function() {
         inputMap[evt.sourceEvent.key] = evt.sourceEvent.type == "keydown";
     }));
 
-    BABYLON.SceneLoader.Append("../../../BJS Editor/assets/EngineRoom/", "scene.babylon", scene, (newMeshes) => {
+    BABYLON.SceneLoader.Append("../../../root/assets/scenes/", "scene.babylon", scene, (newMeshes) => {
         var meshes = newMeshes.meshes;
         meshes.forEach(item => {
             item.physicsImpostor = new BABYLON.PhysicsImpostor(ground, BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0, restitution: 0.9 }, scene);
