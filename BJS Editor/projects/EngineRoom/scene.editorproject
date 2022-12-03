@@ -67,59 +67,8 @@
 		},
 		{
 			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"71614a1b-a06a-4205-ac39-d1dd08b16621",
-				"7ff7cfe8-0a0b-48d9-b69b-b460ce491c69"
-			],
-			"json": "EngineRoom/Anomaly Models/glb/lambert1.001-lambert1.001.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [],
-			"json": "EngineRoom/Anomaly Models/glb/Material.004-Material.004.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [],
-			"json": "EngineRoom/Anomaly Models/fbx/Material!lambert1-1752596103248.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"4d88b520-3e38-4aa9-8444-d2d3734c14e7"
-			],
-			"json": "EngineRoom/materials/screen.material"
-		},
-		{
-			"isMultiMaterial": false,
 			"bindedMeshes": [],
 			"json": "materials/Scanner.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"c4e94866-0a94-4920-b6b8-cec30ac59515"
-			],
-			"json": "materials/m_incubator_top.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"faf3aa68-f95a-423e-a9d0-92601fce2498"
-			],
-			"json": "materials/m_incubator_top.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"83c8dfa2-1931-45bb-b723-352d6f71d3f4"
-			],
-			"json": "materials/m_incubator_top.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [],
-			"json": "materials/m_incubator_top.material"
 		},
 		{
 			"isMultiMaterial": false,
@@ -179,13 +128,6 @@
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [
-				"3f66301d-d1bd-4af0-b1cb-73f2666f85f2"
-			],
-			"json": "materials/m_incubator_top.material"
-		},
-		{
-			"isMultiMaterial": false,
-			"bindedMeshes": [
 				"1cf4fd28-9df7-4d18-99a0-41de6cfae07a"
 			],
 			"json": "materials/cube.material"
@@ -211,17 +153,19 @@
 		"Room_1_Done_UVMap_metalness.png-d11771f0-b566-43a5-95b5-a790cd4b1783.json",
 		"Room_1_Done_UVMap_rough.png-bc074e61-ef85-49dd-adf6-31addf4c7080.json",
 		"Room_1_Done_UVMap_nmap.png-63db1238-6263-423b-9bfc-c55d9696392c.json",
-		"d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg-20499b12-8e43-425e-8c93-d9cc4463bf51.json",
-		"out_side_UVMap_color.png-eabf9f98-4c9d-4e48-a914-16d306e2094b.json",
+		"d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg-296e2c8d-1f0d-49e7-9a09-504573b1a711.json",
 		"out_side_UVMap_metalness.png-5b5cf307-34d2-4e4f-9fd6-4a2342a2d01e.json",
 		"out_side_UVMap_nmap.png-62932110-dfc6-462f-84aa-3141b8525d7d.json",
-		"Computer Monitor.png-8e63477c-f072-4edf-b038-c3f943a7a4e4.json",
 		"ScannerBlue.png-7a717cf8-4888-4c57-843c-594bbfb5df89.json",
-		"texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg-910c89ea-51be-46e6-8f58-5c8245dd436a.json",
 		"InfoBot_Panic_Bot_color.png-154aeca9-80c2-40bd-8122-f018f8f09494.json",
 		"InfoBot_Panic_Bot_metalness.png-39471943-1a33-400f-ae68-c62728da189a.json",
 		"InfoBot_Panic_Bot_rough.png-f557c6ec-28d4-42a5-970f-038d862aec1c.json",
 		"InfoBot_Panic_Bot_nmap.png-4c060679-27a8-48ee-aa71-e7dc5cbf9b80.json",
+		"texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg-974357b1-9604-4dc1-93d7-cc599c30048f.json",
+		"d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg-20499b12-8e43-425e-8c93-d9cc4463bf51.json",
+		"out_side_UVMap_color.png-eabf9f98-4c9d-4e48-a914-16d306e2094b.json",
+		"Computer Monitor.png-8e63477c-f072-4edf-b038-c3f943a7a4e4.json",
+		"texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg-910c89ea-51be-46e6-8f58-5c8245dd436a.json",
 		"column_UVMap_color.png-8fe48564-30bb-42bc-947c-3def0f3d5b3c.json",
 		"column_UVMap_nmap.png-a80d6956-4309-47d2-a001-9a3057028c46.json",
 		"column_UVMap_rough.png-7b9bd9cf-b4dd-4d17-9608-d0e2396612be.json",
@@ -494,13 +438,13 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": -35.34675151211147,
-			"beta": 1.248321880112754,
-			"radius": 165.0415007265936,
+			"alpha": -35.12305211407421,
+			"beta": 1.1414016322249116,
+			"radius": 151.7272044740591,
 			"target": [
-				76.8032297736182,
-				-20.274318991885703,
-				77.89699729466224
+				35.51695708802401,
+				5.214909770435255,
+				-9.218075557981564
 			],
 			"inertialAlphaOffset": 0,
 			"inertialBetaOffset": 0,
@@ -531,9 +475,9 @@
 			],
 			"speed": 2,
 			"position": [
-				-33.45802876736657,
-				32.02971374490086,
-				189.00703278432206
+				-80.9572729638175,
+				68.38205907084006,
+				64.70627469688384
 			],
 			"upVector": [
 				0,
@@ -600,7 +544,7 @@
 					"pinchDeltaPercentage": 0,
 					"useNaturalPinchZoom": false,
 					"pinchZoom": true,
-					"panningSensibility": 6.059082082976159,
+					"panningSensibility": 6.5907758827189795,
 					"multiTouchPanning": true,
 					"multiTouchPanAndZoom": true
 				}

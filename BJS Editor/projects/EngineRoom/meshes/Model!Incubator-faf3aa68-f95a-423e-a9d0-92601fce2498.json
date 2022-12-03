@@ -54,7 +54,7 @@
 			"isUnIndexed": false,
 			"geometryId": "8d02c581-c922-4dc2-9f4f-52bd6437c90b",
 			"subMeshes": null,
-			"materialId": "a345aae5-07c3-4b49-92e4-036bd36e1fb0",
+			"materialId": "default material",
 			"metadata": {
 				"basePoseMatrix": {
 					"0": 1,

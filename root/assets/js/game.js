@@ -1,4 +1,6 @@
-import { canvas } from "./createScenes.js";
+import { canvas, scene } from "./createScenes.js";
+
+let scanner;
 
 function createCamera(scene) {
     var camera = new BABYLON.FreeCamera(
@@ -16,8 +18,6 @@ function createCamera(scene) {
     camera.applyGravity = true;
     camera.enablePhysics = true;
     camera.checkCollisions = true;
-
-    var skeleton = null;
 
     camera.keysUp.push(87);
     camera.keysDown.push(83);
@@ -58,22 +58,21 @@ function createActionManager(scene) {
     );
 }
 
+
 function appendScene(scene) {
-    BABYLON.SceneLoader.Append(
-        "../../../BJS Editor/assets/EngineRoom/",
-        "scene.babylon",
-        scene,
-        (newMeshes) => {
-            var meshes = newMeshes.meshes;
-            meshes.forEach((item) => {
-                item.physicsImpostor = new BABYLON.PhysicsImpostor(
-                    ground,
-                    BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0, restitution: 0.9 },
-                    scene
-                );
-            });
+    BABYLON.SceneLoader.Append("../../../root/assets/scenes/", "scene.babylon", scene, (newMeshes) => {
+        var meshes = newMeshes.meshes;
+        meshes.forEach((item) => {
+            item.enablePhysics = true;
+            item.physicsImpostor = new BABYLON.PhysicsImpostor(item, BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0, restitution: 0.9 }, scene);
+            item.receiveShadows = true;
+        });
+    });
+
+    for (let mesh of scene.meshes)
+        if (mesh.name === "ExitScanner") {
+            scanner = mesh;
         }
-    );
 }
 
 function createControls(scene, camera) {
@@ -121,6 +120,7 @@ function createControls(scene, camera) {
                 switch (kbInfo.event.key) {
                     case "Shift":
                         camera.speed = 12;
+                        console.log(scanner);
                         break;
                 }
                 break;

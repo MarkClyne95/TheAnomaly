@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "EngineRoom/textures/texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg",
+		"url": "meshes/ship/textures/Room_1_Done_UVMap_color_3.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,10 +20,10 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "EngineRoom/textures/texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg",
+		"name": "meshes/ship/textures/Room_1_Done_UVMap_color_3.png",
 		"metadata": {
-			"editorName": "texture_single___metal_by_ai_forte_d4ujqio-fullview.jpg",
-			"editorId": "910c89ea-51be-46e6-8f58-5c8245dd436a",
+			"editorName": "Room_1_Done_UVMap_color_3.png",
+			"editorId": "96a5fc26-af80-4ca9-9b9d-8a1246a54991",
 			"ktx2CompressedTextures": {
 				"isUsingCompressedTexture": false
 			}
@@ -198,7 +198,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 358,
+	"uniqueId": 2401,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,

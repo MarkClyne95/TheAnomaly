@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "EngineRoom/meshes/ship/textures/out_side_UVMap_color.png",
+		"url": "EngineRoom/Anomaly Models/Textures/Panel alt.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,22 +20,22 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "EngineRoom/meshes/ship/textures/out_side_UVMap_color.png",
+		"name": "EngineRoom/Anomaly Models/Textures/Panel alt.png",
 		"metadata": {
-			"editorName": "out_side_UVMap_color.png",
-			"editorId": "eabf9f98-4c9d-4e48-a914-16d306e2094b",
+			"editorName": "Panel alt.png",
+			"editorId": "e2551d52-70fd-413b-9459-98a96e12bdd9",
 			"ktx2CompressedTextures": {
 				"isUsingCompressedTexture": false
 			}
 		},
-		"hasAlpha": false,
-		"getAlphaFromRGB": false,
+		"hasAlpha": true,
+		"getAlphaFromRGB": true,
 		"level": 1,
 		"coordinatesIndex": 0,
 		"coordinatesMode": 0,
-		"wrapU": 1,
-		"wrapV": 1,
-		"wrapR": 1,
+		"wrapU": 0,
+		"wrapV": 0,
+		"wrapR": 0,
 		"anisotropicFilteringLevel": 4,
 		"isCube": false,
 		"is3D": false,
@@ -161,9 +161,9 @@
 		0
 	],
 	"albedo": [
-		0.011764705882352941,
-		0.00392156862745098,
-		0.00392156862745098
+		0.3764705882352941,
+		0.5529411764705883,
+		0.30980392156862746
 	],
 	"reflectivity": [
 		1,
@@ -182,9 +182,9 @@
 	],
 	"microSurface": 1,
 	"useLightmapAsShadowmap": false,
-	"useAlphaFromAlbedoTexture": false,
-	"forceAlphaTest": false,
-	"alphaCutOff": 0.4,
+	"useAlphaFromAlbedoTexture": true,
+	"forceAlphaTest": true,
+	"alphaCutOff": 0,
 	"useSpecularOverAlpha": true,
 	"useMicroSurfaceFromReflectivityMapAlpha": false,
 	"useRoughnessFromMetallicTextureAlpha": true,
@@ -268,7 +268,7 @@
 	"backFaceCulling": false,
 	"cullBackFaces": true,
 	"sideOrientation": 1,
-	"alphaMode": 2,
+	"alphaMode": 10,
 	"_needDepthPrePass": false,
 	"disableDepthWrite": false,
 	"disableColorWrite": false,
@@ -281,6 +281,7 @@
 	"zOffsetUnits": 0,
 	"pointsCloud": false,
 	"fillMode": 0,
+	"transparencyMode": 3,
 	"stencil": {
 		"tags": null,
 		"func": 519,

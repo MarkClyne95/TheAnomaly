@@ -97,6 +97,7 @@
 		"_colorGradingBGR": true,
 		"_exposure": 1,
 		"_toneMappingEnabled": false,
+		"_toneMappingType": 0,
 		"_contrast": 1,
 		"vignetteStretch": 0,
 		"vignetteCentreX": 0,
@@ -163,7 +164,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 971,
+	"uniqueId": 224,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,

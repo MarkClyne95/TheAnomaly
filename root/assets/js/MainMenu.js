@@ -126,6 +126,8 @@ export default function createStartScene(engine) {
     // Enable Collisions
     scene.collisionsEnabled = true;
 
+    scene.debugLayer.show();
+
     let light = (that.light = createLight(scene));
     let camera = (that.camera = createCamera(scene));
 

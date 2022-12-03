@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "EngineRoom/textures/d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg",
+		"url": "textures/d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,10 +20,10 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "EngineRoom/textures/d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg",
+		"name": "textures/d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg",
 		"metadata": {
 			"editorName": "d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg",
-			"editorId": "20499b12-8e43-425e-8c93-d9cc4463bf51",
+			"editorId": "296e2c8d-1f0d-49e7-9a09-504573b1a711",
 			"ktx2CompressedTextures": {
 				"isUsingCompressedTexture": false
 			}

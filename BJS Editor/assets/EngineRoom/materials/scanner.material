@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "Anomaly Models/Textures/ScannerBlue.png",
+		"url": "EngineRoom/textures/d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,10 +20,10 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "Anomaly Models/Textures/ScannerBlue.png",
+		"name": "EngineRoom/textures/d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg",
 		"metadata": {
-			"editorName": "ScannerBlue.png",
-			"editorId": "7a717cf8-4888-4c57-843c-594bbfb5df89",
+			"editorName": "d4qii38-eb988c46-b78b-47e4-b7d5-e4e4210ee19e.jpg",
+			"editorId": "20499b12-8e43-425e-8c93-d9cc4463bf51",
 			"ktx2CompressedTextures": {
 				"isUsingCompressedTexture": false
 			}
@@ -158,14 +158,14 @@
 		"_vignetteBlendMode": 0,
 		"_vignetteEnabled": false,
 		"_skipFinalColorClamp": false,
-		"_applyByPostProcess": true,
+		"_applyByPostProcess": false,
 		"_isEnabled": true
 	},
 	"useLogarithmicDepth": false,
-	"id": "a944b808-7423-48ef-983d-2af6ac21aa7f",
-	"name": "Scanner",
+	"id": "699f5e2d-52ca-47ac-8727-322ff7289427",
+	"name": "scanner",
 	"metadata": {
-		"editorPath": "materials/Scanner.material"
+		"editorPath": "EngineRoom/materials/scanner.material"
 	},
 	"checkReadyOnEveryCall": false,
 	"checkReadyOnlyOnce": false,
@@ -198,7 +198,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 3683,
+	"uniqueId": 2597,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,
