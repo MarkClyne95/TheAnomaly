@@ -55,7 +55,7 @@ function createBG(scene) {
 
 function createGUI(scene) {
     let advancedTexture =
-        BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+        BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI", true);
 
     let titleImg = new BABYLON.GUI.Image("Title", "./texture/Title.png");
     titleImg.width = 0.4;
@@ -83,6 +83,7 @@ function createGUI(scene) {
 
     beginImg.onPointerUpObservable.add(function() {
         setSceneIndex(1);
+        scene.dispose();
     });
     advancedTexture.addControl(beginImg);
 

@@ -3,182 +3,242 @@ import { canvas, scene } from "./createScenes.js";
 let scanner;
 
 function createCamera(scene) {
-    var camera = new BABYLON.FreeCamera(
-        "FreeCamera",
-        new BABYLON.Vector3(0, 10, 0),
-        scene
-    );
-    camera.fov = 0.6;
-    camera.inertia = 0.0;
-    camera.attachControl(canvas, true);
+  var camera = new BABYLON.FreeCamera(
+    "FreeCamera",
+    new BABYLON.Vector3(0, 10, 0),
+    scene
+  );
+  camera.fov = 0.6;
+  camera.inertia = 0.0;
+  camera.attachControl(canvas, true);
 
-    //Set the ellipsoid around the camera (e.g. your player's size)
-    camera.ellipsoid = new BABYLON.Vector3(1, 4, 1);
+  //Set the ellipsoid around the camera (e.g. your player's size)
+  camera.ellipsoid = new BABYLON.Vector3(1, 4, 1);
 
-    camera.applyGravity = true;
-    camera.enablePhysics = true;
-    camera.checkCollisions = true;
+  camera.isPickable = false;
+  camera.applyGravity = true;
+  camera.enablePhysics = true;
+  camera.checkCollisions = true;
 
-    camera.keysUp.push(87);
-    camera.keysDown.push(83);
-    camera.keysRight.push(68);
-    camera.keysLeft.push(65);
+  camera.keysUp.push(87);
+  camera.keysDown.push(83);
+  camera.keysRight.push(68);
+  camera.keysLeft.push(65);
 
-    return camera;
+  return camera;
 }
 
 function createLight(scene) {
-    const light = new BABYLON.HemisphericLight(
-        "light",
-        new BABYLON.Vector3(1, 1, 0)
-    );
+  const light = new BABYLON.HemisphericLight(
+    "light",
+    new BABYLON.Vector3(1, 1, 0)
+  );
 
-    return light;
+  return light;
 }
 
 function createActionManager(scene) {
-    // Keyboard events
-    var inputMap = {};
-    scene.actionManager = new BABYLON.ActionManager(scene);
-    scene.actionManager.registerAction(
-        new BABYLON.ExecuteCodeAction(
-            BABYLON.ActionManager.OnKeyDownTrigger,
-            function(evt) {
-                inputMap[evt.sourceEvent.key] = evt.sourceEvent.type == "keydown";
-            }
-        )
-    );
-    scene.actionManager.registerAction(
-        new BABYLON.ExecuteCodeAction(
-            BABYLON.ActionManager.OnKeyUpTrigger,
-            function(evt) {
-                inputMap[evt.sourceEvent.key] = evt.sourceEvent.type == "keydown";
-            }
-        )
-    );
+  // Keyboard events
+  var inputMap = {};
+  scene.actionManager = new BABYLON.ActionManager(scene);
+  scene.actionManager.registerAction(
+    new BABYLON.ExecuteCodeAction(
+      BABYLON.ActionManager.OnKeyDownTrigger,
+      function (evt) {
+        inputMap[evt.sourceEvent.key] = evt.sourceEvent.type == "keydown";
+      }
+    )
+  );
+  scene.actionManager.registerAction(
+    new BABYLON.ExecuteCodeAction(
+      BABYLON.ActionManager.OnKeyUpTrigger,
+      function (evt) {
+        inputMap[evt.sourceEvent.key] = evt.sourceEvent.type == "keydown";
+      }
+    )
+  );
 }
 
-
 function appendScene(scene) {
-    BABYLON.SceneLoader.Append("../../../root/assets/scenes/", "scene.babylon", scene, (newMeshes) => {
-        var meshes = newMeshes.meshes;
-        meshes.forEach((item) => {
-            item.enablePhysics = true;
-            item.physicsImpostor = new BABYLON.PhysicsImpostor(item, BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0, restitution: 0.9 }, scene);
-            item.receiveShadows = true;
-        });
-    });
+  BABYLON.SceneLoader.Append(
+    "../../../root/assets/scenes/",
+    "scene.babylon",
+    scene,
+    (newMeshes) => {
+      var meshes = newMeshes.meshes;
+      meshes.forEach((item) => {
+        item.enablePhysics = true;
+        item.isPickable = false;
+        item.physicsImpostor = new BABYLON.PhysicsImpostor(
+          item,
+          BABYLON.PhysicsImpostor.BoxImpostor,
+          { mass: 0, restitution: 0.9 },
+          scene
+        );
+        item.receiveShadows = true;
+      });
+    }
+  );
 
-    for (let mesh of scene.meshes)
-        if (mesh.name === "ExitScanner") {
-            scanner = mesh;
-        }
+  for (let mesh of scene.meshes)
+    if (mesh.name === "ExitScanner") {
+      scanner = mesh;
+    }
 }
 
 function createControls(scene, camera) {
-    //Controls...Mouse
-    //We start without being locked.
-    var isLocked = false;
+  //Controls...Mouse
+  //We start without being locked.
+  var isLocked = false;
 
-    // On click event, request pointer lock
-    scene.onPointerDown = function(evt) {
-        //true/false check if we're locked, faster than checking pointerlock on each single click.
-        if (!isLocked) {
-            canvas.requestPointerLock =
-                canvas.requestPointerLock ||
-                canvas.msRequestPointerLock ||
-                canvas.mozRequestPointerLock ||
-                canvas.webkitRequestPointerLock;
-            if (canvas.requestPointerLock) {
-                canvas.requestPointerLock();
-            }
+  // On click event, request pointer lock
+  scene.onPointerDown = function (evt) {
+    //true/false check if we're locked, faster than checking pointerlock on each single click.
+    if (!isLocked) {
+      canvas.requestPointerLock =
+        canvas.requestPointerLock ||
+        canvas.msRequestPointerLock ||
+        canvas.mozRequestPointerLock ||
+        canvas.webkitRequestPointerLock;
+      if (canvas.requestPointerLock) {
+        canvas.requestPointerLock();
+      }
+    }
+  };
+
+  // Event listener when the pointerlock is updated (or removed by pressing ESC for example).
+  var pointerlockchange = function () {
+    var controlEnabled =
+      document.mozPointerLockElement ||
+      document.webkitPointerLockElement ||
+      document.msPointerLockElement ||
+      document.pointerLockElement ||
+      null;
+
+    // If the user is already locked
+    if (!controlEnabled) {
+      //camera.detachControl(canvas);
+      isLocked = false;
+    } else {
+      //camera.attachControl(canvas);
+      isLocked = true;
+    }
+  };
+
+  scene.onKeyboardObservable.add((kbInfo) => {
+    switch (kbInfo.type) {
+      case BABYLON.KeyboardEventTypes.KEYDOWN:
+        switch (kbInfo.event.key) {
+          case "Shift":
+            camera.speed = 12;
+            console.log(scanner);
+            console.log("Am hit");
+            let doRaycast = createRaycast(scene, camera);
+            break;
         }
-    };
+        break;
 
-    // Event listener when the pointerlock is updated (or removed by pressing ESC for example).
-    var pointerlockchange = function() {
-        var controlEnabled =
-            document.mozPointerLockElement ||
-            document.webkitPointerLockElement ||
-            document.msPointerLockElement ||
-            document.pointerLockElement ||
-            null;
-
-        // If the user is already locked
-        if (!controlEnabled) {
-            //camera.detachControl(canvas);
-            isLocked = false;
-        } else {
-            //camera.attachControl(canvas);
-            isLocked = true;
+      case BABYLON.KeyboardEventTypes.KEYUP:
+        switch (kbInfo.event.key) {
+          case "Shift":
+            camera.speed = 6;
+            break;
         }
-    };
+        break;
 
-    scene.onKeyboardObservable.add((kbInfo) => {
-        switch (kbInfo.type) {
-            case BABYLON.KeyboardEventTypes.KEYDOWN:
-                switch (kbInfo.event.key) {
-                    case "Shift":
-                        camera.speed = 12;
-                        console.log(scanner);
-                        break;
-                }
-                break;
-
-            case BABYLON.KeyboardEventTypes.KEYUP:
-                switch (kbInfo.event.key) {
-                    case "Shift":
-                        camera.speed = 6;
-                        break;
-                }
-                break;
+      case BABYLON.KeyboardEventTypes.KEYDOWN:
+        switch (kbInfo.event.key) {
+          case "Enter":
+            console.log("Am hit");
+            let doRaycast = createRaycast(scene, camera);
+            break;
         }
-    });
-    var advancedTexture =
-        BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("Ui");
-    var crosschair = BABYLON.GUI.Button.CreateImageOnlyButton(
-        "b1",
-        "../../../BJS Editor/scenes/EngineRoom/textures/pngfind.com-crosshair-dot-png-5191877.png"
-    );
-    crosschair.image.stretch = BABYLON.GUI.Image.STRETCH_UNIFORM;
-    crosschair.width = "48px";
-    crosschair.height = "48px";
-    crosschair.color = "transparent";
-    advancedTexture.addControl(crosschair);
+        break;
 
-    // Attach events to the document
-    document.addEventListener("pointerlockchange", pointerlockchange, false);
-    document.addEventListener("mspointerlockchange", pointerlockchange, false);
-    document.addEventListener("mozpointerlockchange", pointerlockchange, false);
-    document.addEventListener(
-        "webkitpointerlockchange",
-        pointerlockchange,
-        false
-    );
+      case BABYLON.KeyboardEventTypes.KEYUP:
+        switch (kbInfo.event.key) {
+          case "Enter":
+            break;
+        }
+        break;
+    }
+  });
+  var advancedTexture =
+    BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("Ui");
+  var crosschair = BABYLON.GUI.Button.CreateImageOnlyButton(
+    "b1",
+    "../../../BJS Editor/scenes/EngineRoom/textures/pngfind.com-crosshair-dot-png-5191877.png"
+  );
+  crosschair.image.stretch = BABYLON.GUI.Image.STRETCH_UNIFORM;
+  crosschair.width = "48px";
+  crosschair.height = "48px";
+  crosschair.color = "transparent";
+  advancedTexture.addControl(crosschair);
+
+  // Attach events to the document
+  document.addEventListener("pointerlockchange", pointerlockchange, false);
+  document.addEventListener("mspointerlockchange", pointerlockchange, false);
+  document.addEventListener("mozpointerlockchange", pointerlockchange, false);
+  document.addEventListener(
+    "webkitpointerlockchange",
+    pointerlockchange,
+    false
+  );
+}
+
+function vecToLocal(vector, mesh) {
+  let m = BABYLON.Matrix.Identity();
+  let v = BABYLON.Vector3.TransformCoordinates(vector, m);
+  return v;
+}
+
+function createRaycast(scene, camera) {
+  let origin = camera.position;
+
+  let forward = new BABYLON.Vector3(0, 0, 1);
+  forward = vecToLocal(forward, origin);
+
+  let direction = forward.subtract(origin);
+  direction = BABYLON.Vector3.Normalize(direction);
+
+  let length = 100;
+
+  let ray = new BABYLON.Ray(origin, direction, length);
+
+  let rayHelper = new BABYLON.RayHelper(ray);
+  rayHelper.show(scene);
+
+  let hit = scene.pickWithRay(ray);
+
+  if (hit.pickedMesh) {
+    hit.pickedMesh.scaling.y += 1;
+    console.log(hit.pickedMesh);
+  }
 }
 
 export default function createStartScene(engine) {
-    let that = {};
-    let scene = (that.scene = new BABYLON.Scene(engine));
-    //scene.debugLayer.show();
+  let that = {};
+  let scene = (that.scene = new BABYLON.Scene(engine));
+  //scene.debugLayer.show();
 
-    /********************************************************************
-     * ANY CODE IN RELATION RENDERING ON THE SCREEN SHOULD GO BELOW HERE
-     ********************************************************************/
+  /********************************************************************
+   * ANY CODE IN RELATION RENDERING ON THE SCREEN SHOULD GO BELOW HERE
+   ********************************************************************/
 
-    scene.enablePhysics(null, new BABYLON.CannonJSPlugin());
-    scene.collisionsEnabled = true;
+  scene.enablePhysics(null, new BABYLON.CannonJSPlugin());
+  scene.collisionsEnabled = true;
 
-    let light = (that.light = createLight(scene));
-    let camera = (that.camera = createCamera(scene));
-    let manager = (that.actionManager = createActionManager(scene));
-    let append = (that.append = appendScene(scene));
+  let light = (that.light = createLight(scene));
+  let manager = (that.actionManager = createActionManager(scene));
+  let camera = (that.camera = createCamera(scene));
+  
+  let append = (that.append = appendScene(scene));
 
-    let controls = (that.controls = createControls(scene, camera));
-    //let gui = (that.gui = createGUI(scene));
+  let controls = (that.controls = createControls(scene, camera));
+  //let gui = (that.gui = createGUI(scene));
 
-    //let bgSphere = (that.bgSphere = createBG(scene));
+  //let bgSphere = (that.bgSphere = createBG(scene));
 
-    //let music = (that.music = createMusic(scene));
-    return that;
+  //let music = (that.music = createMusic(scene));
+  return that;
 }
