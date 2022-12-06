@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "EngineRoom/Anomaly Models/Textures/Panel alt.png",
+		"url": "EngineRoom/scene/Panel alt.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,7 +20,7 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "EngineRoom/Anomaly Models/Textures/Panel alt.png",
+		"name": "EngineRoom/scene/Panel alt.png",
 		"metadata": {
 			"editorName": "Panel alt.png",
 			"editorId": "e2551d52-70fd-413b-9459-98a96e12bdd9",
@@ -56,7 +56,7 @@
 	"ambientTextureImpactOnAnalyticalLights": 0,
 	"metallicTexture": {
 		"tags": null,
-		"url": "EngineRoom/meshes/ship/textures/out_side_UVMap_metalness.png",
+		"url": "EngineRoom/scene/out_side_UVMap_metalness.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -69,7 +69,7 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "EngineRoom/meshes/ship/textures/out_side_UVMap_metalness.png",
+		"name": "EngineRoom/scene/out_side_UVMap_metalness.png",
 		"metadata": {
 			"editorName": "out_side_UVMap_metalness.png",
 			"editorId": "5b5cf307-34d2-4e4f-9fd6-4a2342a2d01e",
@@ -110,7 +110,7 @@
 	"useOnlyMetallicFromMetallicReflectanceTexture": false,
 	"bumpTexture": {
 		"tags": null,
-		"url": "EngineRoom/meshes/ship/textures/out_side_UVMap_nmap.png",
+		"url": "EngineRoom/scene/out_side_UVMap_nmap.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -123,7 +123,7 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "EngineRoom/meshes/ship/textures/out_side_UVMap_nmap.png",
+		"name": "EngineRoom/scene/out_side_UVMap_nmap.png",
 		"metadata": {
 			"editorName": "out_side_UVMap_nmap.png",
 			"editorId": "62932110-dfc6-462f-84aa-3141b8525d7d",

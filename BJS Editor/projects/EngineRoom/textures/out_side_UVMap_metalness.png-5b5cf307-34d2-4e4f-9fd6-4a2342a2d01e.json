@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "EngineRoom/meshes/ship/textures/out_side_UVMap_metalness.png",
+	"url": "EngineRoom/scene/out_side_UVMap_metalness.png",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -13,7 +13,7 @@
 	"wRotationCenter": 0.5,
 	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"name": "EngineRoom/meshes/ship/textures/out_side_UVMap_metalness.png",
+	"name": "EngineRoom/scene/out_side_UVMap_metalness.png",
 	"metadata": {
 		"editorName": "out_side_UVMap_metalness.png",
 		"editorId": "5b5cf307-34d2-4e4f-9fd6-4a2342a2d01e",

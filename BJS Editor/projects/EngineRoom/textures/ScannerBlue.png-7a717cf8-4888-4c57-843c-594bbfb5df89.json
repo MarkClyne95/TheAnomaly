@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "Anomaly Models/Textures/ScannerBlue.png",
+	"url": "EngineRoom/scene/ScannerBlue.png",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -13,7 +13,7 @@
 	"wRotationCenter": 0.5,
 	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"name": "Anomaly Models/Textures/ScannerBlue.png",
+	"name": "EngineRoom/scene/ScannerBlue.png",
 	"metadata": {
 		"editorName": "ScannerBlue.png",
 		"editorId": "7a717cf8-4888-4c57-843c-594bbfb5df89",

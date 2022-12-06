@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "meshes/ship/textures/Railings_texture_UVMap_color.png",
+		"url": "EngineRoom/scene/Railings_texture_UVMap_color.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,7 +20,7 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "meshes/ship/textures/Railings_texture_UVMap_color.png",
+		"name": "EngineRoom/scene/Railings_texture_UVMap_color.png",
 		"metadata": {
 			"editorName": "Railings_texture_UVMap_color.png",
 			"editorId": "42d84557-46e4-41a6-a868-2ca0911e47a8",
@@ -56,7 +56,7 @@
 	"ambientTextureImpactOnAnalyticalLights": 0,
 	"metallicTexture": {
 		"tags": null,
-		"url": "meshes/ship/textures/Railings_texture_UVMap_metalness.png",
+		"url": "EngineRoom/scene/Railings_texture_UVMap_metalness.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -69,7 +69,7 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "meshes/ship/textures/Railings_texture_UVMap_metalness.png",
+		"name": "EngineRoom/scene/Railings_texture_UVMap_metalness.png",
 		"metadata": {
 			"editorName": "Railings_texture_UVMap_metalness.png",
 			"editorId": "a9c5e86e-945d-40c1-936e-0bfaadd2384d",
@@ -111,7 +111,7 @@
 	"useOnlyMetallicFromMetallicReflectanceTexture": false,
 	"microSurfaceTexture": {
 		"tags": null,
-		"url": "meshes/ship/textures/Railings_texures_UVMap_rough.png",
+		"url": "EngineRoom/scene/Railings_texures_UVMap_rough.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -124,7 +124,7 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "meshes/ship/textures/Railings_texures_UVMap_rough.png",
+		"name": "EngineRoom/scene/Railings_texures_UVMap_rough.png",
 		"metadata": {
 			"editorName": "Railings_texures_UVMap_rough.png",
 			"editorId": "85d3eece-b229-4981-ac92-a514992fee40",
@@ -158,7 +158,7 @@
 	},
 	"bumpTexture": {
 		"tags": null,
-		"url": "meshes/ship/textures/Railings_texures_UVMap_nmap.png",
+		"url": "EngineRoom/scene/Railings_texures_UVMap_nmap.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -171,7 +171,7 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "meshes/ship/textures/Railings_texures_UVMap_nmap.png",
+		"name": "EngineRoom/scene/Railings_texures_UVMap_nmap.png",
 		"metadata": {
 			"editorName": "Railings_texures_UVMap_nmap.png",
 			"editorId": "1a1f0c60-7bc7-4eb1-a266-2148b3da45d6",

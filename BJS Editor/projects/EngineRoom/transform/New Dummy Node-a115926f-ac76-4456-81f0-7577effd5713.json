@@ -1,0 +1,52 @@
+{
+	"tags": null,
+	"position": [
+		-15.080588340759277,
+		0.3783426582813263,
+		12.634782791137695
+	],
+	"rotation": [
+		-1.5550081384476984,
+		0.00027337460368421286,
+		1.5130172113099079
+	],
+	"scaling": [
+		0.09999999525430354,
+		0.09999998068098223,
+		0.05049286507764674
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "New Dummy Node",
+	"id": "a115926f-ac76-4456-81f0-7577effd5713",
+	"state": "",
+	"metadata": {
+		"script": {
+			"name": "None"
+		}
+	},
+	"type": "TransformNode",
+	"uniqueId": 187,
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

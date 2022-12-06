@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "meshes/ship/textures/Railings_texture_UVMap_color.png",
+		"url": "EngineRoom/scene/Railings_texture_UVMap_color.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,7 +20,7 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "meshes/ship/textures/Railings_texture_UVMap_color.png",
+		"name": "EngineRoom/scene/Railings_texture_UVMap_color.png",
 		"metadata": {
 			"editorName": "Railings_texture_UVMap_color.png",
 			"editorId": "42d84557-46e4-41a6-a868-2ca0911e47a8",

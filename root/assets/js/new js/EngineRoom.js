@@ -6,6 +6,7 @@ let scene;
 let engine;
 let hemiLight;
 let actionManager;
+let player;
 
 export default class EngineRoom {
     constructor(engine, scene) {
@@ -22,6 +23,16 @@ export default class EngineRoom {
         this.CreateControls(scene, camera);
         this.AppendScene(scene);
 
+        var ray = new BABYLON.Ray();
+        var rayHelper = new BABYLON.RayHelper(ray);
+
+        var localMeshDirection = new BABYLON.Vector3(0, 0, 1);
+        var localMeshOrigin = new BABYLON.Vector3(this.camera.position.x, 1, this.camera.position.z);
+        var length = 50;
+
+        rayHelper.attachToMesh(this.camera, localMeshDirection, localMeshOrigin, length);
+        rayHelper.show(scene);
+
         return scene;
     }
 
@@ -32,7 +43,7 @@ export default class EngineRoom {
             scene
         );
 
-        var player = new Player();
+        player = new Player();
 
         console.log(`${player.name}, ${player.getAnxietyMeter}`);
         camera.speed = 6;
@@ -52,7 +63,6 @@ export default class EngineRoom {
         camera.keysDown.push(83);
         camera.keysRight.push(68);
         camera.keysLeft.push(65);
-
         return camera;
     }
 
@@ -155,16 +165,19 @@ export default class EngineRoom {
                     switch (kbInfo.event.key) {
                         case "Shift":
                             this.camera.speed = 12;
-                            console.log(scanner);
                             break;
 
                         case "e":
                             console.log("Am hit");
-                            let doRaycast = CreateRaycast(scene, camera);
+                            let doRaycast = this.CreateRaycast(scene, camera);
                             break;
                         case "f":
                             setSceneIndex(2);
                             break;
+
+                        case "g":
+                            //scene.debugLayer.show();
+                            player.firstDoorFlag = true;
                     }
                     break;
 
@@ -207,28 +220,24 @@ export default class EngineRoom {
     }
 
     CreateRaycast(scene, camera) {
-        let origin = camera.position;
+        let origin = new BABYLON.Vector3(this.camera.position.x, 10, this.camera.position.z);
 
         let forward = new BABYLON.Vector3(0, 0, 1);
-        forward = vecToLocal(forward, camera);
+        forward = this.VectorToLocal(forward, camera);
 
-        let direction = forward.subtract(origin);
-        direction = BABYLON.Vector3.Normalize(direction);
+        let direction = this.camera.getDirection(new BABYLON.Vector3.Forward());
 
-        let length = 10;
+        let length = 1000;
 
         let ray = new BABYLON.Ray(origin, direction, length);
 
-        let rayHelper = new BABYLON.RayHelper(ray);
-        rayHelper.show(scene);
+        BABYLON.RayHelper.CreateAndShow(ray, scene, new BABYLON.Color3(1, 1, 0.1));
 
         let hit = scene.pickWithRay(ray);
 
-        if (hit.pickedMesh) {
-            if (hit.pickedMesh.name === 'ExitScanner') {
-                hit.pickedMesh.scaling.y += 1;
-                console.log(hit.pickedMesh);
-            }
+        if ((hit.pickedMesh.name === "Scanner" || hit.pickedMesh.name === "ExitScanner" || hit.pickedMesh.name === "BlueScreen" || hit.pickedMesh.name === "RedScreen") && player.firstDoorFlag == true) {
+            setSceneIndex(2);
+            scene.dispose()
         }
     }
 

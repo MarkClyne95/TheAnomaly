@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "EngineRoom/Anomaly Models/glb/Material.001 (Base Color).jpeg",
+	"url": "EngineRoom/scene/Material.001 (Base Color).jpeg",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -13,7 +13,7 @@
 	"wRotationCenter": 0.5,
 	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"name": "EngineRoom/Anomaly Models/glb/Material.001 (Base Color).jpeg",
+	"name": "EngineRoom/scene/Material.001 (Base Color).jpeg",
 	"metadata": {
 		"editorName": "Material.001 (Base Color).jpeg",
 		"editorId": "c9a54ec4-47dd-4c48-a5d9-e1b86df19b30",

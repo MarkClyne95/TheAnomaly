@@ -1,4 +1,6 @@
 import { canvas, setSceneIndex, sceneIndex } from "../createScenes.js";
+import { Player } from '../player.js';
+import LoadSave from './LoadSave.js';
 
 let camera;
 let scene;
@@ -7,6 +9,7 @@ let hemiLight;
 let bgSphere;
 let gui;
 let music;
+let savesys = new LoadSave();
 
 export default class MainMenu {
     constructor(engine, scene) {
@@ -107,8 +110,10 @@ export default class MainMenu {
         beginImg.top = 0;
 
         beginImg.onPointerUpObservable.add(function() {
+            var player = new Player();
+            savesys.SaveGame(player);
             setSceneIndex(1);
-            scene.dispose();
+            advancedTexture.dispose();
         });
         advancedTexture.addControl(beginImg);
 

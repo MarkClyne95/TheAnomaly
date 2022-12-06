@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "meshes/ship/textures/Room_1_Done_UVMap_color_3.png",
+	"url": "EngineRoom/scene/Room_1_Done_UVMap_color_3.png",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -13,7 +13,7 @@
 	"wRotationCenter": 0.5,
 	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"name": "meshes/ship/textures/Room_1_Done_UVMap_color_3.png",
+	"name": "EngineRoom/scene/Room_1_Done_UVMap_color_3.png",
 	"metadata": {
 		"editorName": "Room_1_Done_UVMap_color_3.png",
 		"editorId": "96a5fc26-af80-4ca9-9b9d-8a1246a54991",

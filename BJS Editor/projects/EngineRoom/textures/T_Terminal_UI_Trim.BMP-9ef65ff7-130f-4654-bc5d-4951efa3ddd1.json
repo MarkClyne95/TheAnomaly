@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "meshes/ship/textures/T_Terminal_UI_Trim.BMP",
+	"url": "EngineRoom/scene/T_Terminal_UI_Trim.BMP",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -13,7 +13,7 @@
 	"wRotationCenter": 0.5,
 	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"name": "meshes/ship/textures/T_Terminal_UI_Trim.BMP",
+	"name": "EngineRoom/scene/T_Terminal_UI_Trim.BMP",
 	"metadata": {
 		"editorName": "T_Terminal_UI_Trim.BMP",
 		"editorId": "9ef65ff7-130f-4654-bc5d-4951efa3ddd1",

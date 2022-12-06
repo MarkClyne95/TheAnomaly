@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "EngineRoom/Anomaly Models/Textures/Battery Panel Cover alt.png",
+	"url": "EngineRoom/scene/Battery Panel Cover alt.png",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -13,7 +13,7 @@
 	"wRotationCenter": 0.5,
 	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"name": "EngineRoom/Anomaly Models/Textures/Battery Panel Cover alt.png",
+	"name": "EngineRoom/scene/Battery Panel Cover alt.png",
 	"metadata": {
 		"editorName": "Battery Panel Cover alt.png",
 		"editorId": "818e8bad-ac85-4c07-9a3d-12b64470d9ff",

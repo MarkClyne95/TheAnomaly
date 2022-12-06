@@ -1,0 +1,103 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "__root__",
+			"id": "1c125af9-e4c6-4cb6-867f-39c742170374",
+			"uniqueId": 352,
+			"type": "Mesh",
+			"position": [
+				-53.94417190551758,
+				4.028025150299072,
+				-0.5702102780342102
+			],
+			"rotationQuaternion": [
+				0.38066142018806687,
+				0,
+				0.924714487385379,
+				0
+			],
+			"scaling": [
+				0.9999999868816846,
+				-1,
+				1.0000001554674651
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": false,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": null,
+			"parentId": "5721e119-d4ca-483f-9c8b-6d26b95389dd",
+			"isUnIndexed": false,
+			"materialId": "6693af2b-de2c-4ead-9ac0-857f212c4887",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": -0.7101937532424927,
+					"1": 0,
+					"2": 0.7040061354637146,
+					"3": 0,
+					"4": 0,
+					"5": 1,
+					"6": 0,
+					"7": 0,
+					"8": 0.7040062546730042,
+					"9": 0,
+					"10": 0.7101936340332031,
+					"11": 0,
+					"12": -37.90938186645508,
+					"13": -4.028025150299072,
+					"14": 38.381988525390625,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "f4bf9834-2e71-4100-bf7f-f6af47275762",
+					"name": "__root__",
+					"sceneFileName": "EngineRoom/scene/scene.babylon"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.5,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

@@ -10,7 +10,7 @@ function createCamera(scene) {
         scene
     );
 
-    var player = new Player();
+
 
     console.log(`${player.name}, ${player.getAnxietyMeter}`);
     camera.fov = 0.6;
@@ -132,8 +132,6 @@ function createControls(scene, camera) {
                 switch (kbInfo.event.key) {
                     case "Shift":
                         camera.speed = 12;
-                        console.log(scanner);
-
                         break;
 
                     case "e":

@@ -1,6 +1,6 @@
 {
 	"tags": null,
-	"url": "EngineRoom/Anomaly Models/Textures/Keyboard.png",
+	"url": "EngineRoom/scene/Keyboard.png",
 	"uOffset": 0,
 	"vOffset": 0,
 	"uScale": 1,
@@ -13,7 +13,7 @@
 	"wRotationCenter": 0.5,
 	"homogeneousRotationInUVTransform": false,
 	"isBlocking": true,
-	"name": "EngineRoom/Anomaly Models/Textures/Keyboard.png",
+	"name": "EngineRoom/scene/Keyboard.png",
 	"metadata": {
 		"editorName": "Keyboard.png",
 		"editorId": "aa5d6884-f8cd-4495-97cd-44c5b01f933b",
