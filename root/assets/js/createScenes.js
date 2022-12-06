@@ -1,5 +1,6 @@
-import MainMenu  from "./MainMenu.js";
+import MainMenu from "./MainMenu.js";
 import game from "./game.js";
+import engineCorridor from './engineRoomCorridor.js';
 
 const CanvasName = "renderCanvas";
 
@@ -18,10 +19,10 @@ scenes[0] = MainMenu(engine);
 scenes[1] = game(engine);
 scene = scenes[0].scene;
 
-export function setSceneIndex(i){
+export function setSceneIndex(i) {
     scene = scenes[i].scene;
 }
 
 /*******************************************************
-* ANY NEW SCENES YOU CREATE, REMEMBER TO ADD THEM HERE *
-********************************************************/
+ * ANY NEW SCENES YOU CREATE, REMEMBER TO ADD THEM HERE *
+ ********************************************************/

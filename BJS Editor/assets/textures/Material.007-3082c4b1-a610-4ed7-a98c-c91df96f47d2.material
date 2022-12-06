@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "textures/Room_1_Done_UVMap_color_3.png",
+		"url": "F:/Year 4/TheAnomaly/BJS Editor/assets/textures/Room_1_Done_UVMap_color_3.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -56,7 +56,7 @@
 	"ambientTextureImpactOnAnalyticalLights": 0,
 	"metallicTexture": {
 		"tags": null,
-		"url": "textures/Room_1_Done_UVMap_metalness.png",
+		"url": "F:/Year 4/TheAnomaly/BJS Editor/assets/textures/Room_1_Done_UVMap_metalness.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -111,7 +111,7 @@
 	"useOnlyMetallicFromMetallicReflectanceTexture": false,
 	"microSurfaceTexture": {
 		"tags": null,
-		"url": "textures/Room_1_Done_UVMap_rough.png",
+		"url": "F:/Year 4/TheAnomaly/BJS Editor/assets/textures/Room_1_Done_UVMap_rough.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -158,7 +158,7 @@
 	},
 	"bumpTexture": {
 		"tags": null,
-		"url": "textures/Room_1_Done_UVMap_nmap.png",
+		"url": "F:/Year 4/TheAnomaly/BJS Editor/assets/textures/Room_1_Done_UVMap_nmap.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -318,7 +318,7 @@
 	"checkReadyOnlyOnce": false,
 	"state": "",
 	"alpha": 1,
-	"backFaceCulling": true,
+	"backFaceCulling": false,
 	"cullBackFaces": true,
 	"sideOrientation": 1,
 	"alphaMode": 2,
@@ -345,7 +345,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 806,
+	"uniqueId": 1939,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,
