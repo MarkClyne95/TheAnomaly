@@ -1,4 +1,4 @@
-import { canvas, scene } from "./createScenes.js";
+import { canvas, scene, setSceneIndex } from "./createScenes.js";
 import { Player } from './player.js';
 
 let scanner;
@@ -140,6 +140,10 @@ function createControls(scene, camera) {
                     case "e":
                         console.log("Am hit");
                         let doRaycast = createRaycast(scene, camera);
+                        break;
+                    case "f":
+                        setSceneIndex(2);
+                        scene.dispose();
                         break;
                 }
                 break;

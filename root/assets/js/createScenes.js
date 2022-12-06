@@ -1,6 +1,6 @@
 import MainMenu from "./MainMenu.js";
 import game from "./game.js";
-import engineCorridor from './engineRoomCorridor.js';
+import engineRoomCorridor from './engineRoomCorridor.js';
 
 const CanvasName = "renderCanvas";
 
@@ -17,6 +17,7 @@ export let engine = new BABYLON.Engine(canvas, true, null, true);
 
 scenes[0] = MainMenu(engine);
 scenes[1] = game(engine);
+scenes[2] = engineRoomCorridor(engine);
 scene = scenes[0].scene;
 
 export function setSceneIndex(i) {
