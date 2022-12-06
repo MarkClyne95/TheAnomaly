@@ -47,9 +47,10 @@
 			"receiveShadows": false,
 			"billboardMode": 0,
 			"visibility": 1,
-			"checkCollisions": false,
+			"checkCollisions": true,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
+			"parentId": "1d82641d-33f7-4446-9e28-6b4fb183f87d",
 			"isUnIndexed": false,
 			"geometryId": "7eebc0fe-4503-4775-9a94-00d13f70800c",
 			"subMeshes": null,
@@ -82,7 +83,8 @@
 				"script": {
 					"name": "None"
 				},
-				"renderingGroupId": 0
+				"renderingGroupId": 0,
+				"_waitingParentId": null
 			},
 			"instances": [
 				{
@@ -91,7 +93,7 @@
 					"isEnabled": true,
 					"isVisible": true,
 					"isPickable": true,
-					"checkCollisions": false,
+					"checkCollisions": true,
 					"position": [
 						-6.114073276519775,
 						-0.026560094207525253,
@@ -102,6 +104,7 @@
 						0.1828975953526463,
 						0.3091340661048889
 					],
+					"parentId": "1d82641d-33f7-4446-9e28-6b4fb183f87d",
 					"rotationQuaternion": [
 						0,
 						0,
@@ -113,11 +116,11 @@
 						"script": {
 							"name": "None"
 						},
-						"renderingGroupId": 0
+						"renderingGroupId": 0,
+						"_waitingParentId": null
 					},
 					"animations": [],
-					"ranges": [],
-					"parentId": null
+					"ranges": []
 				}
 			],
 			"animations": [],
@@ -132,17 +135,16 @@
 				0
 			],
 			"applyFog": true,
-			"parentId": null,
 			"delayLoadingFile": "geometries/7eebc0fe-4503-4775-9a94-00d13f70800c.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
-				19.736401081085205,
-				1.4978151191025972,
+				19.736400604248047,
+				1.4978151321411133,
 				8.946266174316406
 			],
 			"boundingBoxMinimum": [
 				-0.348696231842041,
-				-1.4978151451796293,
-				-8.946265578269958
+				-1.4978151321411133,
+				-8.94626522064209
 			],
 			"_binaryInfo": {
 				"positionsAttrDesc": {

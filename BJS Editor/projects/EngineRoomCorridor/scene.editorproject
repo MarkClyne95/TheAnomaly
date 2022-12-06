@@ -28,12 +28,12 @@
 		"T_Wall_A_Diff.BMP-29bebf9d-a1fa-46f3-9d9c-8c0d179426c5.json",
 		"T_Wall_A_M.BMP-f054268a-2743-4f49-be45-78206aa38214.json",
 		"T_Wall_A_N_normals.BMP-7989c7e2-204c-48ae-9aa2-9db5a37907f5.json",
+		"uw.jpg-fce260e5-8678-468a-9b47-09a6ba2025a3.json",
+		"Room_1_Done_UVMap_color_3.png-96a5fc26-af80-4ca9-9b9d-8a1246a54991.json",
+		"Room_1_Done_UVMap_metalness.png-d11771f0-b566-43a5-95b5-a790cd4b1783.json",
+		"Room_1_Done_UVMap_rough.png-bc074e61-ef85-49dd-adf6-31addf4c7080.json",
+		"Room_1_Done_UVMap_nmap.png-63db1238-6263-423b-9bfc-c55d9696392c.json",
 		"Battery Panel Cover alt.png-818e8bad-ac85-4c07-9a3d-12b64470d9ff.json",
-		"Computer Monitor.png-96a1ea14-f3ea-4c7d-8e3b-6df01a6c0e51.json",
-		"Material.003 (Base Color).png-fa4a687c-07cd-4ebe-abfb-454320de4060.json",
-		"Material.001 (Base Color).jpeg-2bfc8432-26d2-4203-ad80-7d043ca26dbc.json",
-		"Material.001 (Metallic Roughness).png-39ff1444-1f70-4d37-9bc4-03e367ffbaeb.json",
-		"Material.001 (Normal).jpeg-beff2878-2e90-41a1-94cc-5529d71f281f.json",
 		"T_Terminal_UI_Trim.BMP-9ef65ff7-130f-4654-bc5d-4951efa3ddd1.json",
 		"Keyboard.png-aa5d6884-f8cd-4495-97cd-44c5b01f933b.json",
 		"ScannerBlue.png-5e17aa19-0fef-4e78-92ff-37912a0edcc4.json",
@@ -42,22 +42,19 @@
 		"T_Terminal_UI_Trim_Blur.BMP-c34716b0-cd3b-4b6e-917d-e98efa0483a8.json",
 		"T_Terminal_UI.BMP-dd7245b0-7b74-4f27-89eb-394de4418256.json",
 		"Railings_texures_UVMap_rough.png-85d3eece-b229-4981-ac92-a514992fee40.json",
-		"Room_1_Done_UVMap_color_3.png-96a5fc26-af80-4ca9-9b9d-8a1246a54991.json",
-		"Room_1_Done_UVMap_metalness.png-d11771f0-b566-43a5-95b5-a790cd4b1783.json",
-		"Room_1_Done_UVMap_rough.png-bc074e61-ef85-49dd-adf6-31addf4c7080.json",
-		"Room_1_Done_UVMap_nmap.png-63db1238-6263-423b-9bfc-c55d9696392c.json",
 		"Panel (Normal).png-57b3b7ac-635b-4273-80cc-fa25ad87a65e.json",
 		"Panel (Base Color).png-44c65a71-e0ed-4e68-a82a-acd3f039a18e.json",
 		"lambert1 (Base Color).png-485802b6-c419-46c9-9793-6eb20bd609a7.json",
-		"lambert1 (Normal).png-0009361c-c015-4b48-8865-1e05f9261b9e.json",
-		"uw.jpg-fce260e5-8678-468a-9b47-09a6ba2025a3.json"
+		"lambert1 (Normal).png-0009361c-c015-4b48-8865-1e05f9261b9e.json"
 	],
 	"meshes": [
 		"New Ground-f6cf7ca7-7adb-4e2f-bb65-3fd9e0abd648.json",
 		"Walls-4e8472ff-f107-4635-8998-da21dcffefda.json",
 		"EntryDoor-43be166e-7d38-45e3-9b3b-51d72b396eba.json"
 	],
-	"transformNodes": [],
+	"transformNodes": [
+		"Environment-1d82641d-33f7-4446-9e28-6b4fb183f87d.json"
+	],
 	"particleSystems": [],
 	"lights": [
 		{
@@ -284,15 +281,15 @@
 			"checkCollisions": false,
 			"applyGravity": false,
 			"rotation": [
-				0.5195364314032946,
-				1.7569756094287525,
+				-0.12516342412606768,
+				1.5642009622383481,
 				0
 			],
 			"speed": 2,
 			"position": [
-				-27.98683176845077,
-				32.346132197646,
-				15.200239314647158
+				4.016893227146425,
+				3.58440782601251,
+				-2.5391612532891887
 			],
 			"upVector": [
 				0,
@@ -314,7 +311,7 @@
 			"metadata": {
 				"detached": false
 			},
-			"uniqueId": 985,
+			"uniqueId": 7,
 			"type": "EditorCamera",
 			"inputsmgr": {
 				"FreeCameraKeyboardMoveInput": {

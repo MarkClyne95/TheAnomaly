@@ -6,7 +6,7 @@ let scanner;
 function createCamera(scene) {
     var camera = new BABYLON.FreeCamera(
         "FreeCamera",
-        new BABYLON.Vector3(33, 10, -2),
+        new BABYLON.Vector3(0, 10, 0),
         scene
     );
 
@@ -16,6 +16,8 @@ function createCamera(scene) {
     camera.fov = 0.6;
     camera.inertia = 0.0;
     camera.attachControl(canvas, true);
+
+    camera.speed = 6;
 
     //Set the ellipsoid around the camera (e.g. your player's size)
     camera.ellipsoid = new BABYLON.Vector3(1, 4, 1);
@@ -79,7 +81,6 @@ function appendScene(scene) {
                     BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0, restitution: 0.9 },
                     scene
                 );
-                console.log(item.name);
                 item.receiveShadows = true;
             });
         }

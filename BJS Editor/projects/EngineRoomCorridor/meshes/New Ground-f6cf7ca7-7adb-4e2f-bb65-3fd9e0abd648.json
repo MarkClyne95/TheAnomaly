@@ -49,6 +49,7 @@
 			"checkCollisions": true,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
+			"parentId": "1d82641d-33f7-4446-9e28-6b4fb183f87d",
 			"isUnIndexed": false,
 			"geometryId": "73501a7c-fb15-4186-aa5d-9946d1240b5e",
 			"subMeshes": null,
@@ -58,43 +59,10 @@
 				"script": {
 					"name": "None"
 				},
-				"renderingGroupId": 0
+				"renderingGroupId": 0,
+				"_waitingParentId": null
 			},
-			"instances": [
-				{
-					"name": "New Ground (Mesh Instance)",
-					"id": "5430db47-9cbe-479a-b191-dc6c1213d777",
-					"isEnabled": false,
-					"isVisible": true,
-					"isPickable": true,
-					"checkCollisions": true,
-					"position": [
-						12.124777793884277,
-						5.1887664794921875,
-						-2.35799503326416
-					],
-					"scaling": [
-						0.06156855449080467,
-						0.06156855449080467,
-						0.09821117669343948
-					],
-					"rotation": [
-						0,
-						1.5707963267948963,
-						0
-					],
-					"metadata": {
-						"isPickable": false,
-						"script": {
-							"name": "None"
-						},
-						"renderingGroupId": 0
-					},
-					"animations": [],
-					"ranges": [],
-					"parentId": null
-				}
-			],
+			"instances": [],
 			"animations": [],
 			"ranges": [],
 			"layerMask": 268435455,
@@ -115,7 +83,6 @@
 			"maxZ": 256,
 			"width": 512,
 			"height": 512,
-			"parentId": null,
 			"delayLoadingFile": "geometries/73501a7c-fb15-4186-aa5d-9946d1240b5e.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				256,

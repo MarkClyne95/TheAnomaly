@@ -44,7 +44,8 @@
 	"metadata": {
 		"script": {
 			"name": "None"
-		}
+		},
+		"_waitingParentId": null
 	},
 	"uniqueId": 4223,
 	"type": 1,

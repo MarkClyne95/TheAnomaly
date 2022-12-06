@@ -260,7 +260,7 @@
 	"enableSpecularAntiAliasing": false,
 	"useHorizonOcclusion": true,
 	"useRadianceOcclusion": true,
-	"unlit": false,
+	"unlit": true,
 	"_imageProcessingConfiguration": {
 		"tags": null,
 		"colorCurves": {

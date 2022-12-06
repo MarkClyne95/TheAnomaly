@@ -143,7 +143,7 @@ function createControls(scene, camera) {
                         break;
                     case "f":
                         setSceneIndex(2);
-                        scene.dispose();
+                        camera.dispose();
                         break;
                 }
                 break;

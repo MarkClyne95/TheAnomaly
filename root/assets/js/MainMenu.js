@@ -83,7 +83,7 @@ function createGUI(scene) {
 
     beginImg.onPointerUpObservable.add(function() {
         setSceneIndex(1);
-        scene.dispose();
+        advancedTexture.dispose();
     });
     advancedTexture.addControl(beginImg);
 

@@ -15,7 +15,11 @@
 	"isBlocking": true,
 	"name": "EngineRoom/Anomaly Models/glb/uw.jpg",
 	"metadata": {
-		"editorId": "fce260e5-8678-468a-9b47-09a6ba2025a3"
+		"editorId": "fce260e5-8678-468a-9b47-09a6ba2025a3",
+		"ktx2CompressedTextures": {
+			"isUsingCompressedTexture": false
+		},
+		"editorName": "uw.jpg"
 	},
 	"hasAlpha": false,
 	"getAlphaFromRGB": false,
