@@ -9,6 +9,8 @@ let hemiLight;
 let bgSphere;
 let gui;
 let music;
+let selectSFX;
+
 let savesys = new LoadSave();
 
 export default class MainMenu {
@@ -23,8 +25,12 @@ export default class MainMenu {
         this.camera = this.CreateCamera(scene);
         this.hemiLight = this.CreateLighting(scene);
         this.bgSphere = this.CreateBG(scene);
+
+        selectSFX = new BABYLON.Sound("select", "./audio/SelectNoise.mp3", scene);
+        selectSFX.setVolume(1);
+
         this.music = this.CreateMusic(scene);
-        this.gui = this.CreateGUI(scene)
+        this.gui = this.CreateGUI(scene, music);
 
         return scene;
     }
@@ -81,7 +87,7 @@ export default class MainMenu {
         return sphere;
     }
 
-    CreateGUI(scene) {
+    CreateGUI(scene, music) {
         let advancedTexture =
             BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI", true);
 
@@ -109,11 +115,16 @@ export default class MainMenu {
         beginImg.height = 0.125;
         beginImg.top = 0;
 
+        beginImg.onPointerEnterObservable.add(function() {
+            selectSFX.play();
+        });
         beginImg.onPointerUpObservable.add(function() {
+            music.dispose();
             var player = new Player();
             savesys.SaveGame(player);
             setSceneIndex(1);
             advancedTexture.dispose();
+
         });
         advancedTexture.addControl(beginImg);
 
@@ -125,14 +136,17 @@ export default class MainMenu {
         settingsImg.height = 0.125;
         settingsImg.top = 150;
 
-        settingsImg.onPointerUpObservable.add(function() {
-            alert("I am totally a settings screen");
+        settingsImg.onPointerEnterObservable.add(function() {
+            selectSFX.play();
+            //alert("I am totally a settings screen");
         });
         advancedTexture.addControl(settingsImg);
     }
 
+    
+
     CreateMusic(scene) {
-        var music = new BABYLON.Sound("Music", "./audio/e s c p - - Cyber Crime Story.mp3", scene, null, {
+        music = new BABYLON.Sound("Music", "./audio/e s c p - - Cyber Crime Story.mp3", scene, null, {
             loop: true,
             autoplay: true
         });
