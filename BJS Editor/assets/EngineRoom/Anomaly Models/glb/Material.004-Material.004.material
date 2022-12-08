@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "EngineRoom/Anomaly Models/Textures/Battery Panel Cover alt.png",
+		"url": "F:/Year 4/TheAnomaly/BJS Editor/assets/EngineRoom/Anomaly Models/Textures/Battery Panel Cover alt.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -144,6 +144,7 @@
 		"_colorGradingBGR": true,
 		"_exposure": 1,
 		"_toneMappingEnabled": false,
+		"_toneMappingType": 0,
 		"_contrast": 1,
 		"vignetteStretch": 0,
 		"vignetteCentreX": 0,
@@ -210,7 +211,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 1528,
+	"uniqueId": 814,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,

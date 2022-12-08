@@ -1,0 +1,159 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "Scanner",
+			"id": "c9c86e02-6664-4e6f-82cc-c6d54a6b9c03",
+			"uniqueId": 83,
+			"type": "Mesh",
+			"position": [
+				0,
+				0.026862144470214844,
+				0
+			],
+			"rotationQuaternion": [
+				4.329779768222591e-17,
+				0.7071067811865476,
+				-0.7071067811865475,
+				4.3297783644505983e-17
+			],
+			"scaling": [
+				1.3665440082550049,
+				0.36441174149513245,
+				2.277573347091675
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": false,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": 0,
+			"parentId": "490361a2-e261-4c00-8173-9258280b076b",
+			"isUnIndexed": false,
+			"geometryId": "6b953d31-6757-479b-a1aa-8af3b453b64b",
+			"subMeshes": null,
+			"materialId": "f7cf0220-e204-4bd1-838a-08027762fdda",
+			"metadata": {
+				"gltf": {
+					"pointers": [
+						"/meshes/2/primitives/0",
+						"/nodes/2"
+					]
+				},
+				"basePoseMatrix": {
+					"0": -0.7317730188369751,
+					"1": 3.360611953258705e-16,
+					"2": -8.716441263870858e-24,
+					"3": 0,
+					"4": 1.452740210645143e-23,
+					"5": 6.093234208818664e-16,
+					"6": -0.43906378746032715,
+					"7": 0,
+					"8": -8.961632404752139e-17,
+					"9": -2.7441487312316895,
+					"10": -9.749174522351626e-17,
+					"11": 0,
+					"12": -3.9023716386119046e-25,
+					"13": -1.636773380049708e-17,
+					"14": 0.011794195510447025,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "fa047a7b-a015-4719-8799-a5b60948f99f",
+					"name": "Scanner",
+					"sceneFileName": "EngineRoomCorridor/scene.babylon"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/6b953d31-6757-479b-a1aa-8af3b453b64b.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				0.5,
+				0.5,
+				0.49999988079071045
+			],
+			"boundingBoxMinimum": [
+				-0.5,
+				-0.5,
+				-0.5000000596046448
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 390,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 390,
+					"stride": 3,
+					"offset": 1560,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 260,
+					"stride": 2,
+					"offset": 3120,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 348,
+					"stride": 1,
+					"offset": 4160,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 5552,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

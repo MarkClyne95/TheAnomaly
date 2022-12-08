@@ -1,13 +1,16 @@
-import { Player } from '../player.js';
-import { canvas, setSceneIndex, sceneIndex } from "../createScenes.js";
+import { canvas, setSceneIndex } from "../createScenes.js";
+import LoadSave from './LoadSave.js';
 
 let camera;
+let player;
 let scene;
 let engine;
 let hemiLight;
 let actionManager;
+let panelCover = true;
+let scannerFixed = false;
 
-export default class EngineRoom {
+export class EngineRoomCorridor {
     constructor(engine, scene) {
         this.scene = scene;
         this.engine = engine;
@@ -21,18 +24,19 @@ export default class EngineRoom {
         this.CreateActionManager(scene);
         this.CreateControls(scene, camera);
         this.AppendScene(scene);
-
         return scene;
     }
 
     CreateCamera(scene) {
         var camera = new BABYLON.FreeCamera(
             "FreeCamera",
-            new BABYLON.Vector3(0, 10, 0),
+            new BABYLON.Vector3(80, 10, -6),
             scene
         );
 
-        var player = new Player();
+        let ls = new LoadSave();
+
+        player = ls.LoadGame();
 
         console.log(`${player.name}, ${player.getAnxietyMeter}`);
         camera.speed = 6;
@@ -206,29 +210,36 @@ export default class EngineRoom {
     }
 
     CreateRaycast(scene, camera) {
-        let origin = this.camera.position;
+        let origin = new BABYLON.Vector3(
+            this.camera.position.x,
+            10,
+            this.camera.position.z
+        );
 
         let forward = new BABYLON.Vector3(0, 0, 1);
         forward = this.VectorToLocal(forward, camera);
 
-        let direction = forward.subtract(origin);
-        direction = BABYLON.Vector3.Normalize(direction);
+        let direction = this.camera.getDirection(new BABYLON.Vector3.Forward());
 
         let length = 10;
 
         let ray = new BABYLON.Ray(origin, direction, length);
 
-        let rayHelper = new BABYLON.RayHelper(ray);
-        rayHelper.show(scene);
+        BABYLON.RayHelper.CreateAndShow(ray, scene, new BABYLON.Color3(1, 1, 0.1));
 
         let hit = scene.pickWithRay(ray);
 
-        if (hit.pickedMesh) {
-            hit.pickedMesh.scaling.y += 1;
-            console.log(hit.pickedMesh);
+        if (
+            (hit.pickedMesh.name === "Scanner" ||
+                hit.pickedMesh.name === "ExitScanner" ||
+                hit.pickedMesh.name === "BlueScreen" ||
+                hit.pickedMesh.name === "RedScreen") &&
+            player.firstDoorFlag == true
+        ) {
+            setSceneIndex(2);
+            scene.dispose();
         }
     }
 
     SceneStart() {}
-
 }

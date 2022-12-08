@@ -1,9 +1,11 @@
 //import guiScene  from "./guiScene.js";
 import { scenes, scene, engine, setSceneIndex, sceneIndex } from "./createScenes.js";
-import EngineRoom from "./new js/EngineRoom.js";
-import EngineRoomCorridor from "./new js/EngineRoomCorridor.js";
-import MainMenu from "./new js/MainMenu.js";
-import HUD  from "./HUD.js";
+import { EngineRoom } from "./new js/EngineRoom.js";
+import { EngineRoomCorridor } from "./new js/EngineRoomCorridor.js";
+import { MainMenu } from "./new js/MainMenu.js";
+import HUD from "./HUD.js";
+import { PreEngineRoomCorridor } from "./new js/PreEngineRoomCorridor.js";
+import PlayVideo from "./new js/PlayVideo.js";
 
 //setSceneIndex(0);
 
@@ -11,14 +13,21 @@ import HUD  from "./HUD.js";
 let engineRoom = new EngineRoom(engine, scene);
 let engineRoomScene = engineRoom.CreateScene(engine);
 
+let playVideo = new PlayVideo(engine, scene);
+let play = playVideo.createScene("../../../root/assets/scenes/opening_cutscene_first_draft.mp4", engine, scene);
+
 let mainMenu = new MainMenu(engine, scene);
 let mainMenuScene = mainMenu.CreateScene(engine);
 
 let engineRoomCorridor = new EngineRoomCorridor(engine, scene);
 let engineRoomCorridorScene = engineRoomCorridor.CreateScene(engine);
 
+let preEngineRoomCorridor = new PreEngineRoomCorridor(engine, scene);
+let preEngineRoomCorridorScene = preEngineRoomCorridor.CreateScene(engine);
+
 let hud = new HUD(engine, scene);
 let hudScene = hud.CreateScene(engine);
+
 //let gui = guiScene(engine);
 hudScene.autoClear = false;
 engine.runRenderLoop(() => {
@@ -27,11 +36,17 @@ engine.runRenderLoop(() => {
             mainMenuScene.render();
             break;
         case 1:
+            play.render();
+            break;
+        case 2:
+            preEngineRoomCorridorScene.render();
+            hudScene.render();
+            break;
+        case 3:
             engineRoomScene.render();
             hudScene.render();
             break;
-
-        case 2:
+        case 4:
             engineRoomCorridorScene.render();
             hudScene.render();
             break;

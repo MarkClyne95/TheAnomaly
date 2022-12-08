@@ -1,8 +1,4 @@
-import MainMenu from "./MainMenu.js";
-import game from "./game.js";
-import engineRoomCorridor from './engineRoomCorridor.js';
-import EngineRoom from "./new js/EngineRoom.js";
-import {engineRoomText, engineRoomCorridorText} from "./HUD.js";
+import { engineRoomText, engineRoomCorridorText } from "./HUD.js";
 
 const CanvasName = "renderCanvas";
 
@@ -21,7 +17,7 @@ export let engine = new BABYLON.Engine(canvas, true, null, true);
 
 export function setSceneIndex(index) {
     sceneIndex = index;
-    switch (sceneIndex){
+    switch (sceneIndex) {
         case 1:
             engineRoomText();
             break;

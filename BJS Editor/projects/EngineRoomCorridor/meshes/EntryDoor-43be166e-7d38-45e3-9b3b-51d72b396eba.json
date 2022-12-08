@@ -83,8 +83,7 @@
 				"script": {
 					"name": "None"
 				},
-				"renderingGroupId": 0,
-				"_waitingParentId": null
+				"renderingGroupId": 0
 			},
 			"instances": [
 				{
@@ -95,13 +94,13 @@
 					"isPickable": true,
 					"checkCollisions": true,
 					"position": [
-						-6.114073276519775,
-						-0.026560094207525253,
-						-2.239161729812622
+						-6.114073753356934,
+						-0.19015198945999146,
+						-2.239161968231201
 					],
 					"scaling": [
-						0.25547999306734376,
-						0.1828975953526463,
+						0.25547999143600464,
+						0.18289761245250702,
 						0.3091340661048889
 					],
 					"parentId": "1d82641d-33f7-4446-9e28-6b4fb183f87d",
@@ -116,8 +115,7 @@
 						"script": {
 							"name": "None"
 						},
-						"renderingGroupId": 0,
-						"_waitingParentId": null
+						"renderingGroupId": 0
 					},
 					"animations": [],
 					"ranges": []

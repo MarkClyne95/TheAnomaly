@@ -1,19 +1,22 @@
-let name = "";
+let name = "David";
 let batteryCount = 0;
 let anxietyMeter = 0;
 let oxygenMeter = 0;
 let firstDoorFlag = false;
 let secondDoorFlag = false;
+let hasMultitool = false;
 
 
 export class Player {
-    constructor() {
+
+    constructor(bcount, ameter, ometer, fdflag, sdflag, hasMt) {
         this.name = "David";
-        this.batteryCount = 0;
-        this.anxietyMeter = 0;
-        this.oxygenMeter = 0;
-        this.firstDoorFlag = false;
-        this.secondDoorFlag = false;
+        this.batteryCount = bcount;
+        this.anxietyMeter = ameter;
+        this.oxygenMeter = ometer;
+        this.firstDoorFlag = fdflag;
+        this.secondDoorFlag = sdflag;
+        this.hasMultitool = hasMt;
     }
 
     //#region getting and setting data properties

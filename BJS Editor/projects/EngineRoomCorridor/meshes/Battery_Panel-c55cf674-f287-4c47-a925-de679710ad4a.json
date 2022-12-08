@@ -1,0 +1,159 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "Battery_Panel",
+			"id": "c55cf674-f287-4c47-a925-de679710ad4a",
+			"uniqueId": 805,
+			"type": "Mesh",
+			"position": [
+				0,
+				0.02499999850988388,
+				0
+			],
+			"rotationQuaternion": [
+				0.7071068286895752,
+				0,
+				0,
+				0.7071067094802856
+			],
+			"scaling": [
+				5,
+				3,
+				4
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": false,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": 0,
+			"parentId": "db248fee-d9ed-479f-98a0-55c752834410",
+			"isUnIndexed": false,
+			"geometryId": "9b74a847-a7ce-401a-828b-c78d118833f1",
+			"subMeshes": null,
+			"materialId": "default material",
+			"metadata": {
+				"gltf": {
+					"pointers": [
+						"/meshes/0/primitives/0",
+						"/nodes/0"
+					]
+				},
+				"basePoseMatrix": {
+					"0": -0.20000000298023224,
+					"1": 0,
+					"2": 0,
+					"3": 0,
+					"4": 0,
+					"5": -4.478628667925477e-8,
+					"6": -0.25,
+					"7": 0,
+					"8": 0,
+					"9": 0.3333333432674408,
+					"10": -3.358971767397634e-8,
+					"11": 0,
+					"12": 0,
+					"13": 1.1196571447769088e-9,
+					"14": 0.0062500000931322575,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "Battery_Panel",
+					"name": "Battery_Panel",
+					"sceneFileName": "EngineRoom/Anomaly Models/glb/Battery Panel.glb"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/9b74a847-a7ce-401a-828b-c78d118833f1.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				0.5,
+				0.5,
+				0.5
+			],
+			"boundingBoxMinimum": [
+				-0.5,
+				-0.5,
+				-0.5
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 480,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 480,
+					"stride": 3,
+					"offset": 1920,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 320,
+					"stride": 2,
+					"offset": 3840,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 420,
+					"stride": 1,
+					"offset": 5120,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 6800,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

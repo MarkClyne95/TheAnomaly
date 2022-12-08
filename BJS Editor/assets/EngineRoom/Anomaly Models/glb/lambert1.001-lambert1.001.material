@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "EngineRoom/Anomaly Models/glb/lambert1.001 (Base Color).png",
+		"url": "EngineRoom/Anomaly Models/Textures/Scanner.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,17 +20,10 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "EngineRoom/Anomaly Models/glb/lambert1.001 (Base Color).png",
+		"name": "EngineRoom/Anomaly Models/Textures/Scanner.png",
 		"metadata": {
-			"gltf": {
-				"pointers": [
-					"/materials/0/pbrMetallicRoughness/baseColorTexture"
-				],
-				"editorDone": true
-			},
-			"editorDone": true,
-			"editorName": "lambert1.001 (Base Color).png",
-			"editorId": "f6f4171f-3b05-4120-99f0-71f8e2707767",
+			"editorName": "Scanner.png",
+			"editorId": "9299d419-812a-4afc-8eca-0e37c90b376f",
 			"ktx2CompressedTextures": {
 				"isUsingCompressedTexture": false
 			}
@@ -55,9 +48,9 @@
 		"linearSpecularLOD": false,
 		"isRenderTarget": false,
 		"animations": [],
-		"invertY": false,
+		"invertY": true,
 		"samplingMode": 3,
-		"_useSRGBBuffer": true
+		"_useSRGBBuffer": false
 	},
 	"ambientTextureStrength": 1,
 	"ambientTextureImpactOnAnalyticalLights": 0,
@@ -205,6 +198,7 @@
 		"_colorGradingBGR": true,
 		"_exposure": 1,
 		"_toneMappingEnabled": false,
+		"_toneMappingType": 0,
 		"_contrast": 1,
 		"vignetteStretch": 0,
 		"vignetteCentreX": 0,
@@ -271,7 +265,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 1314,
+	"uniqueId": 652,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,

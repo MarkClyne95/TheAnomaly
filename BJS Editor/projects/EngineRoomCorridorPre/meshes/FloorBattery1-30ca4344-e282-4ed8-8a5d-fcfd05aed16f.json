@@ -1,0 +1,103 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "FloorBattery1",
+			"id": "30ca4344-e282-4ed8-8a5d-fcfd05aed16f",
+			"uniqueId": 120,
+			"type": "Mesh",
+			"position": [
+				33.23163604736328,
+				0.333862841129303,
+				-1.3028112649917603
+			],
+			"rotationQuaternion": [
+				0.7071067811865475,
+				0.7071067811865476,
+				4.3297917002913107e-17,
+				4.3297687720020165e-17
+			],
+			"scaling": [
+				0.4000000059604645,
+				0.6000000238418579,
+				0.4000000059604645
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": true,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": false,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": null,
+			"parentId": "28cdc84a-79c4-4d9f-8fc5-30a614536e84",
+			"isUnIndexed": false,
+			"materialId": "f7cf0220-e204-4bd1-838a-08027762fdda",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": -5.551115123125783e-16,
+					"1": 1.6666666269302368,
+					"2": 3.0616169991140216e-16,
+					"3": 0,
+					"4": 2.5,
+					"5": 3.70074332718459e-16,
+					"6": 8.106374546858485e-22,
+					"7": 0,
+					"8": 8.106374546858485e-22,
+					"9": 2.0410778229441504e-16,
+					"10": -2.5,
+					"11": 0,
+					"12": -0.8346570730209351,
+					"13": -55.38605880737305,
+					"14": -3.257028102874756,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "4d93866a-7fc2-4cee-9f4b-72c749bcc952",
+					"name": "FloorBattery1",
+					"sceneFileName": "EngineRoomCorridor/scene.babylon"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.5,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

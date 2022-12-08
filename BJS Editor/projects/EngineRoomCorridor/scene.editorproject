@@ -19,9 +19,47 @@
 		{
 			"isMultiMaterial": false,
 			"bindedMeshes": [
-				"f6cf7ca7-7adb-4e2f-bb65-3fd9e0abd648"
+				"f6cf7ca7-7adb-4e2f-bb65-3fd9e0abd648",
+				"7a98a717-576a-457c-823c-4033a3726121"
 			],
 			"json": "textures/Material.007-3082c4b1-a610-4ed7-a98c-c91df96f47d2.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"478d7126-3131-47e0-9f5f-dc3abb477022"
+			],
+			"json": "EngineRoom/pipes/Material!09 - Default-2090374712736.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"2f8af23b-a952-4b40-9166-4740d28f724c"
+			],
+			"json": "EngineRoom/Material!Scifi_Box_01-585052544.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"0acd5f99-9f9e-4440-bf31-c4cfa8424f3a"
+			],
+			"json": "EngineRoom/Anomaly Models/glb/lambert1.001-lambert1.001.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"a25d5101-8e8c-4f72-a8e3-bcc30958ec00"
+			],
+			"json": "EngineRoom/Anomaly Models/glb/Material.004-Material.004.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"ce476cb7-d822-4ecc-bd06-8e2c6e8af6ea",
+				"a8411b17-fa15-425b-baa4-89363f25af72",
+				"27d3b240-c9ad-400e-87ea-bb3bbb097d69"
+			],
+			"json": "EngineRoom/Anomaly Models/glb/lambert1-lambert1.material"
 		}
 	],
 	"textures": [
@@ -33,7 +71,16 @@
 		"Room_1_Done_UVMap_metalness.png-d11771f0-b566-43a5-95b5-a790cd4b1783.json",
 		"Room_1_Done_UVMap_rough.png-bc074e61-ef85-49dd-adf6-31addf4c7080.json",
 		"Room_1_Done_UVMap_nmap.png-63db1238-6263-423b-9bfc-c55d9696392c.json",
+		"Metal_D_04.jpg-2bdf9f60-1da3-40b1-90d7-5f79fdfc6536.json",
+		"Rust_D_01.jpg-5ad79888-8025-4849-bb09-292ead7a0ad8.json",
+		"Dirt_02.jpg-a6d730e1-3cc9-4e7e-b45c-eebb63b135d2.json",
+		"Scifi_Box_01_D.png-03bd2222-0984-4600-bd02-afdbed42a968.json",
+		"Scifi_Box_01_N.png-f45f721f-f959-4f0b-9d82-b14247e59283.json",
+		"Scanner.png-9299d419-812a-4afc-8eca-0e37c90b376f.json",
+		"lambert1.001 (Normal).png-85917479-52bd-4388-baf8-d06aec09fa5c.json",
 		"Battery Panel Cover alt.png-818e8bad-ac85-4c07-9a3d-12b64470d9ff.json",
+		"BatteryGreen.png-2f62de7a-9161-4010-adf6-905cec1ba23a.json",
+		"lambert1 (Normal).png-0009361c-c015-4b48-8865-1e05f9261b9e.json",
 		"T_Terminal_UI_Trim.BMP-9ef65ff7-130f-4654-bc5d-4951efa3ddd1.json",
 		"Keyboard.png-aa5d6884-f8cd-4495-97cd-44c5b01f933b.json",
 		"ScannerBlue.png-5e17aa19-0fef-4e78-92ff-37912a0edcc4.json",
@@ -45,15 +92,51 @@
 		"Panel (Normal).png-57b3b7ac-635b-4273-80cc-fa25ad87a65e.json",
 		"Panel (Base Color).png-44c65a71-e0ed-4e68-a82a-acd3f039a18e.json",
 		"lambert1 (Base Color).png-485802b6-c419-46c9-9793-6eb20bd609a7.json",
-		"lambert1 (Normal).png-0009361c-c015-4b48-8865-1e05f9261b9e.json"
+		"lambert1.001 (Base Color).png-f6f4171f-3b05-4120-99f0-71f8e2707767.json",
+		"Panel alt.png-9ea94069-ba14-4b2b-aa34-4418464eb434.json",
+		"Material.002 (Base Color).png-57f0cb16-9f8d-48b9-9c59-b0838acc91ef.json",
+		"Battery Panel Cover.png-16256760-d26d-46e1-b2e8-efb45e930d03.json",
+		"Material.001 (Base Color).jpeg-2bfc8432-26d2-4203-ad80-7d043ca26dbc.json",
+		"Material.001 (Metallic Roughness).png-39ff1444-1f70-4d37-9bc4-03e367ffbaeb.json",
+		"Material.001 (Normal).jpeg-beff2878-2e90-41a1-94cc-5529d71f281f.json",
+		"Material.003 (Base Color).png-fa4a687c-07cd-4ebe-abfb-454320de4060.json",
+		"Computer Monitor.png-96a1ea14-f3ea-4c7d-8e3b-6df01a6c0e51.json",
+		"Material.001 (Base Color).jpeg-8295db53-1de1-4535-ad71-13f359f93986.json",
+		"Material.003 (Base Color).png-6945950f-7a41-426f-a30d-9abd925344c0.json"
 	],
 	"meshes": [
 		"New Ground-f6cf7ca7-7adb-4e2f-bb65-3fd9e0abd648.json",
 		"Walls-4e8472ff-f107-4635-8998-da21dcffefda.json",
-		"EntryDoor-43be166e-7d38-45e3-9b3b-51d72b396eba.json"
+		"Model!S_12-478d7126-3131-47e0-9f5f-dc3abb477022.json",
+		"Model!Scifi_Box_01-2f8af23b-a952-4b40-9166-4740d28f724c.json",
+		"Multitool-98e0d0cc-2ad5-4e27-9463-fbb1dc8ed358.json",
+		"MTBox-cadae0da-c99e-44e8-bf5c-1fb5763c1030.json",
+		"Antennna-1d92da90-8d9a-4e73-b544-69ac2fa7c6f1.json",
+		"Button-0acd5f99-9f9e-4440-bf31-c4cfa8424f3a.json",
+		"Screen-6f5f656a-7de0-4399-ac9c-a637646a9833.json",
+		"BatteryBox-db248fee-d9ed-479f-98a0-55c752834410.json",
+		"Battery_Panel-c55cf674-f287-4c47-a925-de679710ad4a.json",
+		"Battery_Panel_cover-2eeb499f-aeb8-44a9-b8cf-71778a885852.json",
+		"Plane-a25d5101-8e8c-4f72-a8e3-bcc30958ec00.json",
+		"InsertedBatter1-2e90538c-e112-4053-9359-b908a657cbad.json",
+		"b2-ce476cb7-d822-4ecc-bd06-8e2c6e8af6ea.json",
+		"FloorBattery1-4d93866a-7fc2-4cee-9f4b-72c749bcc952.json",
+		"BatteryBase-a8411b17-fa15-425b-baa4-89363f25af72.json",
+		"New Cube-7a98a717-576a-457c-823c-4033a3726121.json",
+		"FloorBattery2-22258a52-4673-414b-be3e-6a0d52e87421.json",
+		"BatteryBase-27d3b240-c9ad-400e-87ea-bb3bbb097d69.json",
+		"EntryDoor-43be166e-7d38-45e3-9b3b-51d72b396eba.json",
+		"__root__-1a942707-1c5e-4b7c-92b5-62624065d4ed.json",
+		"Scanner-89bf00e5-58b0-43cb-83c0-15ff20c46302.json",
+		"HydroponicsScreen-e4f32ace-d9a0-4eca-8a45-0348d4859248.json",
+		"__root__-6adb7f82-3d18-4ea9-b313-77113837b0eb.json",
+		"Scanner-fa047a7b-a015-4719-8799-a5b60948f99f.json",
+		"EngineScreen-ab249f42-3cdd-4cce-8f24-9317c9028e6d.json",
+		"ClosedScreen-b6561b04-e58b-4056-b0c9-9d7918193a8b.json"
 	],
 	"transformNodes": [
-		"Environment-1d82641d-33f7-4446-9e28-6b4fb183f87d.json"
+		"Environment-1d82641d-33f7-4446-9e28-6b4fb183f87d.json",
+		"Sci-Fi Parts Kit Pack  vol 01 Free.fbx-ea4a7c2b-03bc-40ea-82cb-3e33e396af10.json"
 	],
 	"particleSystems": [],
 	"lights": [
@@ -281,15 +364,15 @@
 			"checkCollisions": false,
 			"applyGravity": false,
 			"rotation": [
-				-0.12516342412606768,
-				1.5642009622383481,
+				0.5854153780115596,
+				-9.523389426645812,
 				0
 			],
 			"speed": 2,
 			"position": [
-				4.016893227146425,
-				3.58440782601251,
-				-2.5391612532891887
+				-4.774459598575575,
+				11.493619374006265,
+				-7.595801911588996
 			],
 			"upVector": [
 				0,

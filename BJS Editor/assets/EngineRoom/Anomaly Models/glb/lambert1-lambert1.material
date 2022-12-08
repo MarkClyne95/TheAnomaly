@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "EngineRoom/Anomaly Models/glb/lambert1 (Base Color).png",
+		"url": "EngineRoom/Anomaly Models/Textures/BatteryGreen.png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -20,20 +20,13 @@
 		"wRotationCenter": 0.5,
 		"homogeneousRotationInUVTransform": false,
 		"isBlocking": true,
-		"name": "EngineRoom/Anomaly Models/glb/lambert1 (Base Color).png",
+		"name": "EngineRoom/Anomaly Models/Textures/BatteryGreen.png",
 		"metadata": {
-			"gltf": {
-				"pointers": [
-					"/materials/2/pbrMetallicRoughness/baseColorTexture"
-				],
-				"editorDone": true
-			},
-			"editorDone": true,
+			"editorName": "BatteryGreen.png",
+			"editorId": "2f62de7a-9161-4010-adf6-905cec1ba23a",
 			"ktx2CompressedTextures": {
 				"isUsingCompressedTexture": false
-			},
-			"editorName": "lambert1 (Base Color).png",
-			"editorId": "485802b6-c419-46c9-9793-6eb20bd609a7"
+			}
 		},
 		"hasAlpha": false,
 		"getAlphaFromRGB": false,
@@ -57,7 +50,7 @@
 		"animations": [],
 		"invertY": false,
 		"samplingMode": 3,
-		"_useSRGBBuffer": true
+		"_useSRGBBuffer": false
 	},
 	"ambientTextureStrength": 1,
 	"ambientTextureImpactOnAnalyticalLights": 0,
@@ -72,7 +65,7 @@
 	"useOnlyMetallicFromMetallicReflectanceTexture": false,
 	"bumpTexture": {
 		"tags": null,
-		"url": "EngineRoom/Anomaly Models/glb/lambert1 (Normal).png",
+		"url": "F:/Year 4/TheAnomaly/BJS Editor/assets/EngineRoom/Anomaly Models/glb/lambert1 (Normal).png",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -205,6 +198,7 @@
 		"_colorGradingBGR": true,
 		"_exposure": 1,
 		"_toneMappingEnabled": false,
+		"_toneMappingType": 0,
 		"_contrast": 1,
 		"vignetteStretch": 0,
 		"vignetteCentreX": 0,
@@ -271,7 +265,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 2846,
+	"uniqueId": 903,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,

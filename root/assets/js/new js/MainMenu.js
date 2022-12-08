@@ -13,7 +13,7 @@ let selectSFX;
 
 let savesys = new LoadSave();
 
-export default class MainMenu {
+export class MainMenu {
     constructor(engine, scene) {
         this.scene = scene;
         this.engine = engine;
@@ -120,7 +120,7 @@ export default class MainMenu {
         });
         beginImg.onPointerUpObservable.add(function() {
             music.dispose();
-            var player = new Player();
+            var player = new Player(0, 0, 0, false, false);
             savesys.SaveGame(player);
             setSceneIndex(1);
             advancedTexture.dispose();
@@ -143,7 +143,7 @@ export default class MainMenu {
         advancedTexture.addControl(settingsImg);
     }
 
-    
+
 
     CreateMusic(scene) {
         music = new BABYLON.Sound("Music", "./audio/e s c p - - Cyber Crime Story.mp3", scene, null, {

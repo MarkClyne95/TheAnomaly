@@ -1,0 +1,596 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "Model::S_12",
+			"id": "478d7126-3131-47e0-9f5f-dc3abb477022",
+			"uniqueId": 95,
+			"type": "Mesh",
+			"position": [
+				49.677490234375,
+				31.7199764251709,
+				18.695816040039062
+			],
+			"rotationQuaternion": [
+				-0.7071067811865475,
+				0,
+				0,
+				0.7071067811865476
+			],
+			"scaling": [
+				1,
+				1,
+				1
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": true,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": null,
+			"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+			"isUnIndexed": false,
+			"geometryId": "8f8082ec-e53c-4f45-a185-ae50a51d7b5f",
+			"subMeshes": null,
+			"materialId": "f8671540-a107-464f-883c-7c870c9a8aa9",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": 1,
+					"1": 0,
+					"2": 0,
+					"3": 0,
+					"4": 0,
+					"5": 1,
+					"6": 0,
+					"7": 0,
+					"8": 0,
+					"9": 0,
+					"10": 1,
+					"11": 0,
+					"12": 0,
+					"13": 0,
+					"14": 0,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "Model::S_12",
+					"name": "Model::S_12",
+					"sceneFileName": "EngineRoom/pipes/Sci-Fi Parts Kit Pack  vol 01 Free.fbx"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "1ab9be2c-21c1-4995-9875-7eedbcd3e526",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						7.507063865661621,
+						31.57097625732422,
+						18.695816040039062
+					],
+					"scaling": [
+						0.9999999403953552,
+						0.9999999403953552,
+						1
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-4.3297804701086715e-17,
+						0.7071067811865476,
+						0.7071067811865475,
+						4.329780470108673e-17
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "21613d05-49c6-408f-986c-4f44750c7b04",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						49.677581787109375,
+						31.7199764251709,
+						69.01795959472656
+					],
+					"scaling": [
+						1.0000000000000036,
+						1,
+						1.0000000000000036
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-0.7071067811865487,
+						-2.998902408406036e-8,
+						3.0272648882991166e-8,
+						0.707106781186545
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "206f2cd5-edfd-4154-8d8b-93bd10919cd3",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						7.507063865661621,
+						31.57097625732422,
+						68.91577911376953
+					],
+					"scaling": [
+						0.9999999403953569,
+						0.9999998807907104,
+						1.0000000000000016
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						2.04540140272308e-8,
+						0.7071067811865471,
+						0.7071067811865472,
+						1.853616803099068e-8
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "7566db92-c880-40b0-b031-a8244da5c2ec",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						7.507066249847412,
+						31.57097625732422,
+						110.44084167480469
+					],
+					"scaling": [
+						0.9999999403953553,
+						0.9999998807907104,
+						1
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-3.664174974536692e-9,
+						0.7071067811865475,
+						0.7071067811865476,
+						-5.58202222685078e-9
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "9e3895d9-e509-4de0-bd3a-ee89b9be353d",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						48.24278259277344,
+						31.7199764251709,
+						110.37860870361328
+					],
+					"scaling": [
+						1.0000000000000178,
+						1,
+						1.0000000000000178
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-0.7071067811865496,
+						-6.692363037949218e-8,
+						6.720725517842296e-8,
+						0.7071067811865392
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "4e647f1e-d238-43fe-89aa-556704733e20",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						47.738067626953125,
+						31.7199764251709,
+						167.76922607421875
+					],
+					"scaling": [
+						1.0000000000000573,
+						1,
+						1.0000000000000573
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-0.7071067811865489,
+						-1.1512080003414896e-7,
+						1.240698666975376e-7,
+						0.7071067811865259
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "72c6db76-121a-4573-83f2-79a518d6e485",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						48.23773956298828,
+						31.7199764251709,
+						209.19207763671875
+					],
+					"scaling": [
+						1.000000000000074,
+						1.0000000000000002,
+						1.0000000000000737
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-0.7071067811865495,
+						-1.267925502133276e-7,
+						1.4483531229291808e-7,
+						0.7071067811865196
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "b94cb6a3-d2d3-4aeb-adc8-acd8700b6baf",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						46.724220275878906,
+						31.7199764251709,
+						269.80120849609375
+					],
+					"scaling": [
+						1.000000000000101,
+						1,
+						1.000000000000101
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-0.707106781186551,
+						-1.5926076787468557e-7,
+						1.5954438262502463e-7,
+						0.7071067811865083
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "2b4d218d-df5e-4067-96da-19d2d94a6a55",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						46.72428894042969,
+						31.7199764251709,
+						312.9466247558594
+					],
+					"scaling": [
+						1.0000000000001341,
+						1,
+						1.0000000000001341
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-0.7071067811865521,
+						-1.8356024226388106e-7,
+						1.838438469656284e-7,
+						0.7071067811864954
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "78e6a38c-4825-4fc6-a951-375b3d5c0ac0",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						5.727417945861816,
+						31.57097625732422,
+						167.83261108398438
+					],
+					"scaling": [
+						0.9999999403953576,
+						0.9999999403953554,
+						1.000000000000002
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-1.4906737279201397e-8,
+						0.707106781186547,
+						0.7071067811865474,
+						-3.0084944800583185e-8
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "31e756ac-fe22-4a0a-8327-13db788842a2",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						5.968707084655762,
+						31.57097625732422,
+						209.12803649902344
+					],
+					"scaling": [
+						0.9999999403953591,
+						0.9999999403953564,
+						1.0000000000000024
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						-8.05933860160439e-9,
+						0.7071067811865469,
+						0.7071067811865468,
+						-4.299286080236958e-8
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "0751359d-7e3e-4e9a-809c-eb75f11b391e",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						7.5071234703063965,
+						31.57097625732422,
+						269.7529602050781
+					],
+					"scaling": [
+						0.9999999403953553,
+						0.9999998807907104,
+						1
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						6.490744325144697e-9,
+						0.7071067811865476,
+						0.7071067811865475,
+						4.572896758812117e-9
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "Model::S_12 (Mesh Instance)",
+					"id": "f0d345e4-4b23-48fc-8441-f753523a5082",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						7.5071539878845215,
+						31.57097625732422,
+						312.95159912109375
+					],
+					"scaling": [
+						0.9999999403953583,
+						0.9999998807907104,
+						1.0000000000000029
+					],
+					"parentId": "ea4a7c2b-03bc-40ea-82cb-3e33e396af10",
+					"rotationQuaternion": [
+						2.8070237366923548e-8,
+						0.707106781186547,
+						0.7071067811865471,
+						2.6152395138905332e-8
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
+				}
+			],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/8f8082ec-e53c-4f45-a185-ae50a51d7b5f.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				30.429887771606445,
+				3.563114643096924,
+				24.153337478637695
+			],
+			"boundingBoxMinimum": [
+				-30.42987632751465,
+				-3.563114643096924,
+				-24.153337478637695
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 122256,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 122256,
+					"stride": 3,
+					"offset": 489024,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 81504,
+					"stride": 2,
+					"offset": 978048,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 40752,
+					"stride": 1,
+					"offset": 1304064,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 1467072,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}
