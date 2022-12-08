@@ -22,8 +22,8 @@
 		0
 	],
 	"albedo": [
-		1,
-		1,
+		0,
+		0,
 		1
 	],
 	"reflectivity": [
@@ -73,7 +73,7 @@
 	"enableSpecularAntiAliasing": true,
 	"useHorizonOcclusion": true,
 	"useRadianceOcclusion": true,
-	"unlit": false,
+	"unlit": true,
 	"_imageProcessingConfiguration": {
 		"tags": null,
 		"colorCurves": {
@@ -159,7 +159,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 1895,
+	"uniqueId": 160,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,

@@ -4,7 +4,6 @@ import { EngineRoom } from "./new js/EngineRoom.js";
 import { EngineRoomCorridor } from "./new js/EngineRoomCorridor.js";
 import { MainMenu } from "./new js/MainMenu.js";
 import HUD from "./HUD.js";
-import { PreEngineRoomCorridor } from "./new js/PreEngineRoomCorridor.js";
 import PlayVideo from "./new js/PlayVideo.js";
 
 //setSceneIndex(0);
@@ -22,9 +21,6 @@ let mainMenuScene = mainMenu.CreateScene(engine);
 let engineRoomCorridor = new EngineRoomCorridor(engine, scene);
 let engineRoomCorridorScene = engineRoomCorridor.CreateScene(engine);
 
-let preEngineRoomCorridor = new PreEngineRoomCorridor(engine, scene);
-let preEngineRoomCorridorScene = preEngineRoomCorridor.CreateScene(engine);
-
 let hud = new HUD(engine, scene);
 let hudScene = hud.CreateScene(engine);
 
@@ -39,14 +35,10 @@ engine.runRenderLoop(() => {
             play.render();
             break;
         case 2:
-            preEngineRoomCorridorScene.render();
-            hudScene.render();
-            break;
-        case 3:
             engineRoomScene.render();
             hudScene.render();
             break;
-        case 4:
+        case 3:
             engineRoomCorridorScene.render();
             hudScene.render();
             break;

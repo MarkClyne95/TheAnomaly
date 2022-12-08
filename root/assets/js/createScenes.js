@@ -18,10 +18,10 @@ export let engine = new BABYLON.Engine(canvas, true, null, true);
 export function setSceneIndex(index) {
     sceneIndex = index;
     switch (sceneIndex) {
-        case 1:
+        case 2:
             engineRoomText();
             break;
-        case 2:
+        case 3:
             engineRoomCorridorText();
             break;
     }

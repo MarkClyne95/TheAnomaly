@@ -76,7 +76,12 @@
 					"name": "__root__",
 					"sceneFileName": "EngineRoom/Anomaly Models/glb/Scanner.glb"
 				},
-				"isPickable": false
+				"isPickable": false,
+				"_waitingParentId": null,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
 			},
 			"instances": [],
 			"animations": [],

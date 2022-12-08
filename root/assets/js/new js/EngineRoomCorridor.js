@@ -1,4 +1,5 @@
 import { canvas, setSceneIndex } from "../createScenes.js";
+import { UpdateBatteryCount } from "../HUD.js";
 import LoadSave from './LoadSave.js';
 
 let camera;
@@ -9,6 +10,8 @@ let hemiLight;
 let actionManager;
 let panelCover = true;
 let scannerFixed = false;
+let secondDoorFlag = false;
+let sound;
 
 export class EngineRoomCorridor {
     constructor(engine, scene) {
@@ -24,6 +27,11 @@ export class EngineRoomCorridor {
         this.CreateActionManager(scene);
         this.CreateControls(scene, camera);
         this.AppendScene(scene);
+
+        sound = new BABYLON.Sound("zap", "../../../../root/assets/audio/Zap.mp3", scene, null, {
+            loop: false,
+            autoplay: false
+        });
         return scene;
     }
 
@@ -165,9 +173,6 @@ export class EngineRoomCorridor {
                             console.log("Am hit");
                             let doRaycast = this.CreateRaycast(scene, camera);
                             break;
-                        case "f":
-                            setSceneIndex(2);
-                            break;
                     }
                     break;
 
@@ -212,7 +217,7 @@ export class EngineRoomCorridor {
     CreateRaycast(scene, camera) {
         let origin = new BABYLON.Vector3(
             this.camera.position.x,
-            10,
+            this.camera.position.y,
             this.camera.position.z
         );
 
@@ -221,7 +226,7 @@ export class EngineRoomCorridor {
 
         let direction = this.camera.getDirection(new BABYLON.Vector3.Forward());
 
-        let length = 10;
+        let length = 1000;
 
         let ray = new BABYLON.Ray(origin, direction, length);
 
@@ -229,15 +234,54 @@ export class EngineRoomCorridor {
 
         let hit = scene.pickWithRay(ray);
 
-        if (
-            (hit.pickedMesh.name === "Scanner" ||
-                hit.pickedMesh.name === "ExitScanner" ||
-                hit.pickedMesh.name === "BlueScreen" ||
-                hit.pickedMesh.name === "RedScreen") &&
-            player.firstDoorFlag == true
-        ) {
-            setSceneIndex(2);
-            scene.dispose();
+        console.log(hit.position);
+
+        switch (hit.pickedMesh.name) {
+            case "BatteryBase":
+                console.log(hit.pickedMesh.name);
+                hit.pickedMesh.dispose();
+                player.batteryCount = parseInt(player.batteryCount) + 1;
+                UpdateBatteryCount(player.batteryCount);
+                console.log(player.batteryCount);
+                break;
+
+            case "Battery_Panel_cover":
+                console.log(hit.pickedMesh.name);
+                if (player.batteryCount == 2)
+                    hit.pickedMesh.dispose();
+                this.panelCover = false;
+                break;
+
+            case "Battery_Panel":
+                console.log(hit.pickedMesh.name);
+                if (this.panelCover == false ** this.scannerFixed == false) {
+                    sound.play();
+                    player.batteryCount -= parseInt(player.batteryCount);
+                    UpdateBatteryCount(player.batteryCount);
+                    this.screenFixed = true;
+                }
+                break;
+
+            case "MTBox":
+                console.log(hit.pickedMesh.name);
+                hit.pickedMesh.dispose();
+                break;
+
+            case "ClosedScreen":
+                console.log(hit.pickedMesh.name);
+                if (this.panelCover == false && this.screenFixed == true) {
+                    hit.pickedMesh.material.albedoColor = new BABYLON.Color3.FromHexString("#0000FF");
+                    this.secondDoorFlag = true;
+
+                    setTimeout(() => {
+                        location.reload();
+                    }, 1000);
+                }
+                break;
+
+            case "EngineScreen":
+                console.log(hit.pickedMesh.name);
+                break;
         }
     }
 

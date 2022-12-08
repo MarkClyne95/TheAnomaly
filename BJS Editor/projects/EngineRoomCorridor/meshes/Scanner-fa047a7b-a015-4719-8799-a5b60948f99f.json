@@ -54,7 +54,7 @@
 			"isUnIndexed": false,
 			"geometryId": "6e60bc34-9ead-4053-909b-1a7dcd8fef81",
 			"subMeshes": null,
-			"materialId": "e0469f9f-9cf7-426a-aa25-108bc2620702",
+			"materialId": "default material",
 			"metadata": {
 				"gltf": {
 					"pointers": [

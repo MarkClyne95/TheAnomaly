@@ -35,7 +35,7 @@ export default class PlayVideo {
             ANote0Video.material = ANote0VideoMat;
             ANote0VideoVidTex.video.play();
             setTimeout(() => {
-                setSceneIndex(3);
+                setSceneIndex(2);
                 ANote0VideoVidTex.dispose();
             }, 20000)
             scene.onPointerDown = null;

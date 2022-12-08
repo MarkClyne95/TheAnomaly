@@ -6,6 +6,7 @@ let scene;
 let engine;
 let hemiLight;
 let actionManager;
+let firstDoorFlag = false;
 let player;
 
 export class EngineRoom {
@@ -23,24 +24,7 @@ export class EngineRoom {
         this.CreateControls(scene, camera);
         this.AppendScene(scene);
 
-        var ray = new BABYLON.Ray();
-        var rayHelper = new BABYLON.RayHelper(ray);
-
-        var localMeshDirection = new BABYLON.Vector3(0, 0, 1);
-        var localMeshOrigin = new BABYLON.Vector3(
-            this.camera.position.x,
-            1,
-            this.camera.position.z
-        );
-        var length = 50;
-
-        rayHelper.attachToMesh(
-            this.camera,
-            localMeshDirection,
-            localMeshOrigin,
-            length
-        );
-        rayHelper.show(scene);
+        console.log(player.firstDoorFlag);
 
         return scene;
     }
@@ -179,12 +163,6 @@ export class EngineRoom {
                             console.log("Am hit");
                             let doRaycast = this.CreateRaycast(scene, camera);
                             break;
-                        case "f":
-                            setSceneIndex(2);
-                            break;
-                        case "g":
-                            //scene.debugLayer.show();
-                            player.firstDoorFlag = true;
                     }
                     break;
 
@@ -231,9 +209,14 @@ export class EngineRoom {
 
         let ray = new BABYLON.Ray(origin, direction, length);
 
-        BABYLON.RayHelper.CreateAndShow(ray, scene, new BABYLON.Color3(1, 1, 0.1));
-
         let hit = scene.pickWithRay(ray);
+
+        console.log(hit.pickedMesh.name);
+
+        if (hit.pickedMesh.name == "Model::SM_Terminal_A") {
+            player.firstDoorFlag = true;
+            console.log(player.firstDoorFlag);
+        }
 
         if (
             (hit.pickedMesh.name === "Scanner" ||
@@ -245,6 +228,8 @@ export class EngineRoom {
             setSceneIndex(3);
             scene.dispose();
         }
+
+
     }
 
     SceneStart() {}
