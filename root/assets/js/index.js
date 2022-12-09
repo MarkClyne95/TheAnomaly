@@ -1,5 +1,5 @@
 //import guiScene  from "./guiScene.js";
-import { scenes, scene, engine, setSceneIndex, sceneIndex } from "./createScenes.js";
+import { scenes, scene, engine, setSceneIndex, sceneIndex, play } from "./createScenes.js";
 import { EngineRoom } from "./new js/EngineRoom.js";
 import { EngineRoomCorridor } from "./new js/EngineRoomCorridor.js";
 import { MainMenu } from "./new js/MainMenu.js";
@@ -11,9 +11,6 @@ import PlayVideo from "./new js/PlayVideo.js";
 
 let engineRoom = new EngineRoom(engine, scene);
 let engineRoomScene = engineRoom.CreateScene(engine);
-
-let playVideo = new PlayVideo(engine, scene);
-let play = playVideo.createScene("../../../root/assets/scenes/opening_cutscene_first_draft.mp4", engine, scene);
 
 let mainMenu = new MainMenu(engine, scene);
 let mainMenuScene = mainMenu.CreateScene(engine);
@@ -41,6 +38,9 @@ engine.runRenderLoop(() => {
         case 3:
             engineRoomCorridorScene.render();
             hudScene.render();
+            break;
+        case 4:
+            play.render();
             break;
     }
     //gui.render();

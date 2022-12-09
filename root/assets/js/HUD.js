@@ -6,6 +6,7 @@ let hasMultitool;
 let textbox;
 let textbox2;
 let textbox3;
+let textbox4;
 let advancedTexture;
 
 export function engineRoomText() {
@@ -39,6 +40,12 @@ export function UpdateBatteryCount(amount) {
     textbox3.text = `x${amount}`;
     textbox3.fontSize = 24;
     advancedTexture.addControl(textbox3);
+}
+
+export function ChangeOnscreenText(text, enabled) {
+    textbox4.text = text;
+    textbox4.fontSize = 46;
+    advancedTexture.addControl(textbox4);
 }
 
 export default class HUD {
@@ -79,7 +86,7 @@ export default class HUD {
         //battery
         battery = new BABYLON.GUI.Image(
             "greenBat",
-            "../../../BJS Editor/scenes/EngineRoom/textures/Battery.png"
+            "../../../root/assets/texture/Battery.png"
         );
         battery.width = "100px";
         battery.height = "100px";
@@ -104,6 +111,13 @@ export default class HUD {
         textbox3.left = 350;
         textbox3.top = -400;
 
+        textbox4 = new BABYLON.GUI.TextBlock();
+        textbox4.color = "green";
+        textbox4.outlineWidth = 5;
+        textbox4.outlineColor = "black";
+        textbox4.left = 0;
+        textbox4.top = 100;
+
         //multitool
         hasMultitool = new BABYLON.GUI.Image("mt", "../../../root/assets/texture/Multitool.png");
         hasMultitool.width = "100px";
@@ -123,7 +137,7 @@ export default class HUD {
         //crosshair
         crosschair = new BABYLON.GUI.Image(
             "b1",
-            "../../../BJS Editor/scenes/EngineRoom/textures/pngfind.com-crosshair-dot-png-5191877.png"
+            "../../../root/assets/texture/pngfind.com-crosshair-dot-png-5191877.png"
         );
         //crosschair.image.stretch = BABYLON.GUI.Image.STRETCH_UNIFORM;
         crosschair.width = "48px";

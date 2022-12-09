@@ -1,6 +1,7 @@
-import { canvas, setSceneIndex } from "../createScenes.js";
-import { UpdateBatteryCount } from "../HUD.js";
+import { canvas, setSceneIndex, ResetPlay, play } from "../createScenes.js";
+import { ChangeOnscreenText, UpdateBatteryCount } from "../HUD.js";
 import LoadSave from './LoadSave.js';
+import PlayVideo from "./PlayVideo.js";
 
 let camera;
 let player;
@@ -12,6 +13,11 @@ let panelCover = true;
 let scannerFixed = false;
 let secondDoorFlag = false;
 let sound;
+let newScene;
+let createdScene;
+let restartScene = false;
+let music;
+let played = false;
 
 export class EngineRoomCorridor {
     constructor(engine, scene) {
@@ -27,6 +33,15 @@ export class EngineRoomCorridor {
         this.CreateActionManager(scene);
         this.CreateControls(scene, camera);
         this.AppendScene(scene);
+        this.music = this.CreateMusic(scene);
+
+        scene.registerAfterRender(() => {
+            this.CheckItem(scene, camera);
+            if (!played) {
+                played = true;
+                this.music.play();
+            }
+        })
 
         sound = new BABYLON.Sound("zap", "../../../../root/assets/audio/Zap.mp3", scene, null, {
             loop: false,
@@ -185,18 +200,6 @@ export class EngineRoomCorridor {
                     break;
             }
         });
-        var advancedTexture =
-            BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("Ui");
-        var crosschair = BABYLON.GUI.Button.CreateImageOnlyButton(
-            "b1",
-            "../../../BJS Editor/scenes/EngineRoom/textures/pngfind.com-crosshair-dot-png-5191877.png"
-        );
-        crosschair.image.stretch = BABYLON.GUI.Image.STRETCH_UNIFORM;
-        crosschair.width = "48px";
-        crosschair.height = "48px";
-        crosschair.color = "transparent";
-        advancedTexture.addControl(crosschair);
-
         // Attach events to the document
         document.addEventListener("pointerlockchange", pointerlockchange, false);
         document.addEventListener("mspointerlockchange", pointerlockchange, false);
@@ -230,8 +233,6 @@ export class EngineRoomCorridor {
 
         let ray = new BABYLON.Ray(origin, direction, length);
 
-        BABYLON.RayHelper.CreateAndShow(ray, scene, new BABYLON.Color3(1, 1, 0.1));
-
         let hit = scene.pickWithRay(ray);
 
         console.log(hit.position);
@@ -241,14 +242,18 @@ export class EngineRoomCorridor {
                 console.log(hit.pickedMesh.name);
                 hit.pickedMesh.dispose();
                 player.batteryCount = parseInt(player.batteryCount) + 1;
+                hit.pickedMesh.dispose();
                 UpdateBatteryCount(player.batteryCount);
                 console.log(player.batteryCount);
                 break;
 
             case "Battery_Panel_cover":
                 console.log(hit.pickedMesh.name);
-                if (player.batteryCount == 2)
+                if (player.batteryCount == 2) {
+                    sound.play();
                     hit.pickedMesh.dispose();
+                }
+
                 this.panelCover = false;
                 break;
 
@@ -272,10 +277,12 @@ export class EngineRoomCorridor {
                 if (this.panelCover == false && this.screenFixed == true) {
                     hit.pickedMesh.material.albedoColor = new BABYLON.Color3.FromHexString("#0000FF");
                     this.secondDoorFlag = true;
-
-                    setTimeout(() => {
-                        location.reload();
-                    }, 1000);
+                    ResetPlay();
+                    if (play.isReady()) {
+                        setTimeout(() => {
+                            location.href = "../../../../root/pages/index.html";
+                        }, 1000);
+                    }
                 }
                 break;
 
@@ -283,7 +290,85 @@ export class EngineRoomCorridor {
                 console.log(hit.pickedMesh.name);
                 break;
         }
+
+
     }
+
+    CheckItem(scene, camera) {
+        let origin = new BABYLON.Vector3(
+            this.camera.position.x,
+            this.camera.position.y,
+            this.camera.position.z
+        );
+
+        let forward = new BABYLON.Vector3(0, 0, 1);
+        forward = this.VectorToLocal(forward, camera);
+
+        let direction = this.camera.getDirection(new BABYLON.Vector3.Forward());
+
+        let length = 1000;
+
+        let ray = new BABYLON.Ray(origin, direction, length);
+
+        let hit = scene.pickWithRay(ray);
+
+        switch (hit.pickedMesh.name) {
+            case "BatteryBase":
+                console.log(hit.pickedMesh.name);
+                ChangeOnscreenText("Press E to Pick up battery", true);
+                break;
+
+            case "Battery_Panel_cover":
+                console.log(hit.pickedMesh.name);
+                if (player.batteryCount == 2, true) {
+                    ChangeOnscreenText("Press E to Remove Panel");
+                }
+
+                break;
+
+            case "Battery_Panel":
+                if (this.panelCover == false ** this.scannerFixed == false) {
+                    ChangeOnscreenText("Press E to Zap with multitool", true);
+                }
+                break;
+
+            case "MTBox":
+                console.log(hit.pickedMesh.name);
+                break;
+
+            case "ClosedScreen":
+                console.log(hit.pickedMesh.name);
+                if (this.panelCover == false && this.screenFixed == true) {
+                    ChangeOnscreenText("Press E to Proceed", true);
+                }
+                break;
+
+            case "EngineScreen":
+                console.log(hit.pickedMesh.name);
+                break;
+
+            default:
+                ChangeOnscreenText("", false);
+
+        }
+
+
+
+
+
+    }
+
+    CreateMusic(scene) {
+        music = new BABYLON.Sound("Music", "./audio/reverse.mp3", scene, null, {
+            loop: true,
+            autoplay: false
+        });
+
+        music.setVolume(.1);
+        return music
+    }
+
+
 
     SceneStart() {}
 }

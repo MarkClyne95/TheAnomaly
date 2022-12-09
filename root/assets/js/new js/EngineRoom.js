@@ -1,4 +1,5 @@
 import { Player } from "../player.js";
+import { ChangeOnscreenText } from "../HUD.js";
 import { canvas, setSceneIndex, sceneIndex } from "../createScenes.js";
 
 let camera;
@@ -8,6 +9,9 @@ let hemiLight;
 let actionManager;
 let firstDoorFlag = false;
 let player;
+let sound;
+let music;
+let played = false;
 
 export class EngineRoom {
     constructor(engine, scene) {
@@ -23,8 +27,20 @@ export class EngineRoom {
         this.CreateActionManager(scene);
         this.CreateControls(scene, camera);
         this.AppendScene(scene);
+        this.music = this.CreateMusic(scene);
 
-        console.log(player.firstDoorFlag);
+        sound = new BABYLON.Sound("zap", "../../../../root/assets/audio/Zap.mp3", scene, null, {
+            loop: false,
+            autoplay: false
+        });
+
+        scene.registerAfterRender(() => {
+            this.CheckItem(scene, camera);
+            if (!played) {
+                played = true;
+                this.music.play();
+            }
+        })
 
         return scene;
     }
@@ -38,7 +54,6 @@ export class EngineRoom {
 
         player = new Player(0, 0, 0, false, false);
 
-        console.log(`${player.name}, ${player.getAnxietyMeter}`);
         camera.speed = 6;
         camera.fov = 0.6;
         camera.inertia = 0.0;
@@ -214,6 +229,7 @@ export class EngineRoom {
         console.log(hit.pickedMesh.name);
 
         if (hit.pickedMesh.name == "Model::SM_Terminal_A") {
+            sound.play();
             player.firstDoorFlag = true;
             console.log(player.firstDoorFlag);
         }
@@ -225,11 +241,58 @@ export class EngineRoom {
                 hit.pickedMesh.name === "RedScreen") &&
             player.firstDoorFlag == true
         ) {
+            this.music.dispose();
+            sound.play();
             setSceneIndex(3);
             scene.dispose();
         }
 
 
+    }
+
+    CheckItem(scene, camera) {
+        let origin = new BABYLON.Vector3(
+            this.camera.position.x,
+            this.camera.position.y,
+            this.camera.position.z
+        );
+
+        let forward = new BABYLON.Vector3(0, 0, 1);
+        forward = this.VectorToLocal(forward, camera);
+
+        let direction = this.camera.getDirection(new BABYLON.Vector3.Forward());
+
+        let length = 1000;
+
+        let ray = new BABYLON.Ray(origin, direction, length);
+
+        let hit = scene.pickWithRay(ray);
+
+        switch (hit.pickedMesh.name) {
+            case "Scanner":
+            case "ExitScanner":
+            case "BlueScreen":
+            case "RedScreen":
+                ChangeOnscreenText("Press E to Proceed", true);
+                break;
+            case "Model::SM_Terminal_A":
+                ChangeOnscreenText("Press E to fix the engines", true);
+                break;
+
+            default:
+                ChangeOnscreenText("", true);
+        }
+
+    }
+
+    CreateMusic(scene) {
+        music = new BABYLON.Sound("Music", "./audio/e s c p - - Cyber Crime Storydp.mp3", scene, null, {
+            loop: true,
+            autoplay: false
+        });
+
+        music.setVolume(.1);
+        return music
     }
 
     SceneStart() {}
