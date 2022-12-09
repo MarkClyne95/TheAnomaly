@@ -130,7 +130,7 @@ export default class HUD {
         let HUDMt = new BABYLON.GUI.Image('playerMtSprite', "../../../root/assets/texture/HUDMultitool.png");
         HUDMt.width = "350px";
         HUDMt.height = "400px";
-        HUDMt.top = 550;
+        HUDMt.top = 450;
         HUDMt.color = "transparent";
         advancedTexture.addControl(HUDMt);
 

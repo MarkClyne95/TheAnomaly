@@ -92,7 +92,7 @@ export class MainMenu {
         );
         beginImg.width = 0.4;
         beginImg.height = 0.125;
-        beginImg.top = 0;
+        beginImg.top = 100;
 
         beginImg.onPointerEnterObservable.add(function() {
             selectSFX.play();
@@ -108,25 +108,12 @@ export class MainMenu {
         });
         advancedTexture.addControl(beginImg);
 
-        let settingsImg = new BABYLON.GUI.Image(
-            "Settings",
-            "./texture/Settings.png"
-        );
-        settingsImg.width = 0.4;
-        settingsImg.height = 0.125;
-        settingsImg.top = 150;
-
-        settingsImg.onPointerEnterObservable.add(function() {
-            selectSFX.play();
-            //alert("I am totally a settings screen");
-        });
-        advancedTexture.addControl(settingsImg);
     }
 
 
 
     CreateMusic(scene) {
-        music = new BABYLON.Sound("Music", "./audio/e s c p - - Cyber Crime Story.mp3", scene, null, {
+        music = new BABYLON.Sound("Music", "./audio/reverse.mp3", scene, null, {
             loop: true,
             autoplay: true
         });
