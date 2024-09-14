@@ -107,7 +107,7 @@ export class EngineRoom {
 
     AppendScene(scene) {
         BABYLON.SceneLoader.Append(
-            "../../../root/assets/scenes/",
+            "../scenes/",
             "scene.babylon",
             scene,
             (newMeshes) => {
