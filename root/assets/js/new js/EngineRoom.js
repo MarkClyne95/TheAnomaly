@@ -29,7 +29,7 @@ export class EngineRoom {
         this.AppendScene(scene);
         this.music = this.CreateMusic(scene);
 
-        sound = new BABYLON.Sound("zap", "../../../../root/assets/audio/Zap.mp3", scene, null, {
+        sound = new BABYLON.Sound("zap", "./audio/Zap.mp3", scene, null, {
             loop: false,
             autoplay: false
         });
@@ -107,7 +107,7 @@ export class EngineRoom {
 
     AppendScene(scene) {
         BABYLON.SceneLoader.Append(
-            "../scenes/",
+            "./scenes/",
             "scene.babylon",
             scene,
             (newMeshes) => {
