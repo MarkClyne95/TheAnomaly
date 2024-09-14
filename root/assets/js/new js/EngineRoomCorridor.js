@@ -43,7 +43,7 @@ export class EngineRoomCorridor {
             }
         })
 
-        sound = new BABYLON.Sound("zap", "../../../../root/assets/audio/Zap.mp3", scene, null, {
+        sound = new BABYLON.Sound("zap", "./audio/Zap.mp3", scene, null, {
             loop: false,
             autoplay: false
         });
