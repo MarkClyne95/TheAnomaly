@@ -55,7 +55,7 @@ export class MainMenu {
         var skybox = BABYLON.MeshBuilder.CreateSphere("skyBox", { diameter: 100, sideOrientation: 2 }, scene);
         var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
         //skyboxMaterial.backFaceCulling = false;
-        skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("../../../../root/assets/texture/Standard-Cube-Map/", scene);
+        skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("./texture/Standard-Cube-Map/", scene);
         skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
         skyboxMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
         skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
