@@ -280,7 +280,7 @@ export class EngineRoomCorridor {
                     ResetPlay();
                     if (play.isReady()) {
                         setTimeout(() => {
-                            location.href = "../../../../root/pages/index.html";
+                            location.href = "./index.html";
                         }, 1000);
                     }
                 }
