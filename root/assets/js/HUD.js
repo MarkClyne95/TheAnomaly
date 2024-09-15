@@ -12,7 +12,7 @@ let advancedTexture;
 export function engineRoomText() {
     textbox = new BABYLON.GUI.Image(
         "Text",
-        "../../../root/assets/texture/EngineRoom.png"
+        "./texture/EngineRoom.png"
     );
     textbox.width = "400px";
     textbox.height = "100px";
@@ -26,7 +26,7 @@ export function engineRoomCorridorText() {
     textbox.dispose();
     textbox2 = new BABYLON.GUI.Image(
         "Text",
-        "../../../root/assets/texture/EngineRoomCorridor.png"
+        "./texture/EngineRoomCorridor.png"
     );
     textbox2.width = "400px";
     textbox2.height = "150px";
@@ -86,7 +86,7 @@ export default class HUD {
         //battery
         battery = new BABYLON.GUI.Image(
             "greenBat",
-            "../../../root/assets/texture/Battery.png"
+            "./texture/Battery.png"
         );
         battery.width = "100px";
         battery.height = "100px";
@@ -95,7 +95,7 @@ export default class HUD {
         battery.color = "transparent";
         advancedTexture.addControl(battery);
 
-        batteryCount = new BABYLON.GUI.Image("battery", "../../../root/assets/texture/BatteryIndicator.png");
+        batteryCount = new BABYLON.GUI.Image("battery", "./texture/BatteryIndicator.png");
 
         batteryCount.width = "100px";
         batteryCount.height = "100px";
@@ -119,7 +119,7 @@ export default class HUD {
         textbox4.top = 100;
 
         //multitool
-        hasMultitool = new BABYLON.GUI.Image("mt", "../../../root/assets/texture/Multitool.png");
+        hasMultitool = new BABYLON.GUI.Image("mt", "./texture/Multitool.png");
         hasMultitool.width = "100px";
         hasMultitool.height = "100px";
         hasMultitool.top = -400;
@@ -127,7 +127,7 @@ export default class HUD {
         hasMultitool.color = "transparent";
         advancedTexture.addControl(hasMultitool);
 
-        let HUDMt = new BABYLON.GUI.Image('playerMtSprite', "../../../root/assets/texture/HUDMultitool.png");
+        let HUDMt = new BABYLON.GUI.Image('playerMtSprite', "./texture/HUDMultitool.png");
         HUDMt.width = "350px";
         HUDMt.height = "400px";
         HUDMt.top = 450;
@@ -137,7 +137,7 @@ export default class HUD {
         //crosshair
         crosschair = new BABYLON.GUI.Image(
             "b1",
-            "../../../root/assets/texture/pngfind.com-crosshair-dot-png-5191877.png"
+            "./texture/pngfind.com-crosshair-dot-png-5191877.png"
         );
         //crosschair.image.stretch = BABYLON.GUI.Image.STRETCH_UNIFORM;
         crosschair.width = "48px";
