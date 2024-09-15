@@ -116,7 +116,7 @@ export class EngineRoomCorridor {
 
     AppendScene(scene) {
         BABYLON.SceneLoader.Append(
-            "../scenes/",
+            "./scenes/",
             "EngineRoomCorridor.babylon",
             scene,
             (newMeshes) => {
